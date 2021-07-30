@@ -1,0 +1,1331 @@
+<ActionTemplates>
+<Action>
+<Name>MathEx.Base10ToBaseX</Name>
+<Description>Converts a number from base ten to any other base(bases 2 - 36 supported).</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number</Name>
+<Description>The number that will be converted.</Description>
+<Type>number</Type>
+<Default>435</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>435</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Output Base</Name>
+<Description>The base in which to output the number.</Description>
+<Type>number</Type>
+<Default>16</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>16</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.BaseConvert</Name>
+<Description>Convert a number from any base to any other base (bases 2 - 36 supported).</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number (as string)</Name>
+<Description>The number (in string format) that will be converted.</Description>
+<Type>string</Type>
+<Default>"A54D6E"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"A54D6E"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Input Base</Name>
+<Description>The base of the input number.</Description>
+<Type>number</Type>
+<Default>17</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>17</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Output Base</Name>
+<Description>The base in which to return the output.</Description>
+<Type>number</Type>
+<Default>6</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>6</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.BaseXToBase10</Name>
+<Description>Converts a number from any base in a number in base ten(bases 2 - 36 supported).</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number (as string)</Name>
+<Description>The number which to convert (in string format);</Description>
+<Type>string</Type>
+<Default>"010101011110110101"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"010101011110110101"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Input Base</Name>
+<Description>The base of the input number.</Description>
+<Type>number</Type>
+<Default>2</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>2</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.CoefficientOfVariation</Name>
+<Description>Returns the coefficient of variation for a set of data</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of numbers for which to find the coefficient of variation.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.CreateCounter</Name>
+<Description>Creates a repeating counter.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Counter Name</Name>
+<Description>The name by which the counter is represented.</Description>
+<Type>string</Type>
+<Default>"Items"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Items"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Max Count</Name>
+<Description>The highest number to which the counter will go.</Description>
+<Type>number</Type>
+<Default>34</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>34</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Is 0 Based</Name>
+<Description>Whether or not the counter will be a 0-based counter (as opposed to a 1-based counter).</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.DecimalColorToHex</Name>
+<Description>Converts a decimal color value to a hex color value.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Color</Name>
+<Description>The decimal color value.</Description>
+<Type>number</Type>
+<Default>1232143</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>1232143</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.DecimalColorToRGB</Name>
+<Description>Converts a decimal color value to an RGB value.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Color</Name>
+<Description>The decimal color value.</Description>
+<Type>number</Type>
+<Default>1232143</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>1232143</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Divide</Name>
+<Description>Performs long division on two numbers.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dividend</Name>
+<Description>The number to divide.</Description>
+<Type>number</Type>
+<Default>15</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>15</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Divisor</Name>
+<Description>The number by which to divide the dividend.</Description>
+<Type>number</Type>
+<Default>3</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>3</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.FiveSummaryData</Name>
+<Description>Gets the Five Summary Data for a given numeric dataset.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of numbers for which to find the Five Summary Data.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>MathEx.FractionToDecimal</Name>
+<Description>This action converts a fraction into a decimal.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Numerator</Name>
+<Description>The numerator of the fraction.</Description>
+<Type>number</Type>
+<Default>15</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>15</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Denominator</Name>
+<Description>The denominator of the fraction.</Description>
+<Type>number</Type>
+<Default>30</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>75</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.FractionToLowestTerms</Name>
+<Description>This action reduces a fraction to its lowest terms.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Numerator</Name>
+<Description>The numerator of the fraction.</Description>
+<Type>number</Type>
+<Default>20</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>20</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Denominator</Name>
+<Description>The denominator of the fraction.</Description>
+<Type>number</Type>
+<Default>80</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>80</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.GCF</Name>
+<Description>This finds the Greatest Common Factor of two numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number 1</Name>
+<Description>The first number.</Description>
+<Type>number</Type>
+<Default>7</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>7</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Number 2</Name>
+<Description>The second number.</Description>
+<Type>number</Type>
+<Default>13</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>13</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.GetCounterPos</Name>
+<Description>Gets the current position of the given counter.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Counter Name</Name>
+<Description>The name by which the counter is represented.</Description>
+<Type>string</Type>
+<Default>"Items"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Items"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.GetPrimeFactors</Name>
+<Description>Returns the prime factors of a given integer.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number</Name>
+<Description>The number for which to find the prime factors.</Description>
+<Type>number</Type>
+<Default>28</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>28</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.GetPrimes</Name>
+<Description>Gets all prime numbers in a given range.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Range Start</Name>
+<Description>The starting number of the search range.</Description>
+<Type>number</Type>
+<Default>1</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>1</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Range End</Name>
+<Description>The last number in the search range.</Description>
+<Type>number</Type>
+<Default>100</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>100</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Callback Function</Name>
+<Description>The callback function to use when a prime number is found.</Description>
+<Type>variant</Type>
+<Default>nil</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>nil</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.HexColorToRGB</Name>
+<Description>Converts a hex color value to an RGB color value.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Color</Name>
+<Description>The six character string value of the hex color.</Description>
+<Type>string</Type>
+<Default>"F34AC5"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"F34AC5"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Intersection</Name>
+<Description>Finds the intersection of two sets of numbers.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Set 1</Name>
+<Description>The first set of numbers (in table format).</Description>
+<Type>table</Type>
+<Default>{1, 2, 3}</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>{1, 2, 3}</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Set 2</Name>
+<Description>The second set of numbers (in table format).</Description>
+<Type>table</Type>
+<Default>{1, 2, 4, 7}</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>{1, 2, 4, 7}</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.IsEven</Name>
+<Description>Determines whether or not a given number is an even number.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number</Name>
+<Description>The input number to check.</Description>
+<Type>number</Type>
+<Default>34</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>34</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.IsInteger</Name>
+<Description>Determines whether or not a number is an integer (a whole number).</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number</Name>
+<Description>The input number to check.</Description>
+<Type>number</Type>
+<Default>23.5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>23.5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.IsNegative</Name>
+<Description>Determines whether or not a number is negative.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number</Name>
+<Description>The input number to check.</Description>
+<Type>number</Type>
+<Default>12</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>12</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.IsPrime</Name>
+<Description>Determines whether or not a given number is a prime number.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number</Name>
+<Description>The input number to check.</Description>
+<Type>number</Type>
+<Default>17</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>17</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.LCD</Name>
+<Description>Gets the least common denominator for a given set of integers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Numbers</Name>
+<Description>A set of numbers (in table format) for which to find the least common denominator.</Description>
+<Type>table</Type>
+<Default>{32, 14, 8, 9, 24}</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>{32, 14, 8, 9, 24}</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.LCM</Name>
+<Description>This finds the Least Common Multiple of two numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number 1</Name>
+<Description>The first number.</Description>
+<Type>number</Type>
+<Default>427</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>427</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Number 2</Name>
+<Description>The second number.</Description>
+<Type>number</Type>
+<Default>238</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>238</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Ln</Name>
+<Description>Returns the natural log of a number.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Input</Name>
+<Description>The number for which to find the natural log.</Description>
+<Type>number</Type>
+<Default>100</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>100</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Log</Name>
+<Description>Allows the input of the log base (where the stock AMS action "Math.Log" does not).</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Log Base</Name>
+<Description>The base of the log.</Description>
+<Type>number</Type>
+<Default>10</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>10</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Input</Name>
+<Description>The number for which to find the log.</Description>
+<Type>number</Type>
+<Default>100</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>100</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Mean</Name>
+<Description>Calculates the mean of a set of numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of numbers for which to find the mean.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Median</Name>
+<Description>Finds the median of a set of numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of numbers for which to find the median.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Mode</Name>
+<Description>Finds the mode of a set of numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of numbers for which to find the mode.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.NumberCount</Name>
+<Description>Counts the number of places in a given number.</Description>
+<ReturnValueType>number</ReturnValueType>
+</Action>
+<Action>
+<Name>MathEx.NumberToTable</Name>
+<Description>Stores each digit of a number in a table.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>MathEx.NumberToWords</Name>
+<Description>This will convert a number to a string of words.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Number</Name>
+<Description>The input number.</Description>
+<Type>number</Type>
+<Default>1234</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>1234</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Use Commas</Name>
+<Description>Whether or not to use commas.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Is Monetary</Name>
+<Description>Whether or not to display the result in terms of money (only USD is currently supported).</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.RGBColorToHex</Name>
+<Description>Conerts an RGB color value to a hex color value.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>RGB</Name>
+<Description>The table containing the three RGB values.</Description>
+<Type>table</Type>
+<Default>tRGB</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tRGB</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Range</Name>
+<Description>gets the range of a given set of numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of numbers for which to find the range.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.SortNumericDataSet</Name>
+<Description>Sorts a table of numbers.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of numbers to sort.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Ascending</Name>
+<Description>Whether to sort the items in ascending or descending order.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.StandardDeviation</Name>
+<Description>Calculates the standard deviation for a given set of numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of number for which to find the standard deviation.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.StepCounter</Name>
+<Description>Steps a counter from its current position to its next position.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Counter Name</Name>
+<Description>The name by which the counter is represented.</Description>
+<Type>string</Type>
+<Default>"Items"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Items"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+
+<Action>
+<Name>MathEx.Summation</Name>
+<Description>Calculates the total of all items(added together) of a given set of numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The set of numbers which to add.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>MathEx.Variance</Name>
+<Description>Calculates the variance for a given set of numbers.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dataset</Name>
+<Description>The table of numbers for which to find the variance.</Description>
+<Type>table</Type>
+<Default>tDataset</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDataset</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription>Returns a string containing the numbers (and possibly letters) of the output.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a string containing the numbers (and possibly letters) of the output.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a number in base ten.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a number.
+If an error occurs nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example>MathEx.CreateCounter("Items");</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a string containing the hex color value.
+If an error occurs then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a table containing the RGB values indexed as tColor.Red, tColor.Green, tColor.Red.
+If an error occurs then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a table containing the quotient and the remainder indexed as .Quotient and .Remainder.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a numerically table with tData[1] being the minumum value, tData[2] being the first quartile, tData[3] being the second quartile, tData[4] being the third quartile and tData[5] being the population (or sample) total.
+If an error occurs, nil is returned.
+
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>It normally returns a number unless a zero demoninator is input, in which case it will return "undefined".</ReturnValueDescription>
+<Example>nDecimal = MathEx.FractionToDecimal(1, 12);
+Dialog.Message("Output", nDecimal);</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a table with three numbers. An Integer, the numerator and the denominator found in the indices, .Integer, .Numerator and .Denominator.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the counter's current position.
+If the timer does not exist or an error occurs, -1 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns and indexed table of all prime factors.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a table of all prime numbers in the given range.
+If no prime numbers are found or an error occurs then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The start of the range must be a positive integer greater than 0 and the end number of the range must be a integer greater than the start number.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Const>
+<Name>nil</Name>
+<Value>nil</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>true</Name>
+<Value>true</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>false</Name>
+<Value>false</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note>Use nil to exclude a callback function.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a table containing the RGB values indexed as tColor.Red, tColor.Green, tColor.Red.
+If an error occurs then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns an indexed table of all common numbers from the two input sets.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the input number is even and false if it is odd.
+If an error occurs then false is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the number is an integer.
+If an error occurs then false is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the number is negative.
+If an error occurs then false is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true is the input number is prime and false if it not.
+If an error occurs then false is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the least common denominator as a number. 
+If a error occurs then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the natural log of a number.
+
+If a negative number is input then the string "undefined" is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The natural log is a log where the base is e (calculated to 1000 digits).</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the logx of a number where x is the input base.
+
+If a negative number is input then the string "undefined" is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Return a number.
+If an error occurs then nil is retruned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Return a number.
+If an error occurs then nil is retruned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Return a number.
+If an error occurs then nil is retruned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Return a number.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a numerically indexed table whose values are the digits in the input number.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a string of the input number.</ReturnValueDescription>
+<Example>sMyNumber = MathEx.NumberToWords(86746.32, true, true);
+Dialog.Message("My number in words", sMyNumber);</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a string containing the six-digit value of the hex color.
+If an error occurs a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a number.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the original table sorted.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a number. If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the counter's position after the step action occurs.
+If the timer does not exist or an error occurs, then -1 is returned.</ReturnValueDescription>
+<Example>MathEx.CreateCounter("Items");
+local nCurrentPos = MathEx.StepCounter("Items");</Example>
+<Note>If the counter's current position is it's max position, the step action will cause the counter to restart at 1 (or 0 if it is 0-based).</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a number.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a number. 
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Version1>1</Version1>
+<Version2>4</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Name>MathEx</Name>
+<Description>This plugin adds a number of math functions to your arsenal.</Description>
+<Author>Centauri Soldier</Author>
+<Email>centaurisoldier@amspublic.com</Email>
+<Web>www.amspublic.com</Web>
+<Copyright>2009 www.amspublic.com</Copyright>
+<License>Free to use and distribute.</License>
+<InstallNotes>Place "MathEx" Folder in your "AutoPlay Media Studio/Plugins/Actions" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>
