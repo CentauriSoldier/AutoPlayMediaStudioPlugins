@@ -1,0 +1,1139 @@
+<Name>DXML.GetAttribute</Name>
+<Description>Returns the value of an element's attribute.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The full path to the element whose attribute names you want to retrieve.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AttributeName</Name>
+<Description>The full path to the element whose attribute you want to retrieve.</Description>
+<Type>string</Type>
+<Default>"MyAttribute"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MyAttribute"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.GetAttributeNames</Name>
+<Description>Returns the names of an element's attributes in a numerically indexed table.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The full path to the element whose attribute names you want to retrieve.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.GetElementNames</Name>
+<Description>Returns a numerically indexed table containing the names of all child elements contained within a specific element.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The full path to the element whose child elements you want to find.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>FullPaths</Name>
+<Description>Whether to return the full paths of the child elements, or just the element names:</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>IncludeIndices</Name>
+<Description>Whether to append the delimiter and index (e.g. ":3") to each element name:</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.GetElementXML</Name>
+<Description>Returns the raw XML of an element, i.e. the plain-text XML code for the element and all of its children.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTables</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The full path to the element whose XML you want to retrieve.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.GetLoaded</Name>
+<Description>Returns all the loaded XML files.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>DXML.GetValue</Name>
+<Description>Returns the value of an element.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The full path to the element whose value you want to retrieve.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.GetXML</Name>
+<Description>Returns the specified XML document as a string.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name fo the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.InsertXML</Name>
+<Description>Inserts raw XML code into a specific location in the specified XML table.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The path to the element where you want to insert the XML text. You can insert the XML before this element, insert it after this element, or replace the element (and all its children) with the new XML text.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Text</Name>
+<Description>The XML text that you want to insert.</Description>
+<Type>string</Type>
+<Default>"&lt;element&gt;value1&lt;/element&gt;&lt;element&gt;value2&lt;/element&gt;"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"&lt;element&gt;value1&lt;/element&gt;&lt;element&gt;value2&lt;/element&gt;"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>InsertionMode</Name>
+<Description>The insertion mode to use:</Description>
+<Type>variant</Type>
+<Default>XML.INSERT_AFTER</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>XML.INSERT_AFTER</Default>
+<DataType>combo</DataType>
+<Constraints>XML.INSERT_BEFORE,XML.INSERT_AFTER,XML.REPLACE,</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.IsSaved</Name>
+<Description>Determines whether or not an XML table has been saved since it was last changed.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.ReadFromFile</Name>
+<Description>Loads an XML file into memory.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The full path to the XML file.</Description>
+<Type>string</Type>
+<Default>"C:\\MyFile.XML"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\MyFile.XML"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table in which to load the XML file contents.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.ReadFromString</Name>
+<Description>Loads an XML string into memory.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The full path to the file where the XML string will be saved.</Description>
+<Type>string</Type>
+<Default>"C:\\MyFile.xml"</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>"C:\\MyFile.xml"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table in which to load the XML string.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>String</Name>
+<Description>The String which will be loaded.</Description>
+<Type>string</Type>
+<Default>"&lt;test&gt;&lt;/test&gt;"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"&lt;test&gt;&lt;/test&gt;"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.RemoveAttribute</Name>
+<Description>Removes a specific attribute from an element.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The path to the element whose attribute you want to remove.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AttributeName</Name>
+<Description>The name of the attribute you want to remove.</Description>
+<Type>string</Type>
+<Default>"MyAttribute"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MyAttribute"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.RemoveElement</Name>
+<Description>Removes a specific element (and its children) from the specified XML table.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The path to the element you want to remove.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.Save</Name>
+<Description>Saves the specified XML table to it's relevant file.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.SaveAll</Name>
+<Description>Saves all XML tables to their appropriate files.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>DXML.SetActive</Name>
+<Description>Manually sets the active XML table.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table to make the active table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.SetAttribute</Name>
+<Description>Sets the value of an element's attribute.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The path to the element whose attribute you want to set.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AttributeName</Name>
+<Description>The name of the attribute you want to set.</Description>
+<Type>string</Type>
+<Default>"MyAttribute"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MyAttribute"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AttributeValue</Name>
+<Description>The value you want the attribute to have.</Description>
+<Type>string</Type>
+<Default>"MyValue"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MyValue"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.SetFilePath</Name>
+<Description>Sets or changes the file save path for a specified XML table.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>File</Name>
+<Description>The full file path to which the specified table's file path will be changed.</Description>
+<Type>string</Type>
+<Default>"C:\\NewFile.xml"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\NewFile.xml"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.SetValue</Name>
+<Description>Sets the value of an element.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>XMLPath</Name>
+<Description>The full path to the element whose value you want to set.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The value you want the element to have.</Description>
+<Type>string</Type>
+<Default>"MyValue"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MyValue"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>WriteCDATA</Name>
+<Description>Whether to write the data as a CDATA section:</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.SortByElement</Name>
+<Description>Alphabetically sorts an XML table according to the values of the specified element.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table to sort.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Path</Name>
+<Description>The path to the element that will be the sorting target.</Description>
+<Type>string</Type>
+<Default>"root/element/element"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"root/element/element"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>DXML.StringToXMLAtt</Name>
+<Description>Converts a string into another string that will be able to be stored as an xml string, replacing xml control characters(line breaks, ", ', \, &lt;, &gt;, =) with a different and specific control character which is numerically indexed automatically to identify each character type.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Input</Name>
+<Description>The string to convert.</Description>
+<Type>string</Type>
+<Default>"&lt;Here's some text.&gt;"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"&lt;Here's some text.&gt;"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Control Character</Name>
+<Description>The character which will replace all of the xml control characters in the string.</Description>
+<Type>string</Type>
+<Default>"¬"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"¬"</Default>
+<DataType>combo</DataType>
+<Constraints>"•","¤","¥","¬",</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DXML.UnloadTable</Name>
+<Description>Removes a specified XML table from memory.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>XMLTable</Name>
+<Description>The name of the XML table to remove from memory.</Description>
+<Type>string</Type>
+<Default>"Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+
+<Action>
+<Name>DXML.XMLAttToString</Name>
+<Description>Converts a string, previously converted by the DXML.StringToXMLAtt() function, back to a normal string using the specified control character.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Input</Name>
+<Description>The previously-converted xml string to convert back to a normal string.</Description>
+<Type>string</Type>
+<Default>"Here¬3s some text."</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Here¬3s some text."</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Control Character</Name>
+<Description>The control character used during the initial encoding process.</Description>
+<Type>string</Type>
+<Default>"¬"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"¬"</Default>
+<DataType>combo</DataType>
+<Constraints>"•","¤","¥","¬",</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription>The number of matching child elements found. If an error occurs, -1 is returned. You can use Application.GetLastError to determine whether this action failed, and why</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a string.
+If an error occurs or there is no active table then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>The value of the specified element's attribute. If an element has no attribute or an error occurs, an empty string ("") is returned. You can use Application.GetLastError to determine whether this action failed, and why.
+</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>A numerically indexed table containing the names of the specified element's attributes. If the element doesn't contain any attributes or an error occurs, nil is returned. You can use Application.GetLastError to determine whether this action failed, and why.
+</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>A numerically indexed table containing the names of all child elements contained within the specified element. If there are no child elements or an error occurs, nil is returned. You can use Application.GetLastError to determine whether this action failed, and why.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Boolean>
+<True>Return the full paths of the child elements.</True>
+<False>Return just the element names. (Default)</False>
+</Boolean>
+<Note></Note>
+</Arg>
+<Arg>
+<Boolean>
+<True>Append the delimiter and index to each element name.</True>
+<False>Return just the element names. (Default)</False>
+</Boolean>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>The XML code for the entire element and all of its children. If the element doesn't exist, or an error occurs, an empty string ("") is returned. You can use Application.GetLastError to determine whether this action failed, and why.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a numerically indexed table containing the names of all the loaded XML files.
+If an error occurs or there are no loaded files then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>The value of the specified element. If the element contains no value, or an error occurs, an empty string ("") is returned. You can use Application.GetLastError to determine whether this action failed, and why.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>A string containing the specified XML table. If the table does not exist or an error occurs, an empty string ("") is returned. You can use Application.GetLastError to determine whether this action failed, and why.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Const>
+<Name>XML.INSERT_BEFORE</Name>
+<Value>0</Value>
+<Description>Insert the new XML text before the specified element.</Description>
+</Const>
+<Const>
+<Name>XML.INSERT_AFTER</Name>
+<Value>1</Value>
+<Description>Insert the new XML text after the specified element.</Description>
+</Const>
+<Const>
+<Name>XML.REPLACE</Name>
+<Value>2</Value>
+<Description>Replace the specified element's XML text with the new XML text.</Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>retuns true it the specified table has been saved since its last change and false if it has not.
+If an error occurs or the table does not exist then false is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note>This argument is not required but if it is not set then the XML data cannot be saved to file without first calling DXML.SetFilePath().</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the file was saved and false if it was not.</ReturnValueDescription>
+<Example></Example>
+<Note>File paths are stored when XML documents are loaded. If XML is created without loading a file then a file path must be specified using the DXML.SetFilePath() function.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a numerically indexed table containing all of the XML table names that were not saved to file (most likely because no file path was specified).
+
+If all tables were saved to file or no tables exist then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>This action is automatically called by all DXML functions which need it and is not required (to be called manually) for DXML functions to operate properly. This function is here for the sake of versatility.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>File paths are nomally set during XML string or file loading. This action is used if the file path was not set during the loading process or to simply change where a file will be saved.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Boolean>
+<True>Write the data as a CDATA section. </True>
+<False>Don't write the data as CDATA. (Default)</False>
+</Boolean>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>Returns the converted string.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Const>
+<Name>"•"</Name>
+<Value>"•"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¤"</Name>
+<Value>"¤"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¥"</Name>
+<Value>"¥"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¬"</Name>
+<Value>"¬"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>Returns the converted string.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Const>
+<Name>"•"</Name>
+<Value>"•"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¤"</Name>
+<Value>"¤"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¥"</Name>
+<Value>"¥"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¬"</Name>
+<Value>"¬"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+<Arg>
+<Const>
+<Name>"•"</Name>
+<Value>"•"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¤"</Name>
+<Value>"¤"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¥"</Name>
+<Value>"¥"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"¬"</Name>
+<Value>"¬"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+</Action><Name>DXML</Name>
+<Description>Dynamic XML is an extension of the XML functions for AMS. It allows the programmer to load and work with multiple XML files at the same time.
+
+Notes on Compatibility:
+DXML was designed to be compatible with the original XML functions, it can used with the other XML functions as long as you use the extra compatibility functions provided, although there is really no need to use the normal XML functions as all of them are included in DXML.</Description>
+<Version1>1</Version1>
+<Version2>2</Version2>
+<Version3>2</Version3>
+<Version4>2</Version4>
+<Author>Centauri Soldier</Author>
+<Email>centaurisoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>Copyright © 2010 AMSPublic.com</Copyright>
+<License>Free to use and distribute.</License>
+<InstallNotes>Place the "DXML" Folder in your "AutoPlay Media Studio/Plugins/Actions" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

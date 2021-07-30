@@ -1,0 +1,1155 @@
+<ActionTemplates>
+<Action>
+<Name>INIPlus.CreateSection</Name>
+<Description>(OPTIONAL) Although sections are created automatically when a value's attribute or data is specified, sometimes it is desirable to create blank sections. This function does just that.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section to create.</Description>
+<Type>string</Type>
+<Default>"Preferences"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Preferences"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Attribute</Name>
+<Description>The section's attribute. This can be left blank.</Description>
+<Type>string</Type>
+<Default>"User Preferences"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"User Preferences"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.CreateFromINI</Name>
+<Description>Creates an INIPlus file from an INI file.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>INIPlus File</Name>
+<Description>The INIPlus file to create.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>INI File</Name>
+<Description>The INI file to be copied.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\OldFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\OldFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.ChangeSectionName</Name>
+<Description>Changes the name of an existing section.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Old Name</Name>
+<Description>The name of the existing section.</Description>
+<Type>string</Type>
+<Default>"Old Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Old Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>New Name</Name>
+<Description>The name to which the section will be changed.</Description>
+<Type>string</Type>
+<Default>"New Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"New Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.CopySection</Name>
+<Description>Copies an existing section with all attributes, values and value attributes to a new section.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Old Section</Name>
+<Description>The name of the existing section.</Description>
+<Type>string</Type>
+<Default>"Old Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Old Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Copied Section</Name>
+<Description>The name to call the newly-copied section.</Description>
+<Type>string</Type>
+<Default>"Copy Cat"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Copy Cat"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.CountSections</Name>
+<Description>Counts the number of sections and returns the number.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.CountValues</Name>
+<Description>Counts the number of values in a given section and returns the number.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section in which to count the values.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.DeleteSection</Name>
+<Description>Deletes an existing section and all its values.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section to delete.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.DeleteValue</Name>
+<Description>Deletes a value in a specifc section.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section which contains the target value.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The value to delete.</Description>
+<Type>string</Type>
+<Default>"My Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.ExportToINI</Name>
+<Description>Exports all data in an INIPlus file and write it to an ini file. All attributes can be included as comments in the new ini file.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>INIPlus File</Name>
+<Description>The INIPlus file to be copied.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\OldFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\OldFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>INI File</Name>
+<Description>The ini file to create.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ini"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ini"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Include Attributes</Name>
+<Description>Whether or not to include the all attributes in the INIPlus file as comments in the new INI file.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.GetSectionAttribute</Name>
+<Description>Retrieves the attribute of the given section.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\MyFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section whose attribute to get.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.GetSectionNames</Name>
+<Description>Gets the names of all sections and returns them in a numerically indexed table.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.GetValue</Name>
+<Description>Gets the data of a given value.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section which contains the value where the target data is stored.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The value which contains the target data.</Description>
+<Type>string</Type>
+<Default>"My Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.GetValueAttribute</Name>
+<Description>Gets the attribute of a given value.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section which contains the value where the target attribute is stored.</Description>
+<Type>string</Type>
+<Default>"My Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The value which contains the target attribute.</Description>
+<Type>string</Type>
+<Default>"My Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.GetValueNames</Name>
+<Description>Get all value names from a specified section and returns them in a numerically indexed table.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section in which to count values.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.ReadToTable</Name>
+<Description>Reads the contents of an INIPlus file and returns a table containing two sub tables.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.SectionDoesExist</Name>
+<Description>Determines whether or not a section exists.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section for which to search.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.SetSectionAttribute</Name>
+<Description>Set or changes the the attribute of a given section. If the section does not exist it will be created.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section in which to set the attribute.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Attribute</Name>
+<Description>The attribute text.</Description>
+<Type>string</Type>
+<Default>"Some text here"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Some text here"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.SetValueAttribute</Name>
+<Description>Set or changes the attribute of a given value. If the section or value does not exist then it will be created.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section which contains the value for which to set the attribute.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The value for which to set the attribute.</Description>
+<Type>string</Type>
+<Default>"Some text here"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Some text here"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Attribute</Name>
+<Description>The attribute text.</Description>
+<Type>string</Type>
+<Default>"Some text here"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Some text here"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.SetValueData</Name>
+<Description>Set or changes the data of a given value. If the section or value does not exist then it will be created.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section which contains the value for which to set the data.</Description>
+<Type>string</Type>
+<Default>"My Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The value for which to set the data.</Description>
+<Type>string</Type>
+<Default>"My Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Data</Name>
+<Description>the data text. This can be multi-line.</Description>
+<Type>string</Type>
+<Default>"Some text here"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Some text here"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.SetValueAttributeAndData</Name>
+<Description>Set or changes the attribute and data of a given value. If the section or value does not exist then it will be created.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section which contains the value for which to set the attribute and data.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The value for which to set the attribute and data.</Description>
+<Type>string</Type>
+<Default>"My Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Attribute</Name>
+<Description>The attribute text.</Description>
+<Type>string</Type>
+<Default>"Attribute Text"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Attribute Text"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Data</Name>
+<Description>The data text.</Description>
+<Type>string</Type>
+<Default>"Data Text"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Data Text"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.ShowErrors</Name>
+<Description>Set this to true to see any occuring erros with INIPlus actions.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Show Errors</Name>
+<Description>Whether or not to show errors created by syntax problems in INIPlus functions. This is good for trouble shooting.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>INIPlus.ValueDoesExist</Name>
+<Description>Determines whether or not a value exists.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The INIPlus file to access.</Description>
+<Type>string</Type>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"AutoPlay\\Docs\\NewFile.ipf"</Default>
+<DataType>file</DataType>
+<Constraints>Docs</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The section which contains the target value.</Description>
+<Type>string</Type>
+<Default>"My Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The value for which to search.</Description>
+<Type>string</Type>
+<Default>"My Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the number of sections in a INIPlus file. If an error occurs then -1 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the number of values in a given section in an INIPlus file. If an error occurs then -1 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>A string containing the attribute. If there is no attribute or an error occurs then a blank string ("") is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>A numerically indexed tables whose values are the sections names.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>A string containing the value's data. If there is no data or an error occurs then a blank string ("") is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>A string containing the value's attribute. If there is no attribute or an error occurs then a blank string ("") is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>A numerically indexed tables whose values are the value names.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a table containing two sub tables. If no data exists or an error occurs then nil is returned.
+
+The first table is indexed by section and value names.
+
+tData["My Section"].ID
+tData["My Section"].Name
+tData["My Section"].Attribute
+tData["My Section"].Values["My Value"].ID
+tData["My Section"].Values["My Value"].Name
+tData["My Section"].Values["My Value"].Attribute
+tData["My Section"].Values["My Value"].Data
+
+The second table is indexed by numbers but contains the same data as the first table.
+
+tData[1].ID
+tData[1].Name
+tData[1].Attribute
+tData[1].Values[1].ID
+tData[1].Values[1].Name
+tData[1].Values[1].Attribute
+tData[1].Values[1].Data
+</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if a section exists and false if a section does not. If an error occurs then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if a value exists and false if it does not. If an error occurs then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the number of values in a given section in a INIPlus file. If an error occurs then -1 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>The INIPlus format IS case sensitive. The escape character (for manually editing an INIPlus file) is a carrot "^". Comments can placed anywhere outside of sections but must still escape with a carrot "^" when using function symbols ([, ], &lt;, &gt;, |, =, ", ')</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Name>INIPlus</Name>
+<Description>A human-readable file format using some combined features of INI and XML.</Description>
+<Version1>1</Version1>
+<Version2>2</Version2>
+<Version3>2</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>© 2009 www.AMSPublic.com</Copyright>
+<License>Free to use and distribute.</License>
+<InstallNotes>Place the "INIPlus" folder in your "AutoPlay Media Studio\Plugins\Actions" folder</InstallNotes>
+</Extended>
+</ActionTemplates>

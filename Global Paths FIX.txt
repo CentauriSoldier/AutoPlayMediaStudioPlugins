@@ -1,0 +1,1 @@
+Put a system in place to check folder names for illegal variable symbols. Although folders can use those symbols, variables in AMS cannot and the plugin script throws an error (and not a specific one). Make these illegal folders be automatically removed from the list of creATED VARIABLES.

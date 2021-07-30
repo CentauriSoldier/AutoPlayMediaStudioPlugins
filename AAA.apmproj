@@ -1,0 +1,370 @@
+<!-- Warning : Do not edit this document manually -->
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Project>
+    <ProjectInfo>
+        <Type>0</Type>
+        <ID>{7d5c41e7-7529-4913-9257-0bd9aa61f507}</ID>
+        <Environment>1</Environment>
+    </ProjectInfo>
+    <ProductInfo>
+        <Created>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.1.0.0</Version>
+            <Date>1/11/2020 5:39:09 PM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Created>
+        <Modified>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.1.0.0</Version>
+            <Date>11/21/2020 9:37:28 AM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Modified>
+    </ProductInfo>
+    <Scripts>
+        <Script Name="Lua" ScrollPosition="0" CursorPosition="7797">
+            <Source>LS1bWw0KQXJndW1lbnQgQXNzZXJ0aW9uIEFnZW50IDMuMA0KDQpPcmlnaW5hbCBJZGVhIEJ5IE1pY3JvQnl0ZQ0KUmV2aXNlZCBhbmQgTWFpbnRhaW5lZCBieSBDZW50YXVyaSBTb2xkaWVyDQoNCkNvcHlyaWdodCAyMDE5IEFNU1B1YmxpYy5vcmcNClBlcm1pc3Npb24gaXMgaGVyZWJ5IGdyYW50ZWQsIGZyZWUgb2YgY2hhcmdlLCB0byBhbnkgcGVyc29uIG9idGFpbmluZyBhDQpjb3B5IG9mIHRoaXMgc29mdHdhcmUgYW5kIGFzc29jaWF0ZWQgZG9jdW1lbnRhdGlvbiBmaWxlcyAodGhlICJTb2Z0d2FyZSIpLA0KdG8gZGVhbCBpbiB0aGUgU29mdHdhcmUgd2l0aG91dCByZXN0cmljdGlvbiwgaW5jbHVkaW5nIHdpdGhvdXQgbGltaXRhdGlvbg0KdGhlIHJpZ2h0cyB0byB1c2UsIGNvcHksIG1vZGlmeSwgbWVyZ2UsIHB1Ymxpc2gsIGRpc3RyaWJ1dGUsIHN1YmxpY2Vuc2UsDQphbmQvb3Igc2VsbCBjb3BpZXMgb2YgdGhlIFNvZnR3YXJlLCBhbmQgdG8gcGVybWl0IHBlcnNvbnMgdG8gd2hvbSB0aGUNClNvZnR3YXJlIGlzIGZ1cm5pc2hlZCB0byBkbyBzbywgc3ViamVjdCB0byB0aGUgZm9sbG93aW5nIGNvbmRpdGlvbnM6DQoNClRoZSBhYm92ZSBjb3B5cmlnaHQgbm90aWNlIGFuZCB0aGlzIHBlcm1pc3Npb24gbm90aWNlIHNoYWxsIGJlIGluY2x1ZGVkDQppbiBhbGwgY29waWVzIG9yIHN1YnN0YW50aWFsIHBvcnRpb25zIG9mIHRoZSBTb2Z0d2FyZS4NCg0KVEhFIFNPRlRXQVJFIElTIFBST1ZJREVEICJBUyBJUyIsIFdJVEhPVVQgV0FSUkFOVFkgT0YgQU5ZIEtJTkQsDQpFWFBSRVNTIE9SIElNUExJRUQsIElOQ0xVRElORyBCVVQgTk9UIExJTUlURUQgVE8gVEhFIFdBUlJBTlRJRVMgT0YNCk1FUkNIQU5UQUJJTElUWSwgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UgQU5EIE5PTklORlJJTkdFTUVOVC4NCklOIE5PIEVWRU5UIFNIQUxMIFRIRSBBVVRIT1JTIE9SIENPUFlSSUdIVCBIT0xERVJTIEJFIExJQUJMRSBGT1IgQU5ZIENMQUlNLA0KREFNQUdFUyBPUiBPVEhFUiBMSUFCSUxJVFksIFdIRVRIRVIgSU4gQU4gQUNUSU9OIE9GIENPTlRSQUNULCBUT1JUIE9SDQpPVEhFUldJU0UsIEFSSVNJTkcgRlJPTSwgT1VUIE9GIE9SIElOIENPTk5FQ1RJT04gV0lUSCBUSEUgU09GVFdBUkUgT1IgVEhFDQpVU0UgT1IgT1RIRVIgREVBTElOR1MgSU4gVEhFIFNPRlRXQVJFLg0KDQpdXQ0KLS1bW0Rlc2NyaXB0aW9uDQo8cD5Bcmd1bWVudCBBc3NlcnRpb24gQWdlbnQgaXMgYSBwcm9ncmFtbWVyJ3MgcmVzb3VyY2UgZGVzaWduZWQgZm9yIGNoZWNraW5nIGlucHV0IG9mIGZ1bmN0aW9uIGFyZ3VtZW50cy48L3A+DQo8cD5XaGlsZSB0aGlzIHdhcyBjcmVhdGVkIHByaW1hcmlseSB3aXRoIHBsdWdpbiBkZXNpZ24gaW4gbWluZCwgaXQgbWF5IGFsc28gc2VydmUgaW4gYXBwbGljYXRpb24gZGVzaWduIGFzIHdlbGwuPC9wPg0KDQpdXQ0KLS1bW0ZlYXR1cmVzDQo8dWwgY2xhc3M9ImNvbW1lbnRzX2xpc3RfZmVhdHVyZXMiPg0KCTxsaT5DaGVja3MgZnVuY3Rpb24gYXJndW1lbnQgY291bnQuPC9saT4NCgk8bGk+Q2hlY2tzIGZ1bmN0aW9uIGFyZ3VtZW50IHR5cGVzIGFnYWluc3QgYWxsb3dlZCB0eXBlcy48L2xpPg0KCTxsaT5BbGxvd3MgZm9yIGN1c3RvbSBlcnJvciBtZXNzYWdlcyBhbmQgZXJyb3IgbGV2ZWwgc3BlY2lmaWNpdHkuPC9saT4NCgk8bGk+UHJvdmlkZXMgYSBtZWFucyBvZiBlbmZvcmNpbmcgcGx1Z2luIGRlcGVuZGVuY3kgcmVxdWlyZW1lbnRzLjxsaT4NCjwvdWw+DQpdXQ0KLS1bW1ZlcnNpb24gSGlzdG9yeQ0KPHA+PGI+VmVyc2lvbiAzLjIuMC4wPC9iPjwvcD4NCjxwPkZpeGVkIGEgYnVnIGluIHRoZSBsb2NhbCBFcnJvcigpIGZ1bmN0aW9uPC9wPg0KPHA+PGI+VmVyc2lvbiAzLjEuMC4wPC9iPjwvcD4NCjxwPkZpeGVkIGEgYnVnIGluIHRoZSBDaGVja1R5cGVzKCkgZnVuY3Rpb248L3A+DQo8cD48Yj5WZXJzaW9uIDMuMC4wLjA8L2I+PC9wPg0KPHA+Q29udmVydGVkIHRoZSBJUkxVQSBQTFVHSU4gSEVMUEVSIEZVTkNUSU9OUyB0byB0aGlzIGZvcm1hdC48L3A+DQo8cD48aT5JbXBvcnRlZCBhbmQgY29udmVydGVkIHRoZSBmb2xsb3dpbmcgZnVuY3Rpb25zOjwvaT48L3A+DQo8dWwgY2xhc3M9ImNvbW1lbnRzX2xpc3QiPg0KCTxsaT5DaGVja0NvdW50KCk8L2xpPg0KCTxsaT5DaGVja1R5cGVzKCk8L2xpPg0KCTxsaT5FcnJvcigpPC9saT4NCgk8bGk+R2V0RXZlbnRDb250ZXh0RW5hYmxlZCgpPC9saT4NCgk8bGk+UmVxdWlyZSgpPC9saT4NCgk8bGk+U2V0RXZlbnRDb250ZXh0RW5hYmxlZCgpPC9saT4NCgk8bGk+U2V0R2xvYmFsRXJyb3JNZXNzYWdlKCk8L2xpPg0KPC91bD4NCjxwPlJlbW92ZWQgdGhlIENPTlZFUlQoKSBmdW5jdGlvbjwvcD4NCjxwPjxiPlZlcnNpb24gMi45LjAuMDwvYj48L3A+DQo8cD5GaXhlZCBhIHR5cG8gaW4gdGhlIENPTlZFUlQgZnVuY3Rpb248L3A+DQo8cD48Yj5WZXJzaW9uIDIuOC4wLjA8L2I+PC9wPg0KPHA+Rml4ZWQgYW4gb3BlcmF0aW9uYWwgYnVnIGluIHRoZSBSRVFVSVJFKCkgZnVuY3Rpb24gdGhhdCBjYXVzZWQgaXQgdG8gZmFpbCBpZiBhIHBsdWdpbiByZXF1aXJlbWVudCBjYW1lIGFmdGVyIHRoZSBjYWxsaW5nIHBsdWdpbiBhbHBoYWJldGljYWxseTwvcD4NCjxwPjxiPlZlcnNpb24gMi43LjA8L2I+PC9wPg0KPHA+QWRkZWQgdGhlIENPTlZFUlQgZnVuY3Rpb248L3A+DQo8cD48Yj5WZXJzaW9uIDIuNi4wLjA8L2I+PC9wPg0KPHA+VXBkYXRlZCB0byBiZSBjb21wYXRpYmxlIHdpdGggQU1TIDguMDwvcD4NCjxwPjxiPlZlcnNpb24gMi41LjAuMDwvYj48L3A+DQo8cD5BZGRlZCB0aGUgUkVRVUlSRSgpIGZ1bmN0aW9uPC9wPg0KPHA+PGI+VmVyc2lvbiAyLjQuMC4wPC9iPjwvcD4NCjxwPkZpeGVkIGEgYnVnIHRoYXQgb2NjdXJlZCB3aGVuIEFNUyBjb2RlIG92ZXJ3cm90ZSB0aGUgbmF0aXZlIGx1YSBlcnJvciBmdW5jdGlvbjwvcD4NCjxwPjxiPlZlcnNpb24gMi4zLjAuMDwvYj48L3A+DQo8cD5BZGRlZCB0aGUgSVJMVUFfUExVR0lOX0NoZWNrVGFibGVWYXJzKCkgZnVuY3Rpb248L3A+DQo8cD48Yj5WZXJzaW9uIDIuMi4wLjA8L2I+PC9wPg0KPHA+QnVnZml4IHJlbGVhc2U8L3A+DQo8cD48Yj5WZXJzaW9uIDIuMS4wLjA8L2I+PC9wPg0KPHA+UmVuYW1lZCBhbmQgcmV3cm90ZSB0aGUgSVJMVUFfUExVR0lOX0NoZWNrU3RyaW5nKClbYW5kIG90aGVyIHZhaXJiYWxlIHR5cGVzXSBmdW5jdGlvbiB0byBJUkxVQV9QTFVHSU5fQ2hlY2tUeXBlczwvcD4NCjxwPjxiPlZlcnNpb24gMi4wLjAuMDwvYj48L3A+DQo8cD5TdGFydGVkIHRpbmtlcmluZyB3aXRoIE1pY3JvQnl0ZSdzIGJyYWluY2hpbGQ8L3A+DQo8cD5BZGRlZCB0aGUgRVJST1IgZnVuY3Rpb248L3A+DQpdXQ0KQUFBID0ge307DQpsb2NhbCB0QUFBID0gewkNCglTaG93RXJyb3JFdmVudENvbnRleHQgPSB7fSwNCglDb25zdGFudHMgPSB7fSwNCn07DQoNCi0tVE9ETyBjaGVjayB0byBzZWUgaWYgdGhpcyBpcyBBTVMgc28gdGhpcyBjYW4gYmUgdXNlZCBhcyBhIHN0YW5kYWxvbmUgc2NyaXB0DQpsb2NhbCBmdW5jdGlvbiBHZXRFdmVudENvbnRleHQoc1BsdWdpbikNCglzUGx1Z2luID0gc1BsdWdpbjpsb3dlcigpOw0KCWxvY2FsIHNSZXQgPSAiIjsNCgkNCglpZiB0QUFBLlNob3dFcnJvckV2ZW50Q29udGV4dFtzUGx1Z2luXSA9PSBuaWwgdGhlbg0KCQl0QUFBLlNob3dFcnJvckV2ZW50Q29udGV4dFtzUGx1Z2luXSA9IHRydWU7DQoJZW5kDQoJDQoJaWYgdEFBQS5TaG93RXJyb3JFdmVudENvbnRleHRbc1BsdWdpbl0gdGhlbg0KCQlzUmV0ID0gJ1xyXG5cclxuRXZlbnRDb250ZXh0OiAnLi5EZWJ1Zy5HZXRFdmVudENvbnRleHQoKTsNCgllbmQNCgkNCglyZXR1cm4gc1JldDsNCmVuZA0KDQoNCmxvY2FsIGZ1bmN0aW9uIEVycm9yKHNQbHVnaW4sIHNGdW5jdGlvbiwgc01lc3NhZ2UsIG5FbWJlZExldmVsKQ0KCQ0KCWlmIG5vdCBuRW1iZWRMZXZlbCB0aGVuDQoJCW5FbWJlZExldmVsID0gMDsNCgllbmQJDQoJDQoJZXJyb3IoJ1xyXG5FcnJvciBpbiAiJy4uc1BsdWdpbi4uJyIgcGx1Z2luLCAiJy4uc0Z1bmN0aW9uLi4nIiBmdW5jdGlvbi5cclxuXHJcbicuLnNNZXNzYWdlLi5HZXRFdmVudENvbnRleHQoc1BsdWdpbiksIDQgKyBuRW1iZWRMZXZlbCk7CQ0KZW5kDQoNCg0KbG9jYWwgZnVuY3Rpb24gQ2hlY2tDb3VudChzUGx1Z2luLCBzRnVuY3Rpb24sIHRBcmdzLCBuQXJncykNCglsb2NhbCBuQ291bnQgPSAwOw0KCQ0KCWlmIHR5cGUodEFyZ3MpID09ICJ0YWJsZSIgdGhlbg0KCQluQ291bnQgPSAjdEFyZ3M7DQoJZW5kDQoJDQoJaWYgbkNvdW50IDwgbkFyZ3MgdGhlbg0KCQlFcnJvcihzUGx1Z2luLCBzRnVuY3Rpb24sIG5BcmdzLi4iIEFyZ3VtZW50cyBleHBlY3RlZCwgIi4ubkNvdW50Li4iIEFyZ3VtZW50cyBwYXNzZWQuIiwgNCk7CQkNCgllbmQNCgkNCmVuZA0KDQoNCmxvY2FsIGZ1bmN0aW9uIENoZWNrVHlwZXMoc1BsdWdpbiwgc0Z1bmN0aW9uLCB0QXJncywgbkFyZywgdFR5cGVzKQ0KCWxvY2FsIHNUeXBlID0gdHlwZSh0QXJnc1tuQXJnXSk7DQoJbG9jYWwgblRvdGFsVHlwZXMgPSAjdFR5cGVzOw0KCWxvY2FsIG5TdHJpa2VzID0gMDsNCglsb2NhbCBzQWxsb3dlZFR5cGVzID0gIiI7DQoJbG9jYWwgc0V2ZW50Q29udGV4dCA9ICIiOw0KCQ0KCWZvciBuSW5kZXgsIHNBbGxvd2VkVHlwZSBpbiBwYWlycyh0VHlwZXMpIGRvDQoJDQoJCWlmIG5JbmRleCA8IChuVG90YWxUeXBlcyAtIDEpIHRoZW4NCgkJCXNBbGxvd2VkVHlwZXMgPSBzQWxsb3dlZFR5cGVzLi4iICIuLnNBbGxvd2VkVHlwZS4uIiwiOw0KCQkNCgkJZWxzZWlmIG5JbmRleCA9PSBuVG90YWxUeXBlcyAtIDEgdGhlbg0KCQkJc0FsbG93ZWRUeXBlcyA9IHNBbGxvd2VkVHlwZXMuLiIgIi4uc0FsbG93ZWRUeXBlOw0KCQkNCgkJZWxzZWlmIG5JbmRleCA9PSBuVG90YWxUeXBlcyB0aGVuDQoJCQ0KCQkJaWYgblRvdGFsVHlwZXMgPT0gMSB0aGVuDQoJCQkJc0FsbG93ZWRUeXBlcyA9ICIgIi4uc0FsbG93ZWRUeXBlOw0KCQkJCQ0KCQkJZWxzZQ0KCQkJCXNBbGxvd2VkVHlwZXMgPSBzQWxsb3dlZFR5cGVzLi4iIG9yICIuLnNBbGxvd2VkVHlwZTsNCgkJCQkNCgkJCWVuZA0KCQkJDQoJCWVuZA0KCQkNCgkJaWYgc1R5cGUgfj0gc0FsbG93ZWRUeXBlIHRoZW4NCgkJCW5TdHJpa2VzID0gblN0cmlrZXMgKyAxOw0KCQkJDQoJCWVuZA0KCQkNCgllbmQNCg0KDQoJaWYgblN0cmlrZXMgPT0gblRvdGFsVHlwZXMgdGhlbg0KCQlFcnJvcihzUGx1Z2luLCBzRnVuY3Rpb24sICJCYWQgYXJndW1lbnQgIyIgLi4gbkFyZyAuLiAiLCBtdXN0IGJlIGEobikgIi4uc0FsbG93ZWRUeXBlcy4uIiwgeW91IHBhc3NlZCBhKG4pICIuLnNUeXBlLi4iLiIsIDQpOwkNCgllbHNlDQoJCQ0KCQlyZXR1cm4gdEFyZ3NbbkFyZ107DQoJZW5kDQoJDQplbmQNCg0KDQpsb2NhbCBmdW5jdGlvbiBSZXF1aXJlKHNDYWxsaW5nUGx1Z2luLCB0UGx1Z2luLCBzUGx1Z2luKQ0KCQ0KCWlmIG5vdCB0UGx1Z2luIHRoZW4NCgkJRXJyb3Ioc0NhbGxpbmdQbHVnaW4sICdBQUEuUmVxdWlyZScsICdcclxNaXNzaW5nIHRoZSAiJy4uc1BsdWdpbi4uJyIgcGx1Z2luLlxyXG5UaGUgIicuLnNDYWxsaW5nUGx1Z2luLi4nIiBwbHVnaW4gcmVxdWlyZXMgdGhlICInLi5zUGx1Z2luLi4nIiBwbHVnaW4uJywgNCk7DQoJZW5kDQoJDQplbmQNCg0KDQpsb2NhbCBmdW5jdGlvbiBTZXRHbG9iYWxFcnJvck1lc3NhZ2Uoc1BsdWdpbiwgbkNvZGUsIHNNZXNzYWdlKQ0KCQ0KCWlmIF90YmxFcnJvck1lc3NhZ2VzW25Db2RlXSB0aGVuDQoJCUVycm9yKHNQbHVnaW4sICJBQUEuU2V0R2xvYmFsRXJyb3JNZXNzYWdlIiwgIkVycm9yIGNvZGUgIi4ubkNvZGUuLiIgYWxyZWFkeSBpbiB1c2UsIHBsZWFzZSB1c2UgYW5vdGhlci4iLCA0KTsNCgkJDQoJZWxzZQkNCgkJX3RibEVycm9yTWVzc2FnZXNbbkNvZGVdID0gc01lc3NhZ2U7DQoJCQ0KCWVuZA0KCQ0KZW5kDQoNCg0KbG9jYWwgZnVuY3Rpb24gQ2hlY2tQcmVDb3VudChzRnVuY3Rpb24sIHRBcmdzLCBuTnVtYmVyRXhwZWN0ZWQpDQoJbG9jYWwgbkNvdW50ID0gI3RBcmdzOw0KCQ0KCWlmIChuQ291bnQgPCBuTnVtYmVyRXhwZWN0ZWQpIHRoZW4NCgkJRXJyb3IoIlVua25vd24iLCAiVW5rbm93biIsICJJbmNvcnJlY3QgbnVtYmVyIG9mIGFyZ3VtZW50cyBpbiBBQUEuIi4uDQoJCQkgIHNGdW5jdGlvbi4uIigpLlxyXG4iLi5uQ291bnQuLiIgYXJndW1lbnRzIHBhc3NlZCwgIi4ubk51bWJlckV4cGVjdGVkLi4iIGV4cGVjdGVkLiIsIDQpOw0KCWVuZA0KCQ0KZW5kDQoNCmxvY2FsIGZ1bmN0aW9uIENoZWNrUHJlVHlwZShzRnVuY3Rpb24sIHZBcmcsIHNUeXBlRXhwZWN0ZWQsIG5BcmdJbmRleCkNCglsb2NhbCBzVHlwZSA9IHR5cGUodkFyZyk7DQoNCglpZiAoc1R5cGUgfj0gc1R5cGVFeHBlY3RlZCkgdGhlbg0KCQlFcnJvcigiVW5rbm93biIsICJVbmtub3duIiwgIkluY29ycmVjdCBhcmd1bWVudCBpbiBBQUEuIi4uDQoJCQkgIHNGdW5jdGlvbi4uIigpLlxyXG4iLi5zVHlwZS4uIiBwYXNzZWQsICIuLnNUeXBlRXhwZWN0ZWQuLiIgZXhwZWN0ZWQgZm9yIGFyZ3VtZW50IGluZGV4ICIuLm5BcmdJbmRleC4uIi4iLCA0KTsNCgllbmQNCgkNCglyZXR1cm4gdkFyZzsNCmVuZA0KDQoNCi0tW1sNCiAgX19fX19fICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF8gICBfX19fX18gICAgICAgICAgICAgICAgXyAgIF8gICAgICAgICAgICAgICAgIA0KIHwgIF9fX198ICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8IHwgfCAgX19fX3wgICAgICAgICAgICAgIHwgfCAoXykgICAgICAgICAgICAgICAgDQogfCB8X18gIF9fICBfX18gX18gICBfX18gIF9fXyAgX19fICBfX3wgfCB8IHxfXyBfICAgXyBfIF9fICAgX19ffCB8XyBfICBfX18gIF8gX18gIF9fXyANCiB8ICBfX3wgXCBcLyAvICdfIFwgLyBfIFwvIF9ffC8gXyBcLyBfYCB8IHwgIF9ffCB8IHwgfCAnXyBcIC8gX198IF9ffCB8LyBfIFx8ICdfIFwvIF9ffA0KIHwgfF9fX18gPiAgPHwgfF8pIHwgKF8pIFxfXyBcICBfXy8gKF98IHwgfCB8ICB8IHxffCB8IHwgfCB8IChfX3wgfF98IHwgKF8pIHwgfCB8IFxfXyBcDQogfF9fX19fXy9fL1xfXCAuX18vIFxfX18vfF9fXy9cX19ffFxfXyxffCB8X3wgICBcX18sX3xffCB8X3xcX19ffFxfX3xffFxfX18vfF98IHxffF9fXy8NCiAgICAgICAgICAgICB8IHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgIHxffCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQotLV1dDQoNCg0KLS09PT09PT09PT09PT09PT09PQ0KLS0gQUFBLkNoZWNrQ291bnQNCi0tPT09PT09PT09PT09PT09PT0NCmZ1bmN0aW9uIEFBQS5DaGVja0NvdW50KC4uLikNCglDaGVja1ByZUNvdW50KCJDaGVja0NvdW50IiwgYXJnLCA0KTsJDQoJbG9jYWwgc1BsdWdpbiA9IENoZWNrUHJlVHlwZSgiQ2hlY2tDb3VudCIsIGFyZ1sxXSwgInN0cmluZyIsIDEpOw0KCWxvY2FsIHNGdW5jdGlvbiA9IENoZWNrUHJlVHlwZSgiQ2hlY2tDb3VudCIsIGFyZ1syXSwgInN0cmluZyIsIDIpOw0KCWxvY2FsIHRBcmdzID0gQ2hlY2tQcmVUeXBlKCJDaGVja0NvdW50IiwgYXJnWzNdLCAidGFibGUiLCAzKTsNCglsb2NhbCBuQXJncyA9IENoZWNrUHJlVHlwZSgiQ2hlY2tDb3VudCIsIGFyZ1s0XSwgIm51bWJlciIsIDQpOw0KCUNoZWNrQ291bnQoc1BsdWdpbiwgc0Z1bmN0aW9uLCB0QXJncywgbkFyZ3MpOw0KZW5kDQoNCg0KLS09PT09PT09PT09PT09PT09PQ0KLS0gQUFBLkNoZWNrVHlwZXMNCi0tPT09PT09PT09PT09PT09PT0NCmZ1bmN0aW9uIEFBQS5DaGVja1R5cGVzKC4uLikNCglDaGVja1ByZUNvdW50KCJDaGVja1R5cGVzIiwgYXJnLCA1KTsNCglsb2NhbCBzUGx1Z2luID0gQ2hlY2tQcmVUeXBlKCJDaGVja1R5cGVzIiwgYXJnWzFdLCAic3RyaW5nIiwgMSk7DQoJbG9jYWwgc0Z1bmN0aW9uID0gQ2hlY2tQcmVUeXBlKCJDaGVja1R5cGVzIiwgYXJnWzJdLCAic3RyaW5nIiwgMik7DQoJbG9jYWwgdEFyZ3MgPSBDaGVja1ByZVR5cGUoIkNoZWNrVHlwZXMiLCBhcmdbM10sICJ0YWJsZSIsIDMpOw0KCWxvY2FsIG5BcmcgPSBDaGVja1ByZVR5cGUoIkNoZWNrVHlwZXMiLCBhcmdbNF0sICJudW1iZXIiLCA0KTsNCglsb2NhbCB0VHlwZXMgPSBDaGVja1ByZVR5cGUoIkNoZWNrVHlwZXMiLCBhcmdbNV0sICJ0YWJsZSIsIDUpOw0KCXJldHVybiBDaGVja1R5cGVzKHNQbHVnaW4sIHNGdW5jdGlvbiwgdEFyZ3MsIG5BcmcsIHRUeXBlcyk7DQplbmQNCg0KDQotLT09PT09PT09PT09PQ0KLS0gQUFBLkVycm9yDQotLT09PT09PT09PT09PQ0KZnVuY3Rpb24gQUFBLkVycm9yKC4uLikNCglDaGVja1ByZUNvdW50KCJFcnJvciIsIGFyZywgMyk7DQoJbG9jYWwgc1BsdWdpbiA9IENoZWNrUHJlVHlwZSgiRXJyb3IiLCBhcmdbMV0sICJzdHJpbmciLCAxKTsNCglsb2NhbCBzRnVuY3Rpb24gPSBDaGVja1ByZVR5cGUoIkVycm9yIiwgYXJnWzJdLCAic3RyaW5nIiwgMik7DQoJbG9jYWwgc01lc3NhZ2UgPSBDaGVja1ByZVR5cGUoIkVycm9yIiwgYXJnWzNdLCAic3RyaW5nIiwgMyk7DQoJbG9jYWwgbkVtYmVkTGV2ZWwgPSBDaGVja1ByZVR5cGUoIkVycm9yIiwgYXJnWzRdLCAibnVtYmVyIiwgNCk7DQoJDQoJaWYgdHlwZShuRW1iZWRMZXZlbCkgfj0gIm51bWJlciIgdGhlbg0KCQluRW1iZWRMZXZlbCA9IDA7DQoJZW5kDQoJDQoJRXJyb3Ioc1BsdWdpbiwgc0Z1bmN0aW9uLCBzTWVzc2FnZSwgbkVtYmVkTGV2ZWwpOw0KZW5kDQoNCg0KLS09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KLS0gQUFBLkdldEV2ZW50Q29udGV4dEVuYWJsZWQNCi0tPT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NCmZ1bmN0aW9uIEFBQS5HZXRFdmVudENvbnRleHRFbmFibGVkKC4uLikNCglsb2NhbCBzUGx1Z2luID0gYXJnWzFdOw0KCWxvY2FsIGJSZXQgPSB0QUFBLlNob3dFcnJvckV2ZW50Q29udGV4dFtzUGx1Z2luXSB+PSBuaWw7DQoJDQoJaWYgYlJldCB0aGVuDQoJCWJSZXQgPSB0QUFBLlNob3dFcnJvckV2ZW50Q29udGV4dFtzUGx1Z2luXTsNCgllbmQNCgkNCglyZXR1cm4gYlJldDsNCmVuZA0KDQoNCi0tPT09PT09PT09PT09PT0NCi0tIEFBQS5SZXF1aXJlDQotLT09PT09PT09PT09PT09DQpmdW5jdGlvbiBBQUEuUmVxdWlyZSguLi4pCQ0KCWxvY2FsIHNQbHVnaW4gPSBhcmdbMV07DQoJbG9jYWwgdFJlcXVpcmVkUGx1Z2luID0gYXJnWzJdOw0KCWxvY2FsIHNSZXF1aXJlZFBsdWdpbiA9IGFyZ1szXTsNCglSZXF1aXJlKHNQbHVnaW4sIHRSZXF1aXJlZFBsdWdpbiwgc1JlcXVpcmVkUGx1Z2luKTsNCmVuZA0KDQoNCi0tPT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NCi0tIEFBQS5TZXRFdmVudENvbnRleHRFbmFibGVkDQotLT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQpmdW5jdGlvbiBBQUEuU2V0RXZlbnRDb250ZXh0RW5hYmxlZCguLi4pCQ0KCWxvY2FsIHNQbHVnaW4gPSBhcmdbMV07DQoJdEFBQS5TaG93RXJyb3JFdmVudENvbnRleHRbc1BsdWdpbjpsb3dlcigpXSA9IENoZWNrVHlwZXMoYXJnLCAyLCB7ImJvb2xlYW4ifSk7DQplbmQNCg0KDQotLT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NCi0tIEFBQS5TZXRHbG9iYWxFcnJvck1lc3NhZ2UNCi0tPT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KZnVuY3Rpb24gQUFBLlNldEdsb2JhbEVycm9yTWVzc2FnZSguLi4pDQoJbG9jYWwgc1BsdWdpbiA9IGFyZ1sxXTsNCglsb2NhbCBuQ29kZSA9IGFyZ1syXTsNCglsb2NhbCBzTWVzc2FnZSA9IGFyZ1szXTsNCglTZXRHbG9iYWxFcnJvck1lc3NhZ2Uoc1BsdWdpbiwgbkNvZGUsIHNNZXNzYWdlKTsNCmVuZA==</Source>
+            <FoldLines />
+            <BookMarks />
+        </Script>
+    </Scripts>
+    <Modules />
+    <Dependencies />
+    <Resources />
+    <Properties>
+        <Property Name="PluginName">AAA</Property>
+        <Property Name="HelpFileAuthoring">1</Property>
+        <Property Name="PluginVersion">1.0.0.0</Property>
+        <Property Name="AuthorInfo">Argument Assertion Advocate Action Plugin&#x0D;&#x0A;Created by Centauri Soldier&#x0D;&#x0A;Original Concept by MicroByte&#x0D;&#x0A;&#x0D;&#x0A;For use with AutoPlay Media Studio 8.0+.&#x0D;&#x0A;&#x0D;&#x0A;This programmer&apos;s resource helps with argument checking for app and plugin developers.</Property>
+        <Property Name="ApplyCompressionDebug">0</Property>
+        <Property Name="CompressionLevelDebug">10</Property>
+        <Property Name="AttachDebuggerOnDebug">1</Property>
+        <Property Name="MakeHelpOnDebug">0</Property>
+        <Property Name="InstallOnDebug">1</Property>
+        <Property Name="ApplyLicenceCheckOnDebug">0</Property>
+        <Property Name="InserFirstSerialOnDebug">0</Property>
+        <Property Name="ApplyCompressionPublish">0</Property>
+        <Property Name="CompressionLevelPublish">10</Property>
+        <Property Name="MakeHelpOnPublish">1</Property>
+        <Property Name="InstallOnPublish">1</Property>
+        <Property Name="InserFirstSerialOnPublish">0</Property>
+        <Property Name="ActiveProjectSettingsTab">0</Property>
+    </Properties>
+    <Intellisense>
+        <ActionGroups />
+        <Actions Expanded="1">
+            <Action GUID="{c0a2c45a-ae34-44c9-a026-586a81115b18}" Group="" WizardPage="1">
+                <Name>CheckCount</Name>
+                <Description>Checks the number of arguments in the table and throws an error if there are not enough.</Description>
+                <Arguments>
+                    <Argument GUID="{baa3798b-b52e-424a-bfbe-e3991bf549b5}">
+                        <Name>Plugin</Name>
+                        <Description>This is the name of the calling plugin.</Description>
+                        <DefaultValue>&quot;My Plugin&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{c224fcc5-a154-42a4-802e-4c8196bcf651}">
+                        <Name>Function</Name>
+                        <Description>This is the name of the calling function.</Description>
+                        <DefaultValue>&quot;My Function&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{7c2d6167-1263-406b-8d87-2804c2862333}">
+                        <Name>Argument Table</Name>
+                        <Description>This must be the arg table passed to the function. Leave as default.</Description>
+                        <DefaultValue>arg</DefaultValue>
+                        <Data />
+                        <Type>3</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{9ab8d9b6-e5f4-4959-b4e3-8b7c0541968f}">
+                        <Name>Argument Count</Name>
+                        <Description>The number of expected arguments.</Description>
+                        <DefaultValue>1</DefaultValue>
+                        <Data />
+                        <Type>1</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes />
+                <Examples />
+                <Return>
+                    <Type>0</Type>
+                    <Description>returns nothing.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{5901ce72-08d2-4fa2-a335-cebb38df0bc7}" Group="" WizardPage="1">
+                <Name>CheckTypes</Name>
+                <Description>Checks the value at a given argument table position to see if it is one of the specified types. If Not it throws an error.&#x0D;&#x0A;Possible variable types[ boolean, function, nil, number, string, table, thread, userdata]</Description>
+                <Arguments>
+                    <Argument GUID="{1e19d8af-3b01-44a3-bbd5-2c272478b78c}">
+                        <Name>Plugin</Name>
+                        <Description>This is the name of the calling plugin.</Description>
+                        <DefaultValue>&quot;My Plugin&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{5d0632fa-ac67-43e1-a88e-f44e4f7ecc69}">
+                        <Name>Function</Name>
+                        <Description>This is the name of the calling function.</Description>
+                        <DefaultValue>&quot;My Function&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{412a116f-52b1-4f4e-aba4-042d227489c7}">
+                        <Name>Argument Table</Name>
+                        <Description>This must be the arg table passed to the function. Leave as default.</Description>
+                        <DefaultValue>arg</DefaultValue>
+                        <Data />
+                        <Type>3</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{d0d51401-4726-4c26-9329-3b7b31405673}">
+                        <Name>Argument Index</Name>
+                        <Description>The index of the argument in the arg table. E.g., 1 for the first agument input into this function, 2 for the second, etc.</Description>
+                        <DefaultValue>1</DefaultValue>
+                        <Data />
+                        <Type>1</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{3d62acf2-aadd-4d1d-b631-4865113698f1}">
+                        <Name>Allowed Argument Types</Name>
+                        <Description>A numerically-indexed table containing the types that this argument can be.&#x0D;&#x0A;An argument must be allowed to be at least one type but can be allowed to be many types. This refers to the lua default variable types.</Description>
+                        <DefaultValue>{&quot;nil&quot;}</DefaultValue>
+                        <Data />
+                        <Type>3</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes />
+                <Examples>
+                    <Example GUID="{90a1f936-ef80-467a-99da-04f095f785bf}">
+                        <Title>An Argument with only one type allowed.</Title>
+                        <Description>This tests the first function argument to see if it is a string. If it is not, an error will be thrown.</Description>
+                        <Script>QUFBLkNoZWNrVHlwZXMoYXJnLCAxLCB7InN0cmluZyJ9KTs=</Script>
+                    </Example>
+                    <Example GUID="{e59e0a3a-32ba-4cde-9a8f-a371fd53f410}">
+                        <Title>An Argument with more than one type allowed.</Title>
+                        <Description>This tests the third function argument to see if it is either a string or a number. If it is neither, an error will be thrown.</Description>
+                        <Script>QUFBLkNoZWNrVHlwZXMoYXJnLCAzLCB7InN0cmluZyIsIm51bWJlciJ9KTs=</Script>
+                    </Example>
+                </Examples>
+                <Return>
+                    <Type>5</Type>
+                    <Description>Returns the argument from the arg table at the index indicated.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{271c6317-c5f9-47f9-9e34-7b7c22f2a2b8}" Group="" WizardPage="0">
+                <Name>Error</Name>
+                <Description>Displays a custom error message using the plugin and function name and is able to list the event context as well.</Description>
+                <Arguments>
+                    <Argument GUID="{c5fd3a27-514e-44b3-9c47-95de672d811d}">
+                        <Name>Plugin</Name>
+                        <Description>This is the name of the calling plugin.</Description>
+                        <DefaultValue>&quot;My Plugin&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{345eb79f-415f-432e-9b06-0c13550cdf11}">
+                        <Name>Function Name</Name>
+                        <Description>The name of the function throwing the error.</Description>
+                        <DefaultValue>&quot;Function&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{4a170733-2352-4726-8d30-4c88f38e1404}">
+                        <Name>Message</Name>
+                        <Description>The error message to show.</Description>
+                        <DefaultValue>&quot;Error&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{1cf25ff3-ea23-41a8-a769-d70dfb12c376}">
+                        <Name>Error Level</Name>
+                        <Description>The level at which the argument is called. How many functions deep the error is embedded. Leave out this argument (or set to nil or 0) for top-level functions.</Description>
+                        <DefaultValue />
+                        <Data />
+                        <Type>1</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes />
+                <Examples />
+                <Return>
+                    <Type>0</Type>
+                    <Description>Returns nothing.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{132b2851-9169-4097-a9b8-be518b111f93}" Group="" WizardPage="1">
+                <Name>GetEventContextEnabled</Name>
+                <Description>Determines whethere the event context is enabled within the AAA framework.</Description>
+                <Arguments>
+                    <Argument GUID="{db6b5ecc-d59c-40e3-8f6f-5bfe7cdce5d7}">
+                        <Name>Plugin</Name>
+                        <Description>This is the name of the calling plugin.</Description>
+                        <DefaultValue>&quot;My Plugin&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes />
+                <Examples />
+                <Return>
+                    <Type>3</Type>
+                    <Description>Returns true if the event context is enabled or false otherwise.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{b5aacdf5-ed26-4a91-b146-1c1fb07ea259}" Group="" WizardPage="1">
+                <Name>Require</Name>
+                <Description>Throws an error if the required plugin is not loaded. This should be called at the called at the beginning of each function, once for each required plugin or in an init function.&#x0D;&#x0A;&#x0D;&#x0A;Note: this may be called at once only at the start of your plugin script if the required plugin is after your plugin alphabetically</Description>
+                <Arguments>
+                    <Argument GUID="{533854f3-e106-4d35-a4b6-54b5e2baab21}">
+                        <Name>Plugin</Name>
+                        <Description>This is the name of the calling plugin.</Description>
+                        <DefaultValue>&quot;My Plugin&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{916406da-5c26-48de-83ac-a8800057228f}">
+                        <Name>Required Plugin Table</Name>
+                        <Description>This is the table of the required plugin such as ABI, AD, GlobalPaths, etc.</Description>
+                        <DefaultValue>SomePlugin</DefaultValue>
+                        <Data />
+                        <Type>3</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{ba4442dc-dc15-41f1-8ea0-7ec5dccc25b8}">
+                        <Name>Required Plugin Name</Name>
+                        <Description>This is name of the required plugin such as &quot;ABI&quot;, &quot;AD&quot;, &quot;GlobalPaths&quot;, etc.</Description>
+                        <DefaultValue>&quot;SomePlugin&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes />
+                <Examples />
+                <Return>
+                    <Type>0</Type>
+                    <Description>returns nothing.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{35b97145-91b0-4dbe-8c5e-c09a15ef9412}" Group="" WizardPage="1">
+                <Name>SetEventContextEnabled</Name>
+                <Description>Sets the event context enabled or disabled.</Description>
+                <Arguments>
+                    <Argument GUID="{ccd3ffce-4ed4-4860-97e4-18d87f8e4877}">
+                        <Name>Plugin</Name>
+                        <Description>This is the name of the calling plugin.</Description>
+                        <DefaultValue>&quot;My Plugin&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{a2a3d24e-4320-47aa-8602-657fe44a656b}">
+                        <Name>Enabled</Name>
+                        <Description>Whether or not the event context should be enabled.</Description>
+                        <DefaultValue>true</DefaultValue>
+                        <Data />
+                        <Type>2</Type>
+                        <SubType>-1</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes />
+                <Examples />
+                <Return>
+                    <Type>0</Type>
+                    <Description>Returns nothing.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{55bf1487-a1d1-42cb-a159-56939593db3f}" Group="" WizardPage="1">
+                <Name>SetGlobalErrorMessage</Name>
+                <Description>Sets a Global error message in the runtime engine.</Description>
+                <Arguments>
+                    <Argument GUID="{528d1f74-7d28-4792-b6f6-4e55f48f4fe5}">
+                        <Name>Plugin</Name>
+                        <Description>This is the name of the calling plugin.</Description>
+                        <DefaultValue>&quot;My Plugin&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{bff1b64f-1e9c-4266-b8b6-3638c382e52a}">
+                        <Name>Code</Name>
+                        <Description>The error code to use.&#x0D;&#x0A;Note: if the error code already exists within the _tblErrorMessages table, a runtmie error will be thrown.</Description>
+                        <DefaultValue />
+                        <Data />
+                        <Type>1</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{27d49b53-bebb-40c2-a0a0-6bbdf9b05edb}">
+                        <Name>Message</Name>
+                        <Description>The message to associate with the error code.</Description>
+                        <DefaultValue>&quot;&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes />
+                <Examples />
+                <Return>
+                    <Type>0</Type>
+                    <Description>Nothing returned.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+        </Actions>
+    </Intellisense>
+</Project>

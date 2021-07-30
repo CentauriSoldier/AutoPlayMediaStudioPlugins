@@ -1,0 +1,886 @@
+<ActionTemplates>
+<Action>
+<Name>Pane.AMSObjectIsInPane</Name>
+<Description>Determines whether or not an specific object is in the specified pane.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the AMS object in question.</Description>
+<Type>string</Type>
+<Default>"Web1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Web1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.AddAMSObject</Name>
+<Description>Adds an object to the specified pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AMS Object</Name>
+<Description>The name of the AMS object to add.</Description>
+<Type>string</Type>
+<Default>"Web1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Web1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Position</Name>
+<Description>A table indexed by X and Y which contains the respective horizontal and vertical position values of the object.</Description>
+<Type>table</Type>
+<Default>{X=5,Y=5}</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>{X=5,Y=5}</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Size</Name>
+<Description>A table indexed by Width and Height which contains the respective Width and Height valuse of the object.</Description>
+<Type>table</Type>
+<Default>{Width=400,Height=400}</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>{Width=400,Height=400}</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.Create</Name>
+<Description>Creates a pane.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Properties</Name>
+<Description>A table containing the pane properties.</Description>
+<Type>table</Type>
+<Default>tPaneProps</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tPaneProps</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.Destroy</Name>
+<Description>Destroys a pane and all child objects.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Return AMS Objects</Name>
+<Description>Whether or not any hosted AMS objects should be returned to application window when the pane is destroyed.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.GetDifferential</Name>
+<Description>Gets the x and y differential values.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>Pane.GetObjectCount</Name>
+<Description>Gets the number of objects in the specified pane.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.GetPanes</Name>
+<Description>Gets the names of all panes.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>Pane.GetPos</Name>
+<Description>Gets the internal and external position of the specified pane.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.GetProperties</Name>
+<Description>Gets the properties of the specified pane.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.GetSize</Name>
+<Description>Gets the internal and external size of the specified pane.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.GetWndHandle</Name>
+<Description>Gets the window handle of the specified pane.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.IsAttached</Name>
+<Description>Determines whether or not the specified pane is attached.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.IsEnabled</Name>
+<Description>Determines whether or not the specified pane is enabled.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.IsValid</Name>
+<Description>Determines whether or not the specified pane exists and was created and stored properly.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.IsVisible</Name>
+<Description>Determines whether or not the specified pane is visible.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.Maximize</Name>
+<Description>Maximizes the specifed pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.Minimize</Name>
+<Description>Minimizes the specifed pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.OnShow</Name>
+<Description>Used for object persistence across pages.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Pane.OnStartUp</Name>
+<Description>Initializes the Pane plugin.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Pane.RemoveAMSObject</Name>
+<Description>Removes a specific object from the specified pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.Restore</Name>
+<Description>Restores the specifed pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.SetAttached</Name>
+<Description>Attaches or detaches the specified pane from the application window.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.SetDifferential</Name>
+<Description>Sets the x and y differentials. Useful if panes are appearing in the wrong locations do a custom application skin.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Pane.SetEnabled</Name>
+<Description>Enables or disables the specified pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.SetObjectPos</Name>
+<Description>Sets the position of an obeject within a pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.SetObjectSize</Name>
+<Description>Sets the size of an obeject within a pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.SetPos</Name>
+<Description>Sets the internal and external position of the specifed pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.SetProperties</Name>
+<Description>THIS FUNCTION DOES NOT CURRENTLY WORK!</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.SetSize</Name>
+<Description>Sets the internal and external size of the specifed pane.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Pane.SetVisible</Name>
+<Description>Sets a pane visible or invisible.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Pane</Name>
+<Description>The name (not the title) of the pane with which to work.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+If the pane name is invalid, -1 is returned.
+If the pane already exists then 1 is returned.
+If the action is successful then the window handle of the new pane is returned.</ReturnValueDescription>
+<Example>local tProps = {
+	Attached = false,	
+	DetachToHere = false,
+	DockedType = UNDOCKED,
+	Enabled = true,
+	IgnoreMoveCoT = true,
+	IgnoreSizeCoT = true,
+	Opacity = 200,
+	Sizeable = true,
+	Title = "Hello",
+	TitleBar = true,
+	Visible = true,
+	X=50,
+	Y=50,
+	ExtX=1850,
+	ExtY=50,
+	Width=250,
+	Height=400,
+	ExtWidth=800,
+	ExtHeight=600,	
+	};
+
+--[[
+This is one of the many window callback functions.
+This one must be called before the pane is created in order to function.
+]]
+
+function test_OnCreate(hWnd)
+Dialog.Message("Success", hWnd.." has been created");
+end
+
+--the pane name is not case sensitive and will be converted to all lowercase.
+Pane.Create("Test", tProps);
+
+--[[
+&lt;Callback Functions&gt;
+Notice that the above callback function's prefix is all lowercase followed by an underscore then the callback type name.
+These callback back function names are auto-generated when the pane is created and the names are uniform for all panes.
+
+For example, this pane's callback functions are as follows:
+
+test_OnAttach(hWnd)
+test_OnClose(hWnd)
+test_OnDetach(hWnd)
+test_OnDisable(hWnd)
+test_OnEnable(hWnd)
+test_OnHide(hWnd, lParam)
+test_OnMove(hWnd, nX, nY)
+test_OnShow(hWnd, lParam)
+test_OnSize(hWnd, nWidth, nHeight, wParam)
+test_OnSizing(hWnd, nType)
+]]</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Name>Pane</Name>
+<Description>&lt;p&gt;The Pane Action Plugin is designed to allow the creation of dynamic windows.&lt;/p&gt;
+&lt;p&gt;These windows are meant to host windowed obejects that persist across pages and allow access to the app window simultaneously.&lt;/p&gt;
+&lt;p&gt;With the Pane Action Plugin, there is no realistic limit to the number of panes you can have open at once.&lt;/p&gt;</Description>
+<Version1>1</Version1>
+<Version2>0</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>Copyright © 2011 AMSPublic.com</Copyright>
+<License>GNU GPL 3.0</License>
+<InstallNotes>Place the "Pane" folder in the "AutoPlay Media Studio 8.0\Plugins\Actions" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

@@ -1,0 +1,1462 @@
+<ActionTemplates>
+<Action>
+<Name>KeyBind.BindGroup</Name>
+<Description>Binds a group of specified keys at once.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Source Table</Name>
+<Description>The numerically-indexed table containing subtables with each of the keys and their properties.</Description>
+<Type>table</Type>
+<Default>tKeys</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tKeys</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table upon which this action will be executed.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.BindKey</Name>
+<Description>Binds a single key.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key</Name>
+<Description>The key code number of the key that will be bound.</Description>
+<Type>number</Type>
+<Default>KeyBind.Key.Enter</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>KeyBind.Key.Enter</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Text</Name>
+<Description>This is a short description of the key's action.</Description>
+<Type>string</Type>
+<Default>"Clear Mines"</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>"Clear Mines"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Description</Name>
+<Description>This is the long description of the key's action.</Description>
+<Type>string</Type>
+<Default>"Used by engineers to clear mines from a battlefield"</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>"Used by engineers to clear mines from a battlefield"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Shift</Name>
+<Description>Requires the Shift modifier.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Ctrl</Name>
+<Description>Requires the Ctrl modifier.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Alt</Name>
+<Description>Requireds the Alt modifier.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Script</Name>
+<Description>The script that will be executed when the key (or key combination) is pressed.</Description>
+<Type>string</Type>
+<Default>"Dialog.Message(\"Key Test\", \"Hello World\");"</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>"Dialog.Message(\"Key Test\", \"Hello World\");"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table upon which this action will be executed.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.DeleteKeyBinding</Name>
+<Description>Deletes a key binding from a key table.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key</Name>
+<Description>The key code number of the key that will be deleted.</Description>
+<Type>number</Type>
+<Default>KeyBind.Key.r</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>KeyBind.Key.r</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table upon which the action will be executed.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.DeleteKeyTable</Name>
+<Description>Deletes an entire set of keys and their key table at once.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table to delete.</Description>
+<Type>string</Type>
+<Default>"Input Key Bindings"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Input Key Bindings"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.GetKey</Name>
+<Description>Gets the properties of the specified key. </Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key</Name>
+<Description>The key code number of the key whose attributes are being requested.</Description>
+<Type>number</Type>
+<Default>KeyBind.Key.Four</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>KeyBind.Key.Four</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table upon which this action will be executed.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.GetKeyCode</Name>
+<Description>Gets the key code given the key name.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key Name</Name>
+<Description>The name of the key whose code is being requested.</Description>
+<Type>string</Type>
+<Default>"Enter"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Enter"</Default>
+<DataType>combo</DataType>
+<Constraints>"LeftMouseButton","RightMouseButton","MiddleMouseButton","Backspace","Tab","Enter","Shift","Ctrl","Alt","Pause","CapsLock","Esc","Spacebar","PageUp","PageDown","End","Home","Left","Up","Right","Down","Insert","Delete","0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","V","W","X","Y","Z","WindowsLeft","WindowsRight","Application","Numpad0","Numpad1","Numpad2","Numpad3","Numpad4","Numpad5","Numpad6","Numpad7","Numpad8","Numpad9","NumpadAsterisk","NumpadPlus","NumpadDash","NumpadPeriod","NumpadForwardslash","F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12","NumLock","ScrollLock",";","=",",","-",".","/","`","[","\\","]","'","Function",</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.GetKeyCount</Name>
+<Description>Gets the count of key bindings in a key table.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table for which to count the keys.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.GetKeyName</Name>
+<Description>Gets the key name given the key code.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key</Name>
+<Description>The key code number of the key whose name is being requested.</Description>
+<Type>number</Type>
+<Default>KeyBind.Key.LWin</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>KeyBind.Key.LWin</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.GetKeyTableCount</Name>
+<Description>Gets the total number of key tables.</Description>
+<ReturnValueType>number</ReturnValueType>
+</Action>
+<Action>
+<Name>KeyBind.GetKeyTableNames</Name>
+<Description>Gets the names of all key tables.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>KeyBind.KeyIsBound</Name>
+<Description>Determines whether or not a key is bound to a specific key table..</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key</Name>
+<Description>The key code number of the key whose bound status is being requested.</Description>
+<Type>number</Type>
+<Default>KeyBind.Key.Tab</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>KeyBind.Key.Tab</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table upon which the action will be executed.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.KeyTableDoesExist</Name>
+<Description>Detrmines whether or not a specific key table exists.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table whose existence is being confirmed.</Description>
+<Type>string</Type>
+<Default>"My Keys"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Keys"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.LoadSettings</Name>
+<Description>Loads key binding settings from a file.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The full path to the key bindings file.</Description>
+<Type>string</Type>
+<Default>"C:\\Test.kbs"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Test.kbs"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Source Key Table</Name>
+<Description>The name of the key table which will be loaded from the settings file.</Description>
+<Type>string</Type>
+<Default>"Custom Key Set"</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>"Custom Key Set"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Target Key Table</Name>
+<Description>The name of the key table which will adopt the loaded key settings.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Decryption Key</Name>
+<Description>The string that will be used to decrypt the code portion of the key attributes.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.OnKey</Name>
+<Description>Executes code for all key tables and key bindings.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>e_Key</Name>
+<Description>The arguement passed to the program when a key is pressed.</Description>
+<Type>number</Type>
+<Default>e_Key</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_Key</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>e_Modifiers</Name>
+<Description>The arguement passed to the program when a modifier is pressed.</Description>
+<Type>table</Type>
+<Default>e_Modifiers</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_Modifiers</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table which will be referenced when a key or key combination is pressed.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.SaveSettings</Name>
+<Description>Saves key binding settings to a file for later recall.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The full path to where the file will be saved.</Description>
+<Type>string</Type>
+<Default>"C:\\Test.kbs"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Test.kbs"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table whose key data will be saved.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Encryption Key</Name>
+<Description>The string that will be used to encrypt the code portion of the key attributes.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>KeyBind.SetKeyAtt</Name>
+<Description>Sets attributes for an existing key binding.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key</Name>
+<Description>The key code number of the key whose attributes are being requested.</Description>
+<Type>number</Type>
+<Default>KeyBind.GetKeyCode("Enter")</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>KeyBind.GetKeyCode("Enter")</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Text</Name>
+<Description>This is a short description of the key's action.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Description</Name>
+<Description>This is a long description of the key's action.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Shift</Name>
+<Description>Requires the Shift modifier.</Description>
+<Type>boolean</Type>
+<Default>nil</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>nil</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Ctrl</Name>
+<Description>Requires the Ctrl modifier.</Description>
+<Type>boolean</Type>
+<Default>nil</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>nil</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Alt</Name>
+<Description>Requires the Alt modifier.</Description>
+<Type>boolean</Type>
+<Default>nil</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>nil</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Script</Name>
+<Description>The script that will be executed when the key (or key combination) is pressed.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table upon which the action will be executed.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>KeyBind.UpdateGrid</Name>
+<Description>Displays key binding settings in a grid object.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the grid object upon which the key data will be displayed.</Description>
+<Type>string</Type>
+<Default>"Grid1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Grid1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Include Description</Name>
+<Description>Whether or not to include each key's desciption attribute on the grid.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>ResizeMode</Name>
+<Description>How each column in the grid will be resized.</Description>
+<Type>number</Type>
+<Default>GVS_DEFAULT</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>GVS_DEFAULT</Default>
+<DataType>combo</DataType>
+<Constraints>GVS_DEFAULT,GVS_HEADER,GVS_DATA,GVS_BOTH,</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key Table</Name>
+<Description>The name of the key table to load into the grid.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+
+<Extended>
+<Action>
+<ReturnValueDescription>
+-1 : The specified key is not supported or does not exist
+ 0  : Action was successful</ReturnValueDescription>
+<Example>local tKeys = {
+{Text="Test Key 1",Description="Here's some text",Key=KeyBind.Key.Tab,Shift=false,Ctrl=true,Alt=false,Script=[[
+Dialog.Message("Key Test", "This is a test of the \"Ctrl + "..KeyBind.GetKeyName(KeyBind.Key.Tab).."\" key combination");
+
+
+--test of multiline
+]]},
+{Key=KeyBind.Key.l,Script=[[Dialog.Message("Test Key", "This is the l key");]]}
+};
+
+KeyBind.BindGroup(tKeys);</Example>
+<Note></Note>
+<Arg>
+<Note>See KeyBind.BindKey() for specifics on how to create a single key binding.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-1 : The specified key is not supported or does not exist
+ 0  : Action was successful</ReturnValueDescription>
+<Example>local sCode = "Dialog.Message(\"Success\", \"Mine Cleared\");"
+KeyBind.BindKey(KeyBind.Key.M, "Clear Mines", "This ability is used by engineers to clear mines from the battlefield", false, false, false, sCode);</Example>
+<Note></Note>
+<Arg>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Not required.</Note>
+</Arg>
+<Arg>
+<Note>Not required.</Note>
+</Arg>
+<Arg>
+<Note>Not required. This is false by default.</Note>
+</Arg>
+<Arg>
+<Note>Not required. This is false by default.</Note>
+</Arg>
+<Arg>
+<Note>Not required. This is false by default.</Note>
+</Arg>
+<Arg>
+<Note>Not required but recommended.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-3 : The specified key is unbound
+-2 : The specified key table does not exist or is empty
+-1 : The specified key is not supported or does not exist
+ 0  : Action was successful</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-2 : The specified key table does not exist or is empty
+ 0  : Action was successful</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-3 : The specified key is unbound
+-1 : The specified key is not supported or does not exist
+
+When the action is successful, a table is returned which contains the key's attributes. The table is indexed by the following.
+Key
+Name
+Text
+Desc
+Shift
+Ctrl
+Alt
+Script</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-1 : The specified key is not supported or does not exist
+If the action is successful then the key code is returned</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+<Const>
+<Name>"LeftMouseButton"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"RightMouseButton"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"MiddleMouseButton"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Backspace"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Tab"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Enter"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Shift"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Ctrl"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Alt"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Pause"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"CapsLock"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Esc"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Spacebar"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"PageUp"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"PageDown"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"End"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Home"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Left"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Up"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Right"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Down"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Insert"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Delete"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"0"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"1"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"2"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"3"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"4"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"5"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"6"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"7"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"8"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"9"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"A"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"B"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"C"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"D"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"E"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"G"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"H"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"I"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"J"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"K"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"L"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"M"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"N"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"O"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"P"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Q"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"R"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"S"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"T"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"V"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"W"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"X"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Y"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Z"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"WindowsLeft"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"WindowsRight"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Application"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad0"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad1"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad2"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad3"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad4"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad5"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad6"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad7"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad8"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Numpad9"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"NumpadAsterisk"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"NumpadPlus"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"NumpadDash"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"NumpadPeriod"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"NumpadForwardslash"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F1"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F2"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F3"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F4"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F5"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F6"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F7"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F8"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F9"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F10"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F11"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"F12"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"NumLock"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"ScrollLock"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>";"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"="</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>","</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"-"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"."</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"/"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"`"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"["</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"\\"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"]"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"'"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Function"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-2 : The specified key table does not exist or is empty
+If the action is successful then the number of keys in the specifed table is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-1 : The specified key is not supported or does not exist
+If the action is succesful then the name of the key is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns the number of key tables.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a numerically indexed table containing the names of the key tables.
+If an error occurs or no tables exist then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+-1 : The specified key is not supported or does not exist
+Returns true if the key is bound to the specifed table and false if it is not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the table exist and false if it does not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-6 : The specified source table section does not exist, is empty or is corrupt
+-5 : File does not exist
+ 0  : Action was successful</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note>This file will have been created by the KeyBind.SaveSettings() function.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to ignore the decryption process.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-1 : The specified key is not supported or does not exist</ReturnValueDescription>
+<Example></Example>
+<Note>This must be placed in the On Key event of the page, dialog, object or project.</Note>
+<Arg>
+<Note>DO NOT change this argument.</Note>
+</Arg>
+<Arg>
+<Note>DO NOT change this argument.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+0  : Action was successful
+If a file error occurs then the error code is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note>The file need not exist prior to saving.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to ignore the encryption process.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+-3 : The specified key is unbound
+-1 : The specified key is not supported or does not exist
+ 0  : Action was successful</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Not required</Note>
+</Arg>
+<Arg>
+<Note>Not Required</Note>
+</Arg>
+<Arg>
+<Note>Not required.</Note>
+</Arg>
+<Arg>
+<Note>Not required.</Note>
+</Arg>
+<Arg>
+<Note>Not required.</Note>
+</Arg>
+<Arg>
+<Note>Not required but rocommended.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>
+-8 : Object does not exist
+ 0  : Action was successful</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Const>
+<Name>GVS_DEFAULT</Name>
+<Value>0</Value>
+<Description>Use the default behavior which is to make the column as small as it can be while still accommodating all of its text.  (Default)</Description>
+</Const>
+<Const>
+<Name>GVS_HEADER</Name>
+<Value>1</Value>
+<Description>Make the column resize according to the size of the text in the header cell.</Description>
+</Const>
+<Const>
+<Name>GVS_DATA</Name>
+<Value>2</Value>
+<Description>Make the column resize to the widest non-header cell in the column.</Description>
+</Const>
+<Const>
+<Name>GVS_BOTH</Name>
+<Value>3</Value>
+<Description>Mixes both GVS_HEADER and GVS_DATA using whichever is the widest in the column.</Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note>Set this to nil to use the default setting.</Note>
+</Arg>
+<Arg>
+<Note>Set this to "" or nil to use the default key table.</Note>
+</Arg>
+</Action>
+<Name>KeyBind</Name>
+<Description>This plugin makes key binding, key code association and integrated script execution simple. No more memorizing key codes or endless lines of code on different pages or separate objects. With KeyBind, creating key-script associations is simple and quick.</Description>
+<Version1>1</Version1>
+<Version2>0</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>Copyright © 2010 AMSPublic.com</Copyright>
+<License>GNU GPL v3</License>
+<Requirements>AutoPlay Media Studio 8 or higher.</Requirements>
+<InstallNotes>Place the KeyBind folder in your "AutoPlay Media Studio\Plugins\Action" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

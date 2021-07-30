@@ -1,0 +1,1378 @@
+<ActionTemplates>
+<Action>
+<Name>Project.Associate</Name>
+<Description>Creates a file and icon association with the program for a specified file extension.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Extension</Name>
+<Description>The file extension for which to create the association.</Description>
+<Type>string</Type>
+<Default>"abcd"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"abcd"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Exe</Name>
+<Description>The full path to the exe file which will be executed when the specified file type is clicked.</Description>
+<Type>string</Type>
+<Default>"_ExeFolder.."\\"..Project.GetDetails().ExeName"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"_ExeFolder.."\\"..Project.GetDetails().ExeName"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Icon</Name>
+<Description>The full path to the icon file that will be used for this file type.</Description>
+<Type>string</Type>
+<Default>"_ExeFolder.."\\"..Project.GetDetails().ExeName"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"_ExeFolder.."\\"..Project.GetDetails().ExeName"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Short Description</Name>
+<Description>It's best to use the project name or something as simple for this.</Description>
+<Type>string</Type>
+<Default>"Project"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Project"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Long Description</Name>
+<Description>This text will show up when a user mouse-overs a file.</Description>
+<Type>string</Type>
+<Default>"Project Manager"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Project Manager"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.CheckCLAs</Name>
+<Description>Checks for the existence of custom command line arguments and processes all present.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.DeleteResources</Name>
+<Description>Deletes a list of files on the end-user's system. Very usefiul for deleting truncated resources after a runtime update.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Resources</Name>
+<Description>A table containing the paths of the resources to delete.</Description>
+<Type>table</Type>
+<Default>tResources</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tResources</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.DidCrash</Name>
+<Description>Determines whether or not the program crashed during its last run.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+</Action>
+<Action>
+<Name>Project.Disassociate</Name>
+<Description>Deletes a file and icon association with the program.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Extension</Name>
+<Description>The file extension for which to create the association.</Description>
+<Type>string</Type>
+<Default>".abcd"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>".abcd"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.GetCLAArg</Name>
+<Description>Gets the argument passed to the program via a CLA value/argument pair </Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>CLA</Name>
+<Description>The value of the CLA value/argument pair for which to find the argument.</Description>
+<Type>string</Type>
+<Default>"k"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"k"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>Project.GetCLAPairDivider</Name>
+<Description>Gets the control character used in separating the value element of a CLA value/argument pair from the argument element.</Description>
+<ReturnValueType>string</ReturnValueType>
+</Action>
+<Action>
+<Name>Project.GetDetails</Name>
+<Description>Gets the project's details.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>Project.GetExecutionPoint</Name>
+<Description>Determines the place-type from where the program is running.</Description>
+<ReturnValueType>string</ReturnValueType>
+</Action>
+<Action>
+<Name>Project.GetFileCode</Name>
+<Description>Dermines whether or not the program was opened by a calling file with the specified extension.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Extension</Name>
+<Description>The allowed file type.</Description>
+<Type>string</Type>
+<Default>".txt"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>".txt"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>Project.GetLastFolder</Name>
+<Description>Get the last folder set by the Project.SetLastFolder() function.</Description>
+<ReturnValueType>string</ReturnValueType>
+</Action>
+<Action>
+<Name>Project.GetRegValue</Name>
+<Description>Gets one of the program's registry value's data.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Value Name</Name>
+<Description>The value name from which to retrieve the value data.</Description>
+<Type>string</Type>
+<Default>"InstalledPath"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"InstalledPath"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.GetValue</Name>
+<Description>Returns a specified value's data from the project ini file.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section in the ini file.</Description>
+<Type>string</Type>
+<Default>"Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The name of the value in the ini file.</Description>
+<Type>string</Type>
+<Default>"Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.HasRun</Name>
+<Description>Returns true if the project has run before and false if it has not.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+</Arguments>
+</Action><Action>
+<Name>Project.Initialize</Name>
+<Description>This is the core function of the the Project Action Plugin. The plugin will not function properly unless this is executed before all other Project Action Plugin functions.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Title</Name>
+<Description>The title of the program.</Description>
+<Type>string</Type>
+<Default>"Test Project"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Test Project"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Author</Name>
+<Description>The author(s) of the program.</Description>
+<Type>string</Type>
+<Default>"Stan Stanley"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Stan Stanley"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Company</Name>
+<Description>The company which owns the program.</Description>
+<Type>string</Type>
+<Default>"Datadyne"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Datadyne"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Website</Name>
+<Description>The contact website for the program, author and/or company.</Description>
+<Type>string</Type>
+<Default>"www.mysite.com"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"www.mysite.com"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Email</Name>
+<Description>The contact email for the program.</Description>
+<Type>string</Type>
+<Default>"me@mysite.com"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"me@mysite.com"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Copyright</Name>
+<Description>Copyright information for the program.</Description>
+<Type>string</Type>
+<Default>"Copyright  2009 MySite.com"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Copyright  2009 MySite.com"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>License</Name>
+<Description>The license summary for the program.</Description>
+<Type>string</Type>
+<Default>"Free to use and distribute"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Free to use and distribute"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Exe Filename</Name>
+<Description>The name of the program file including the extension.</Description>
+<Type>string</Type>
+<Default>"Project.exe"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Project.exe"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Icon File</Name>
+<Description>The icon file used for the program.</Description>
+<Type>string</Type>
+<Default>"MyIcon.ico"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MyIcon.ico"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>INI File</Name>
+<Description>The full path to the ini file used by the program.</Description>
+<Type>string</Type>
+<Default>"_ExeFolder.."\\Project.ini""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>_ExeFolder.."\\Project.ini"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Data Folder</Name>
+<Description>The name of the data folder [if different than the default("AutoPlay")].</Description>
+<Type>string</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Logo File</Name>
+<Description>The path to the logo image file.</Description>
+<Type>string</Type>
+<Default>"C:\\MyLogo.png"</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>"C:\\MyLogo.png"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.IsCompiled</Name>
+<Description>Determines whether the project is compiled or not.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+</Action>
+<Action>
+<Name>Project.IsRegistered</Name>
+<Description>Determines whether or not the project has been added to the registry.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+</Action>
+<Action>
+<Name>Project.IsRunning</Name>
+<Description>Determines whether or not there is already an instance of your program running.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+</Action><Action>
+<Name>Project.ProcessVersion</Name>
+<Description>Updates and/or gets the project's internal version (not the file version).</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Version File</Name>
+<Description>The full path to the version file. Leave this blank to use the default file.</Description>
+<Type>string</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Version Segments</Name>
+<Description>The number of version points to use (3 would look like 1.1.3, while 5 would look like 2.6.2.1.5)</Description>
+<Type>number</Type>
+<Default>4</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>4</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Max Number</Name>
+<Description>The highest number to which each version segment will ascend.</Description>
+<Type>number</Type>
+<Default>9</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>9</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.Register</Name>
+<Description>Inputs the project into the registry if it is not already there.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.RenameResources</Name>
+<Description>Renames a list of files on the end-user's system. Very usefiul for renaming resources that have changed after a runtime update.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Resources</Name>
+<Description>A table containing the info about the resources to rename. This must bea numerically-indexed table with indexes Folder, Old and New where Fodler is the folder to the file to be renamed, Old is the filename and extension of the current file and New is the filename and extension to which it will be changed.</Description>
+<Type>table</Type>
+<Default>tResources</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tResources</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.RequireOS</Name>
+<Description>Will allow the program to run only if the user has the specified OS or higher.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>OS Name</Name>
+<Description>The name of the operating system (or higher) required for program execution.</Description>
+<Type>string</Type>
+<Default>"Windows 98"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Windows 98"</Default>
+<DataType>combo</DataType>
+<Constraints>"Windows 95","Windows 98","Windows ME","Windows NT 3","Windows NT 4","Windows 2000","Windows Server 2003","Windows XP","Windows Server 2008","Windows Vista","Windows 7",</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.RestoreAudioSettings</Name>
+<Description>Restores the audio settings for the specified channel(s) based on the information stored by the Project.SaveAudioSettings() function.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Channel</Name>
+<Description>The channel(s) for which to restore the audio settings.</Description>
+<Type>number</Type>
+<Default>CHANNEL_USER1</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>CHANNEL_USER1</Default>
+<DataType>combo</DataType>
+<Constraints>CHANNEL_BACKGROUND,CHANNEL_EFFECTS,CHANNEL_NARRATION,CHANNEL_USER1,CHANNEL_USER2,CHANNEL_USER3,CHANNEL_USER4,CHANNEL_ALL,</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>Project.RestoreObjectStates</Name>
+<Description>Restores the objects on the current page or dialog to their saved settings.</Description>
+<ReturnValueType></ReturnValueType>
+</Action><Action>
+<Name>Project.RestoreWindowPos</Name>
+<Description>Restores the position of the current page or dialog based on the values stored in the project ini by the Project.SaveWindowPos() function.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.RestoreWindowSize</Name>
+<Description>Restores the size of the current page or dialog based on the values stored in the project ini by the Project.SaveWindowSize() function.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.SaveAudioSettings</Name>
+<Description>Saves the audio settings for the specified audio channel(s) in the project's ini file for later retrieval.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Channel</Name>
+<Description>The audio channel(s) for which to save the settings.</Description>
+<Type>number</Type>
+<Default>CHANNEL_USER1</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>CHANNEL_USER1</Default>
+<DataType>combo</DataType>
+<Constraints>CHANNEL_BACKGROUND,CHANNEL_EFFECTS,CHANNEL_NARRATION,CHANNEL_USER1,CHANNEL_USER2,CHANNEL_USER3,CHANNEL_USER4,CHANNEL_ALL,</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.SaveObjectStates</Name>
+<Description>Save the properties of objects on the current page or dialog.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.SaveWindowPos</Name>
+<Description>Saves the current window or dialog position in the project ini for later access by the Project.RestoreWindowPos() function.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.SaveWindowSize</Name>
+<Description>Saves the current window or dialog size in the project ini for later access by the Project.RestoreWindowSize() function.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.SetCLAPairDivider</Name>
+<Description>Sets the control character used in separating the value element of a CLA value/argument pair from the argument element.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Divider</Name>
+<Description>The character used as the divider between the value element and the argument element of a CLA value/argument pair.</Description>
+<Type>string</Type>
+<Default>"="</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"="</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>Project.SetCLAs</Name>
+<Description>Sets the Command Line Argument code and arguments for all desired command line arguments.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>tCLAs</Name>
+<Description>The table which contains the argument and code for each CLA table item.</Description>
+<Type>table</Type>
+<Default>{{"m","Dialog.Message(\"\",\"Hello World\")"},{"n","TextFile.WriteFromString(\"C:\\MyFile.txt\", \"Hello World\", false);"}}</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>{{"m","Dialog.Message(\"\",\"Hello World\")"},{"n","TextFile.WriteFromString(\"C:\\MyFile.txt\", \"Hello World\", false);"}}</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.SetCrash</Name>
+<Description>Allows the setting of the last crash data in the project's ini file.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Project Did Crash</Name>
+<Description>Whether or not the project's last state is set to crash.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.SetLastFolder</Name>
+<Description>Sets the last folder in your project's ini file for later retrieval by the Project.GetLastFolder() function.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Folder</Name>
+<Description>The path to the folder to set as the project's last folder accessed.</Description>
+<Type>string</Type>
+<Default>"C:\\MyFolder"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\MyFolder"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.SetRegValue</Name>
+<Description>Sets one the program's registry value's data.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Value</Name>
+<Description>The value name for which to set the data.</Description>
+<Type>string</Type>
+<Default>"Serial"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Serial"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Data</Name>
+<Description>The value's data.</Description>
+<Type>string</Type>
+<Default>"J65F-K64F-MB5E-87Y4-F4E2U"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"J65F-K64F-MB5E-87Y4-F4E2U"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.SetValue</Name>
+<Description>Sets the data for a specifed value in the project ini file.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section in the ini file.</Description>
+<Type>string</Type>
+<Default>"Section"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Section"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Value</Name>
+<Description>The name of the value in the ini file.</Description>
+<Type>string</Type>
+<Default>"Value"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Value"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Data</Name>
+<Description>The data to which the value will be set.</Description>
+<Type>string</Type>
+<Default>"Data"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Data"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Project.ShowAbout</Name>
+<Description>Shows an about box listing all of the project details.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.Shutdown</Name>
+<Description>Required for proper project shutdown.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.Unregister</Name>
+<Description>Removes the project from the registry if it's there.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Project.UpdateRuntime</Name>
+<Description>Updates the primary application runtime.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Runtime</Name>
+<Description>The full path to the new runtime file that will replace the existing one.</Description>
+<Type>string</Type>
+<Default>"D:\Downloads\MyFile.exe"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"D:\Downloads\MyFile.exe"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>CDD</Name>
+<Description>The full path to the new cdd file.</Description>
+<Type>string</Type>
+<Default>"D:\Downloads\MyFile.cdd"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"D:\Downloads\MyFile.cdd"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Show Update Window</Name>
+<Description>Whether or not to show the command window during the update.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Background Color</Name>
+<Description>The color of the command window background.</Description>
+<Type>string</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>combo</DataType>
+<Constraints>"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F",</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Foreground Color</Name>
+<Description>The color of the command window text.</Description>
+<Type>string</Type>
+<Default>7</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>7</Default>
+<DataType>combo</DataType>
+<Constraints>0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Title</Name>
+<Description>The title of the command window.</Description>
+<Type>string</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Pre-timeout Message</Name>
+<Description>The message shown right before the update starts and before the timeout.</Description>
+<Type>string</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Post-timeout Message</Name>
+<Description>The message shown right before the update starts and after the timeout.</Description>
+<Type>string</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Restart Runtime</Name>
+<Description>Whether or not to restart the runtime after the update is complete.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Force Shutdown</Name>
+<Description>By default, the runtime will be updated when the application shuts down. You can set this argument to true to force the application to shutdown.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>Warning: If you are compiling your project with "MoleBox Virtualization Solution" then be sure to have your associated file icons OUTSIDE of the compiled exe and be sure that the association icon paths point to them as well or Windows will not be able to see them.</Note>
+<Arg>
+<Note>You may include OR exclude the "." before the file extension letters.</Note>
+</Arg>
+<Arg>
+<Note>Leave this blank to use the default program exe file.</Note>
+</Arg>
+<Arg>
+<Note>Leave this blank to use the default program icon file.</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a table indexed by File and Success.
+If an error occurs or the table which was passed was nil then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the program crashed during the last run or false if it shutdown normally.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note>You may include OR exclude the "." before the file extension letters.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns the argument of the CLA value/argument pair.
+If an error occurs or the CLA does not exist or was not passed to the program, a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>
+Returns the control character.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a table indexed by the following values:
+
+Author
+Company
+Copyright
+Email
+ExeName
+IconFile
+License
+Title
+Version
+Website</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns "Uncompiled" if the project is not yet compiled.
+
+If the program is compiled, the returned string indicates the place-type.
+
+Possible (compiled) return values:
+"CD/DVD/ISO"
+"Hard Drive"
+"Removable Drive"
+"Network Drive"
+"RAM Disk"
+"Unknown"
+"Invalid"</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a table indexed by Code and File.
+
+If the program was called by the specified file type then the Code value is 1 and the File value is the path to the calling file.
+
+If the program was called by a file but not of the specified type then the Code value is -1 and the File value is the path to the calling file.
+
+If the program was not called by a file then the Code value is 0 and the File value is a blank string.</ReturnValueDescription>
+<Example>local tReturn = Project.GetFileCode(".skde");
+
+if tReturn.Code == 1 then
+Dialog.Message("Success", "Program opened with file...\r\n"..tReturn.File);
+elseif tReturn.Code == -1 then
+Dialog.Message("Error", "That file type is not supported.");
+end</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>Returns a string.
+If there was no last folder declared or if an error occurs then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the value data of the specifed registry value name or a blank string if the key, value name or data does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a string containing the data of the specified value. If an error occurs or the value or section does not exist then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This may be left blank.</Note>
+</Arg>
+<Arg>
+<Note>This may be left blank.</Note>
+</Arg>
+<Arg>
+<Note>This may be left blank.</Note>
+</Arg>
+<Arg>
+<Note>This may be left blank.</Note>
+</Arg>
+<Arg>
+<Note>This may be left blank although it is not recommended.</Note>
+</Arg>
+<Arg>
+<Note>This is not intended as a replacement for a full license file.</Note>
+</Arg>
+<Arg>
+<Note>This is case sensitive.</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Leave this blank to have the file created automatically.</Note>
+</Arg>
+<Arg>
+<Note>Use this parameter ONLY if you are NOT using the GlobalPaths Action Plugin and have changed the data folder name.</Note>
+</Arg>
+<Arg>
+<Note>Leave this blank or nil if you don't use a logo.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the project is compiled or false if it is not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the project has been added to the registry or false if it has not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if there is more than one instance of the program running and false if there is only one instance.</ReturnValueDescription>
+<Example></Example>
+<Note>This is used, primarily, for preventing more than one instance of your program.</Note>
+</Action><Action>
+<ReturnValueDescription>Returns a string containing the verion number of the program (but not the file version).</ReturnValueDescription>
+<Example></Example>
+<Note>Every time the project runs when it is uncompiled, the version is incremented and returned, If the project is compiled the verion is just returned.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>To use a 0-9 system set the Max Number to 9.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a table indexed by Old, New and Success.
+If an error occurs or the table which was passed was nil then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Const>
+<Name>CHANNEL_BACKGROUND</Name>
+<Value>5</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_EFFECTS</Name>
+<Value>0</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_NARRATION</Name>
+<Value>6</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_USER1</Name>
+<Value>1</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_USER2</Name>
+<Value>2</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_USER3</Name>
+<Value>3</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_USER4</Name>
+<Value>4</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_ALL</Name>
+<Value>-3</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Const>
+<Name>"Windows 95"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows 98"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows ME"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows NT 3"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows NT 4"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows 2000"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows Server 2003"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows XP"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows Server 2008"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows Vista"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Windows 7"</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example>Project.SaveAudioSettings(CHANNEL_USER1,"Audio\\MyTrack.wav",175,false);</Example>
+<Note></Note>
+<Arg>
+<Const>
+<Name>CHANNEL_BACKGROUND</Name>
+<Value>5</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_EFFECTS</Name>
+<Value>0</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_NARRATION</Name>
+<Value>6</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_USER1</Name>
+<Value>1</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_USER2</Name>
+<Value>2</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_USER3</Name>
+<Value>3</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_USER4</Name>
+<Value>4</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>CHANNEL_ALL</Name>
+<Value>-3</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note>E.g. web="www.mysite.com" | In this example, the equal sign (=) is the divider.</Note>
+</Arg>
+<Arg>
+<Note>E.g. web=&lt;www.mysite.com&gt; | In this example, the equal sign (=) is the switch and the less than sign (&lt;) is the argument start control character.</Note>
+</Arg>
+<Arg>
+<Note>E.g. web=&lt;www.mysite.com&gt; | In this example, the equal sign (=) is the switch and the greater than sign (&gt;) is the argument end control character.</Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example>local tCLAs = {{"m","Dialog.Message(\"\",\"Hello World\")"},{"n","TextFile.WriteFromString(\"C:\\MyFile.txt\", \"Hello World\", false);"}};</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example>Project.SetCrash(true);</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Boolean>
+<True></True>
+<False></False>
+</Boolean>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example>Project.SetLastFolder("C:\\MyFolder");</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>This also fixes the Windows Vista/Windows 7 hang error on program close.</Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action><Name>Project</Name>
+<Description>The Project Action Plugin handles many actions common to most projects.
+
+Thanks to Jassing for help with the file association code.
+Thanks to Imagine Programming for help with the compilation status discriminate.</Description>
+<Version1>1</Version1>
+<Version2>7</Version2>
+<Version3>4</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>Copyright ? 2009-2012 AMSPublic.com</Copyright>
+<License>Free to use and distribute.</License>
+<InstallNotes>Place the "Project" folder in your "AutoPlay Media Studio\Plugins\Actions" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

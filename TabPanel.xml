@@ -1,0 +1,1476 @@
+<ActionTemplates>
+<Action>
+<Name>TabPanel.AddTab</Name>
+<Description>Adds a tab to an existing TabPanel object.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Text</Name>
+<Description>The text to display on the tab.</Description>
+<Type>string</Type>
+<Default>"Tab1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Tab1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Data</Name>
+<Description>The data that will be associated with the tab.</Description>
+<Type>variant</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Extra Data</Name>
+<Description>The extra data that will be associated with the tab.</Description>
+<Type>variant</Type>
+<Default>""</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.EmbedObject</Name>
+<Description>Embeds an object in a specific tab in TabPanel object.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab in which the object will be embedded.</Description>
+<Type>variant</Type>
+<Default>4</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>4</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object to embed.</Description>
+<Type>string</Type>
+<Default>"Grid1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Grid1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>X</Name>
+<Description>The X coordinate of the object.</Description>
+<Type>number</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Y</Name>
+<Description>The Y coordinate of the object.</Description>
+<Type>number</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>TabPanel.GetActiveTab</Name>
+<Description>Gets the active tab on the specified panel object.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetObjectFromPanel</Name>
+<Description>Get the actual name of the TabPanel object.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetPanelObjects</Name>
+<Description>Get a list of all embedded objectsin all tabs of the specified TabPanel.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetPos</Name>
+<Description>Returns the X and Y page or dialog coordinates of a TabPanel in pixels. This coordinate refers to the upper left hand corner of the object's bounding box relative to the page or dialog.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetSize</Name>
+<Description>Returns the pixel dimensions of a TabPanel.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetTabCount</Name>
+<Description>Returns the number of tabs in a specific TabPanel.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetTabData</Name>
+<Description>Returns the item data associated to a specific tab in a TabPanel.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab for which to find the data.</Description>
+<Type>variant</Type>
+<Default>3</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>3</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetTabExtraData</Name>
+<Description>Returns the item extra data associated to a specific tab in a TabPanel.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab for which to find the data.</Description>
+<Type>variant</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetTabID</Name>
+<Description>Returns the ID of the selected tab in a specific TabPanel.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab Text</Name>
+<Description>The text of the tab.</Description>
+<Type>string</Type>
+<Default>"Tab1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Tab1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetTabObjects</Name>
+<Description>Get a list of all embedded objects in a specific tab of the specified TabPanel.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab for which to find the embedded objects.</Description>
+<Type>variant</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.GetTabText</Name>
+<Description>Returns the tab text of a specific tab in a TabPanel.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab ID</Name>
+<Description>The ID of the tab.</Description>
+<Type>number</Type>
+<Default>2</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>2</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.InitializePanel</Name>
+<Description>Prepares a listbox object to recieve TabPanel commands.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the ListBox object.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>listbox</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.IsEnabled</Name>
+<Description>Returns true if a specific TabPanel is enabled, or false if it's disabled.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.IsVisible</Name>
+<Description>Returns true if a specific TabPanel is visible, and false if it isn't.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.MoveObject</Name>
+<Description>Moves an embeddded object from one tab to a different tab.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Source Tab</Name>
+<Description>The tab text or ID of the tab from which the object will be moved..</Description>
+<Type>variant</Type>
+<Default>4</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>4</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Destination Tab</Name>
+<Description>The tab text or ID of the tab to which the object will be moved..</Description>
+<Type>variant</Type>
+<Default>5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object to be moved.</Description>
+<Type>string</Type>
+<Default>"Grid1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Grid1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Refresh</Name>
+<Description>Whether or not to refresh the TabPanel after the action.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.ObjectIsInTab</Name>
+<Description>Determines whether or not an object is in the specified tab.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab in which to search for the embedded object.</Description>
+<Type>variant</Type>
+<Default>2</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>2</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The object for which to search.</Description>
+<Type>string</Type>
+<Default>"Grid1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Grid1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.ObjectIsSupported</Name>
+<Description>Determines whether or not a specific object or object type is supported for use in a TabPanel.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name or type of an object.</Description>
+<Type>variant</Type>
+<Default>5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.Refresh</Name>
+<Description>Refreshes the tabs in a TabPanel.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.RemoveTab</Name>
+<Description>Removes a tab from a TabPanel.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab which will be removed.</Description>
+<Type>variant</Type>
+<Default>3</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>3</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object Handler Code</Name>
+<Description>The code that describes how to handle the object (if any) in the specified tab.</Description>
+<Type>number</Type>
+<Default>TB_MOVE_RIGHT</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>TB_MOVE_RIGHT</Default>
+<DataType>combo</DataType>
+<Constraints>TP_MOVE_OBJECTS_LEFT,TP_MOVE_OBJECTS_RIGHT,TP_MOVE_OBJECTS_FIRST,TP_MOVE_OBJECTS_LAST,TP_SPECIFY_EACH,TP_DELETE_OBJECTS,</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object Orders</Name>
+<Description>The table containing objects and their destination details.</Description>
+<Type>table</Type>
+<Default>nil</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>nil</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Refresh</Name>
+<Description>Whether or not to refresh the obejct once this action as been completed (recommended).</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.SetEnabled</Name>
+<Description>Sets the enabled/disabled state of a TabPanel.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Enable</Name>
+<Description>Whether to make the TabPanel object enabled or disabled.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.SetPos</Name>
+<Description>Sets the X and Y pixel coordinates of a TabPanel relative to the page or dialog.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>X</Name>
+<Description>The new X pixel coordinate (horizontal position) to set for the TabPanel object. This is the X coordinate of the upper left hand corner of the object's bounding box relative to the page or dialog.</Description>
+<Type>number</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Y</Name>
+<Description>The new Y pixel coordinate (vertical position) to set for the TabPanel object. This is the Y coordinate of the upper left hand corner of the object's bounding box relative to the page or dialog.</Description>
+<Type>number</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.SetSize</Name>
+<Description>Sets the size of a TabPanel.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Width</Name>
+<Description> The new width of the TabPanel object in pixels.</Description>
+<Type>number</Type>
+<Default>200</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>200</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Height</Name>
+<Description>The new height of the TabPanel object in pixels.</Description>
+<Type>number</Type>
+<Default>32</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>32</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.SetTabData</Name>
+<Description>Set the data for the specified tab.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab for which to set the data.</Description>
+<Type>variant</Type>
+<Default>1</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>1</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Data</Name>
+<Description>The data to set.</Description>
+<Type>variant</Type>
+<Default>4</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>4</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.SetTabExtraData</Name>
+<Description>Set the extra data for the specified tab.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab for which to set the data.</Description>
+<Type>variant</Type>
+<Default>1</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>1</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Extra Data</Name>
+<Description>The extra data to set.</Description>
+<Type>variant</Type>
+<Default>4</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>4</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.SetTabText</Name>
+<Description>Set the title of a tab.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab which which will be renamed.</Description>
+<Type>variant</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Text</Name>
+<Description>The new text to display in the tab.</Description>
+<Type>string</Type>
+<Default>"Tab2"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Tab2"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Refresh</Name>
+<Description>Whether or not to refresh the TabPanel after the action has been completed (recommeded).</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.SetVisible</Name>
+<Description>Sets the visibility of a TabPanel.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Visible</Name>
+<Description>Whether to make the tabPanel object visible or invisible.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>TabPanel.TabDoesExist</Name>
+<Description>Determines whether or not the specified tab exists in the specified panel.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Panel</Name>
+<Description>The name of the TabPanel.</Description>
+<Type>string</Type>
+<Default>"TabPanel1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"TabPanel1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Tab</Name>
+<Description>The tab text or ID of the tab for which to search.</Description>
+<Type>variant</Type>
+<Default>"Tab1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Tab1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription>
+Returns true if the tab was added successfuly and false if it was not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This can be of any type except nil.</Note>
+</Arg>
+<Arg>
+<Note>This can be of any type except nil.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the object was successfully embedded and false if it was not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is relative to the panel object.</Note>
+</Arg>
+<Arg>
+<Note>This is relative to the panel object.</Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>
+Returns a table index by ID and Text.
+If an error occurs nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns the host object name.
+If an error occurs, a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>Although the "Panel" name is used for all other TabPanel functions, the actual host object name changes every time a change is made to the object. Use this to get the host object name.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a table whose indexes are the names of each tab in the TabPanel and whose values are numerically-indexed tables whose values are the objects' names.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+A table containing the object's current coordinates, indexed by values X and Y. If the object cannot be found, nil will be returned. You can use Application.GetLastError to determine whether this action failed, and why.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+A table containing the object's pixel dimensions, indexed by values "Width" and "Height". If the object cannot be found, nil will be returned. You can use Application.GetLastError to determine whether this action failed, and why.
+</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+The number of tabs in the TabPanel object.
+If an error occurs, -1 will be returned</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+The return value will be of whatever type was input. This could be of types string, number, table, boolean, function or userdata.
+If an error occurs, nil will be returned.
+</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+The return value will be of whatever type was input. This could be of types string, number, table, boolean, function or userdata.
+If an error occurs, nil will be returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+The ID of the specified tab.
+If an error occurs, -1 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed in the tab.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a table whose indexes are numerically-indexed tables whose values are the objects' names.
+If an error occurs, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+A string containing the specified tab's text. If an error occurs, a blank string "" will be returned.
+</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the object was intialized successfully and false if it was not.</ReturnValueDescription>
+<Example></Example>
+<Note>This must be called on a listbox object before any other TabPanel actions are called on that object. Must be a ListBox object.</Note>
+<Arg>
+<Note>This is the name that will be used in the "Panel" argument for other TabPanel functions.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+True if the TabPanel is enabled, false if it is disabled.</ReturnValueDescription>
+<Example></Example>
+<Note>When a TabPanel object is disabled, it doesn't respond to the user at all.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+ True if the TabPanel is visible, false if it's invisible. If an error occurs, false will be returned</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Boolean>
+<True>true</True>
+<False>false</False>
+</Boolean>
+<Note>Normally, this is not required for this action but is here to use in case you are experiencing redraw errors.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the object is in the specified tab and false if is not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the object is supported and false if it is not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>This is called automatically when any other TabPanel function changes anything about a TabPanel. You need call this only if you are editing any of the obejcts with external functions.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>Objects may be moved or deleted.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+<Arg>
+<Const>
+<Name>TP_MOVE_OBJECTS_LEFT</Name>
+<Value>1</Value>
+<Description>Moves all objects in the tab to the closest tab on the left.
+If the specified tab is the first tab in the TabPanel then all of the objects are moved to the second tab (If no other tabs exist then all objects are deleted).</Description>
+</Const>
+<Const>
+<Name>TP_MOVE_OBJECTS_RIGHT</Name>
+<Value>2</Value>
+<Description>Moves all objects in the tab to the closest tab on the right.
+If the specified tab is the last tab in the TabPanel then all of the objects are moved to the second-to-last tab (If no other tabs exist then all objects are deleted).</Description>
+</Const>
+<Const>
+<Name>TP_MOVE_OBJECTS_FIRST</Name>
+<Value>3</Value>
+<Description>Moves all objects in the tab to the first tab in the TabPanel.
+If the specified tab is the first tab in the TabPanel then all of the objects are moved to the second tab (If no other tabs exist then all objects are deleted).</Description>
+</Const>
+<Const>
+<Name>TP_MOVE_OBJECTS_LAST</Name>
+<Value>4</Value>
+<Description>Moves all objects in the tab to the last tab in the TabPanel.
+If the specified tab is the last tab in the TabPanel then all of the objects are moved to the second-to-last tab (If no other tabs exist then all objects are deleted).</Description>
+</Const>
+<Const>
+<Name>TP_SPECIFY_EACH</Name>
+<Value>5</Value>
+<Description>FEATURE COMING SOON.
+NOT YET SUPPORTED.</Description>
+</Const>
+<Const>
+<Name>TP_DELETE_OBJECTS</Name>
+<Value>6</Value>
+<Description>Deletes all of the objects on the tab.</Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>FEATURE COMING SOON. NOT YET SUPPORTED.</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>When a TabPanel is disabled, it doesn't respond to the user at all.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Boolean>
+<True>true</True>
+<False>false</False>
+</Boolean>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the data was set succesfully and false if it was not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+<Arg>
+<Note>This can be of types string, number, table, boolean, function or userdata.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the extra data was set succesfully and false if it was not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+<Arg>
+<Note>This can be of types string, number, table, boolean, function or userdata.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a table indexed by ID and Text for the newy-named tab.
+Ifd an error occures, nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Boolean>
+<True>true</True>
+<False>false</False>
+</Boolean>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>
+Returns true if the specified tab is in the specified panel and false if it is not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is the text displayed on the tab or the ID of the tab. Either one will located it properly.</Note>
+</Arg>
+</Action><Name>TabPanel</Name>
+<Version1>2</Version1>
+<Version2>0</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Original Plugin by RizlaUK. This plugin created and maintained by Centauri Soldier.</Author>
+<Email>centaurisoldier@gmail.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>© 2010 RizlaUK and Centauri Soldier.</Copyright>
+<License>Free to use and distribute.</License>
+<Description>Creates an object from a host ListBox object that is tabbed and whose tabs can host other objects.
+|
+|
+|
+
+[Supported Object Types]
+OBJECT_COMBOBOX
+OBJECT_FLASH
+OBJECT_GRID
+OBJECT_INPUT
+OBJECT_LISTBOX
+OBJECT_PROGRESS
+OBJECT_QUICKTIME
+OBJECT_RICHTEXT
+OBJECT_TREE
+OBJECT_VIDEO
+
+|
+|
+|
+
+[Callback Functions]
+You should call these in your globals.
+You can apply a callback function to each object by using if-then blocks inside the specific function to separate calling objects.
+
+|
+|
+|
+|
+
+TabPanel_OnAddTab(sPanel, sTabText, nTabIndex, vData, vExtraData)
+TabPanel_OnEmbedObject(sPanel, sText_or_nID, sObjectToEmbed, nX, nY)
+TabPanel_OnIntializePanel(sPanel, sObjectName)
+TabPanel_OnMoveObject(sPanel, nCurrentTabID, nNewTabID, sObject)
+TabPanel_OnRefresh(sPanel)
+TabPanel_OnRemoveTab(sPanel, nTabID)
+
+|
+|
+|
+
+[Example]
+
+function TabPanel_OnAddTab(sPanel, sTabText, nTabIndex, vData, vExtraData)
+
+if sObject == "Tab1" then
+--do somthing
+elseif sObject == "Tab2" then
+--do something else
+end
+
+end</Description>
+<Requirements>GlobalPaths Action Plugin. You can download it from www.AMSPublic.com.</Requirements>
+<InstallNotes>Place the "TabPanel" folder in your "AutoPlay Media Studio\plugins\Actions" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

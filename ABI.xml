@@ -1,0 +1,372 @@
+<ActionTemplates>
+<Action>
+<Name>Application.GetPageOrDialog</Name>
+<Description>Returns the name of the current page or dialog.</Description>
+<ReturnValueType>string</ReturnValueType>
+</Action>
+<Action>
+<Name>Application.IsDialog</Name>
+<Description>Determines whether or not the current window is a dialog.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+</Action>
+<Action>
+<Name>DialogEx.Close</Name>
+<Description>Together with the revised, DialogEx.Show() function, this function allows the programmer to return any variable type from a DialogEx window.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Argument</Name>
+<Description>The argument you wish to return.</Description>
+<Type>variant</Type>
+<Default>vRet</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>vRet</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>DialogEx.Show</Name>
+<Description>Together with the revised, DialogEx.Close() function, this function allows the programmer to return any variable type from a DialogEx window.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Dialog</Name>
+<Description>The name of the Dialog you wish to show.</Description>
+<Type>string</Type>
+<Default>"MyDialog"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MyDialog"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Folder.Clear</Name>
+<Description>Removes all files and sub folders from the specifed folder.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+</Action>
+<Action>
+<Name>Folder.GetEndFolder</Name>
+<Description>Gets the name of the last folder in a folder path.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Path</Name>
+<Description>The folder path to search.</Description>
+<Type>string</Type>
+<Default>"C:\\Test"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Test"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Use Web Format</Name>
+<Description>Whether or not to use forward slashes instead of backslashes.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>Folder.GetParent</Name>
+<Description>Gets the parent folder of the specified folder path.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Path</Name>
+<Description>The file/folder path.</Description>
+<Type>string</Type>
+<Default>"C:\\Test\\New Folder"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Test\\New Folder"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Use Web Format</Name>
+<Description>Whether or not to use forward slashes instead of backslashes.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Folder.GetSize</Name>
+<Description>Gets the size of folder including all files and subfolders in bytes.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Folder</Name>
+<Description>The folder whose size to get.</Description>
+<Type>string</Type>
+<Default>"C:\\My Folder"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\My Folder"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>String.Capatalize</Name>
+<Description>Capatalizes the first letter of a string.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Input</Name>
+<Description>The string to capatalize.</Description>
+<Type>string</Type>
+<Default>"i wish I could write properly!"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"i wish I could write properly!"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>String.IsBlank</Name>
+<Description>Determines whether or not the input string is blank.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Input</Name>
+<Description>The input string to check.</Description>
+<Type>string</Type>
+<Default>" "</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>" "</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Remove Spaces</Name>
+<Description>Whether or not all spaces should be removed when checking the string.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>String.ToTable</Name>
+<Description>Creates a table from a delimited string.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>String</Name>
+<Description>The original string to convert to a table.</Description>
+<Type>string</Type>
+<Default>"Item1, Item2, Some More Stuff, etc"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Item1, Item2, Some More Stuff, etc"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Delimiter</Name>
+<Description>The control character that delimits the sections of the string that should separate. </Description>
+<Type>string</Type>
+<Default>","</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>","</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Window.Center</Name>
+<Description>Centers a window in the middle of the user's desktop.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Handle</Name>
+<Description>The handle of the window to center.</Description>
+<Type>number</Type>
+<Default>Application.GetWndHandle()</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>Application.GetWndHandle()</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+
+
+<Extended>
+<Action>
+<ReturnValueDescription>
+Returns the name of the page or dialog.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the current window is a dialog and false if it is a page.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns any value entered to the variable assigned to DialogEx.Show()
+
+Additional:
+This function operates exactly as the original except that you can return any variable type you desire (string, number, table etc.).</ReturnValueDescription>
+<Example></Example>
+<Note>This DialogEx code is the combination of code By Centauri Soldier and Shadiku (ShadowUK) </Note>
+<Arg>
+<Note>This can be of ANY variable type.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns any value entered to the variable assigned to DialogEx.Show()
+
+Additional:
+This function operates exactly as the original except that you can return any variable type you desire (string, number, table etc.).</ReturnValueDescription>
+<Example></Example>
+<Note>This DialogEx code is the combination of code By Centauri Soldier and Shadiku (ShadowUK) </Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -1 if the folder does not exist.
+Returns the error number if a different error occured.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns the last folder in the path.
+If an error occurs or there is no end folder, a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>
+Returns the path to the parent folder.
+If an error occurs then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns the size of the folder in bytes.
+
+If an error occurs or the folder does not exist then -1 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>
+Returns the input string with the first word capatalized.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the string is blank and false if it is not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This is very useful for instances such as getting a string from an input object that may contain only spaces.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a numerically indexed table whose values are the delimited items in the original string.</ReturnValueDescription>
+<Example></Example>
+<Note>Orginal function by IR, modified by Centauri Soldier.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Name>ABI</Name>
+<Description>Action Bank Infusion
+This plugin adds some much-needed, functions to the general Action Bank.
+New Actions range from DialogEx functions to XML functions and are infused directly into their respective parent tables.</Description>
+<Version1>3</Version1>
+<Version2>1</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>Copyright © 2010-2012 AMSPublic.com</Copyright>
+<License>Free to use and distribute.</License>
+<InstallNotes>Place the "ABI" folder in your "AutoPlay Media Studio 8.0/Plugins/Action" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

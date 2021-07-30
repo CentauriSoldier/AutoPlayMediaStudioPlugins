@@ -1,0 +1,930 @@
+<ActionTemplates>
+<Action>
+<Name>Menu.Create</Name>
+<Description>Creates a menu table for later use.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu</Name>
+<Description>The name of the menu to create.</Description>
+<Type>string</Type>
+<Default>"Main Menu"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Main Menu"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.DoesExist</Name>
+<Description>Determines whether or not a menu exists.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu</Name>
+<Description>The name of the menu for which to search.</Description>
+<Type>string</Type>
+<Default>"Main Menu"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Main Menu"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.Enable</Name>
+<Description>Enables or disbales the menu bar.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Enable</Name>
+<Description>Whether or not to enable the menu bar.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action><Action>
+<Name>Menu.GetActive</Name>
+<Description>Gets the name of the currently active menu table.</Description>
+<ReturnValueType>string</ReturnValueType>
+</Action>
+<Action>
+<Name>Menu.GetChecked</Name>
+<Description>Determines whether or not a specifc menu item is checked.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.GetEnabled</Name>
+<Description>Determines whether or not a specifc menu item is checked.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.GetItemProperties</Name>
+<Description>Gets the properties of a specific menu item.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.GetNames</Name>
+<Description>Get the names of all menus.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>Menu.GetTable</Name>
+<Description>Gets the specified menu in the format created by Application.GetMenu().</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu</Name>
+<Description>The name of the menu.</Description>
+<Type>string</Type>
+<Default>"Main Menu"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Main Menu"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.GetXML</Name>
+<Description>Gets the specified menu as an xml table.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.LoadFromFile</Name>
+<Description>Loads the xml menu table from a file. If the specified menu does not exist, it will be created, otherwise it will be overwrtitten.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu</Name>
+<Description>The name of the menu.</Description>
+<Type>string</Type>
+<Default>"Main Menu"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Main Menu"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>File</Name>
+<Description>The full path to the menu xml file.</Description>
+<Type>string</Type>
+<Default>"C:\\Main Menu.xml"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Main Menu.xml"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.OnMenu</Name>
+<Description>This must be placed in the On Menu sections of your project in order for this plugin to work.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>e_ID</Name>
+<Description>This must be left as e_ID.</Description>
+<Type>number</Type>
+<Default>e_ID</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_ID</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.RemoveItem</Name>
+<Description>Deletes and item from the specified menu.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AutoUpdate</Name>
+<Description>Whether or not to auto-update after the action is complete.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.Rename</Name>
+<Description>Renames a menu table.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Old Name</Name>
+<Description>The original name of the menu.</Description>
+<Type>string</Type>
+<Default>"Main Menu"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Main Menu"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>New Name</Name>
+<Description>The new name ot use.</Description>
+<Type>string</Type>
+<Default>"Better Menu"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Better Menu"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.RenameItem</Name>
+<Description>Renames a menu item</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>New Name</Name>
+<Description>The name to which the item will be renamed.</Description>
+<Type>string</Type>
+<Default>"New Item"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"New Item"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AutoUpdate</Name>
+<Description>Whether or not to auto-update after the action is complete.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.SaveToFile</Name>
+<Description>Save the specified menu xml data to file.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu</Name>
+<Description>The name of the menu.</Description>
+<Type>string</Type>
+<Default>"Main Menu"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Main Menu"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>File</Name>
+<Description>The full path where the xml file will be saved.</Description>
+<Type>string</Type>
+<Default>"C:\\Main Menu.xml"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Main Menu.xml"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.SetActive</Name>
+<Description>Sets the specified menu table to active. If it does not exist, it will be created.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu</Name>
+<Description>The name of the menu to set active.</Description>
+<Type>string</Type>
+<Default>"Main Menu"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Main Menu"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.SetChecked</Name>
+<Description>Sets a menu item checked or not.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Checked</Name>
+<Description>Whether or not the item will be checked.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AutoUpdate</Name>
+<Description>Whether or not to auto-update after the action is complete.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.SetDelmiter</Name>
+<Description>Sets the character used to separate menu items in the actions arguments.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Delimiter</Name>
+<Description>The character that will become the new delimiter.</Description>
+<Type>string</Type>
+<Default>","</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>","</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.SetEnabled</Name>
+<Description>Sets a menu item enabled or not.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Enabled</Name>
+<Description>Whether or not the item will be enabled.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AutoUpdate</Name>
+<Description>Whether or not to auto-update after the action is complete.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.SetItem</Name>
+<Description>This action is used to create and edit menu items.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Icon ID</Name>
+<Description>The icon id used for this menu item</Description>
+<Type>number</Type>
+<Default>0</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>0</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Enabled</Name>
+<Description>Whether or not the item will be enabled.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Checked</Name>
+<Description>Whether or not the item will be checked.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Code</Name>
+<Description>The code that will be executed when the menu item is selected.</Description>
+<Type>string</Type>
+<Default>"Dialog.Message(\"Test\", \"Well, it seems to be working.\r\nAre you impressed?\", MB_YESNO, MB_ICONQUESTION, MB_DEFBUTTON2);"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Dialog.Message(\"Test\", \"Well, it seems to be working.\r\nAre you impressed?\", MB_YESNO, MB_ICONQUESTION, MB_DEFBUTTON2);"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AutoUpdate</Name>
+<Description>Whether or not to auto-update after the action is complete.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.SetXML</Name>
+<Description>Sets the specified menu from an xml string. If the specified menu does not exist, it will be created, otherwise it will be overwrtitten.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Menu.ToggleChecked</Name>
+<Description>Toggles the checked status of a menu item.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AutoUpdate</Name>
+<Description>Whether or not to auto-update after the action is complete.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.ToggleEnabled</Name>
+<Description>Toggles the enabled status of a menu item.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Menu Item</Name>
+<Description>The path to the menu item.</Description>
+<Type>string</Type>
+<Default>"File|Open"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"File|Open"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>AutoUpdate</Name>
+<Description>Whether or not to auto-update after the action is complete.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>0</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Menu.Update</Name>
+<Description>This action is used to refresh the menu bar after changes are made to the active menu.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+
+<Extended>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns 1 if the menu already exists.</ReturnValueDescription>
+<Example></Example>
+<Note>This action is automatically called when the Menu.SetActive() function is called and is, thus, not needed for standard menu operations.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the menu exists and false if it does not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Action>
+<ReturnValueDescription>
+Returns the name of the active menu.
+If there is no active menu then a blank strin gis returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the item is checked and false if it is not.
+If there is no active menu, -3 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the item is enabled and false if it is not.
+If there is no active menu, -3 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the properties of the item in a table indexed by ID, Text, IconID, Checked, and Enabled.
+If the menu item does not exist then nil is returned.
+If there is no active menu then -3 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns the names of all menus in a numerically indexed table.
+If there are no menus then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>For most applications one menu will suffice but this is available in case you need to create more than one menu layout.</Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns the menu table.
+If the menu does not exist then -1 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a string containing the menu xml.
+If the menu does not exist then -1 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note>No Menu function will affect any loaded xml documents you may have in memory.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -4 if a file error occured (Use Application.GetlastError() to determine the exact problem).</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -3 if there is no active menu.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This can be left nil.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns 1 if the new menu name references a menu that already exists.
+Returns -1 if the original menu name references a menu that does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This can be left nil.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -3 if there is no active menu.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This can be left nil.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -1 if the menu does not exist.
+Returns -4 if a file error occured (Use Application.GetlastError() to determine the exact problem).</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>This function must be called before performing any other menu actions.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -3 if there is no active menu.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This can be left nil.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the menu item delimter.
+If an invalid character was specified then it is, simply, ignored.</ReturnValueDescription>
+<Example></Example>
+<Note>This cannot be any of the following characters: {"\r\n","\\","\'","\"","&lt;","&gt;","="} .</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -3 if there is no active menu.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This can be left nil.</Note>
+</Arg>
+<Arg>
+<Note>This can be left nil.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -2 if the item was constructed incorectly.
+Returns -3 if there is no active menu.</ReturnValueDescription>
+<Example></Example>
+<Note>You can use this to create new menu items or change any of the properties of an existing item. To specify a separator, use "---" as the item (e.g. "File|---").</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This can be left nil.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -3 if there is no active menu.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -3 if there is no active menu.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 0 if the action was successful.
+Returns -3 if there is no active menu.</ReturnValueDescription>
+<Example></Example>
+<Note>When using many of the menu altering functions, you can use AutoUpdate and avoid having to use Menu.Update().</Note>
+</Action>
+<Name>Menu</Name>
+<Description>The Menu Action Plugin makes creating and manipulating menus a cinch.
+Forget those exhaustive tables of properties and subtables. With the Menu plugin you'll be on your way to simple menus in no time at all. no more referencing menu items by number. No more miles of code in your On Menu events. This plugin allows you to reference your menu items by name and to specify code based on those name so you never need to remember a menu id again.</Description>
+<Version1>3</Version1>
+<Version2>3</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentuariSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>© 2008 - 2010 AMSPublic.com</Copyright>
+<License>Free to use and distribute</License>
+<InstallNotes>Place the Menu folder in your AutoPlay MEdia Studio\Plugins\Actions folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

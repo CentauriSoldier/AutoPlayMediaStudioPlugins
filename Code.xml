@@ -1,0 +1,537 @@
+<ActionTemplates>
+<Action>
+<Name>Code.GenerateUUID</Name>
+<Description>Generates a Universally Unique Identifier.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Prefix</Name>
+<Description>An additional string which is added before the UUID.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>0</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GetEventScript</Name>
+<Description>Gets the script from the specific event of a page or dialog.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Page or Dialog</Name>
+<Description>The name of the page or dialog containing the script.</Description>
+<Type>string</Type>
+<Default>"Page1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Page1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Event</Name>
+<Description>The event from which the code will be retrieved.</Description>
+<Type>string</Type>
+<Default>"On Show"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"On Show"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GetObjectScript</Name>
+<Description>Gets the script from the specific event of an object.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object containing the script.</Description>
+<Type>string</Type>
+<Default>"Button1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Button1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Event</Name>
+<Description>The event from which the script will be retrieved.</Description>
+<Type>string</Type>
+<Default>"On Click"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"On Click"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GotScriptFileSection</Name>
+<Description>Executes the code in a script file from a declared section start point to the end of the section.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The name of the file containing the script.</Description>
+<Type>string</Type>
+<Default>"C:\\Script.lua"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Script.lua"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section of code to execute.</Description>
+<Type>string</Type>
+<Default>"MySection"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MySection"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GotoEventLine</Name>
+<Description>Executes the code in a page/dialog from a specific point onward.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Page or Dialog</Name>
+<Description>The name of the page or dialog containing the script.</Description>
+<Type>string</Type>
+<Default>"Page1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Page1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Event</Name>
+<Description>The name of the event in which the script will be executed.</Description>
+<Type>string</Type>
+<Default>"On Show"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"On Show"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Line</Name>
+<Description>The number of the line at which to begin execution of the script.</Description>
+<Type>number</Type>
+<Default>5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GotoEventSection</Name>
+<Description>Executes the code in a page/dialog from a declared section start point to the end of the section.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Page or Dialog</Name>
+<Description>The name of the page or dialog containing the script.</Description>
+<Type>string</Type>
+<Default>"Page1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Page1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Event</Name>
+<Description>The name of the event in which the script will be executed.</Description>
+<Type>string</Type>
+<Default>"On Show"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"On Show"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section of code to execute.</Description>
+<Type>string</Type>
+<Default>"MySection"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MySection"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GotoObjectLine</Name>
+<Description>Executes the code in an object from a specific point onward.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object containing the script.</Description>
+<Type>string</Type>
+<Default>"Button1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Button1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Event</Name>
+<Description>The name of the event in which the script will be executed.</Description>
+<Type>string</Type>
+<Default>"On Click"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"On Click"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Line</Name>
+<Description>The number of the line at which to begin execution of the script.</Description>
+<Type>number</Type>
+<Default>5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GotoObjectSection</Name>
+<Description>Executes the code in an object from a declared section start point to the end of the section.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object containing the script.</Description>
+<Type>string</Type>
+<Default>"Button1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Button1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Event</Name>
+<Description>The name of the event in which the script will be executed.</Description>
+<Type>string</Type>
+<Default>"On Click"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"On Click"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section of code to execute.</Description>
+<Type>string</Type>
+<Default>"MySection"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MySection"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GotoScriptFileLine</Name>
+<Description>Executes the code in a script file from a specific point onward.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The name of the file containing the script.</Description>
+<Type>string</Type>
+<Default>"C:\\Script.lua"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Script.lua"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Line</Name>
+<Description>The number of the line at which to begin execution of the script.</Description>
+<Type>number</Type>
+<Default>5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GotoScriptLine</Name>
+<Description>Executes the code in a script string from a specific point onward.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Script</Name>
+<Description>The name of the variable containing the script.</Description>
+<Type>variant</Type>
+<Default>sScript</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>sScript</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Line</Name>
+<Description>The number of the line at which to begin execution of the script.</Description>
+<Type>number</Type>
+<Default>5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Code.GotoScriptSection</Name>
+<Description>Executes the code in a script string from a declared section start point to the end of the section.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Script</Name>
+<Description>The name of the variable containing the script.</Description>
+<Type>variant</Type>
+<Default>sScript</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>sScript</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Section</Name>
+<Description>The name of the section of code to execute.</Description>
+<Type>string</Type>
+<Default>"MySection"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MySection"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription>
+Returns a string containing the UUID.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note>Leave this blank or nil to exclude the prefix.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a string containing the script from the specified page's/dialog's specific event.
+
+If an error occurs then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a string containing the script from the specified object's specific event.
+
+If an error occurs then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>Sections are declared in comments and use html/xml tag syntax.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example>--Put this in the On Show event
+--&amp;lt;MySection&amp;gt
+Dialog.Message("Section Test", "This is a dialog box");
+Dialog.Message("Section Test", "Here's another one");
+--&amp;lt/MySection&amp;gt
+Dialog.Message("Section Test", "This one will not be executed when the biutton is clicked since it's not in the section");
+
+--Put this on a button
+Code.GotoEventSection("Page1", "On Show", "MySection");</Example>
+<Note>Sections are declared in comments and use html/xml tag syntax.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>See example for section syntax.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>Sections are declared in comments and use html/xml tag syntax.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>Sections are declared in comments and use html/xml tag syntax.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Name>Code</Name>
+<Description>The Code Action Plugin allows for unconventional means of code manipulation by implementing a goto method as well as providing other functionality such as a UUID generation.</Description>
+<Version1>1</Version1>
+<Version2>0</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>Copyright © 2009 AMSPublic.com</Copyright>
+<License>GNU GPL v3</License>
+<InstallNotes>Place the Code folder in your "AutoPlay Media Studio\Plugins\Action" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

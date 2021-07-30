@@ -1,0 +1,432 @@
+<ActionTemplates>
+<Action>
+<Name>Box.Bump</Name>
+<Description>Calls a script from the specified Box.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.Close</Name>
+<Description>Stops the execution of a script in the specified Box.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.Empty</Name>
+<Description>Empties the specified Box and frees it to receive input.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.Fill</Name>
+<Description>Puts a script into the specified Box.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Fill Type</Name>
+<Description>Whether the box is being filled by a file or a string.</Description>
+<Type>string</Type>
+<Default>"string"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"string"</Default>
+<DataType>combo</DataType>
+<Constraints>"string","file",</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Script</Name>
+<Description>The script string or the file path the script file.</Description>
+<Type>string</Type>
+<Default>"Dialog.Message(\"Wow! This is cool.\", \"And I found it in a Box!\");"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Dialog.Message(\"Wow! This is cool.\", \"And I found it in a Box!\");"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Interval</Name>
+<Description>The interval at which to repeat the script when the box is opened (in milliseconds).</Description>
+<Type>number</Type>
+<Default>3000</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>3000</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.GetBumpInterval</Name>
+<Description>Gets the interval at which the specified Box's script is called.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.GetClosedBoxes</Name>
+<Description>Gets a list of all the closed Boxes.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>Box.GetNames</Name>
+<Description>Gets the names of all of the filled Boxes.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>Box.GetOpenBoxes</Name>
+<Description>Gets a list of all the open Boxes.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>Box.GetScript</Name>
+<Description>Gets the script contained in the specified Box.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.Initialize</Name>
+<Description>Required action that must be called before any other Box plugin action.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Max Boxes</Name>
+<Description>The maximum number of boxes to build.</Description>
+<Type>number</Type>
+<Default>100</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>100</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.IsFull</Name>
+<Description>Determines whether or not a Box has been filled.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.IsOpen</Name>
+<Description>Determines whether or not a Box is open.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.Open</Name>
+<Description>Starts the execution of a script in the specified Box and repeats the call at its interval.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default>"Box 1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Box 1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Box.SetBumpInterval</Name>
+<Description>Changes the interval at which the script in the specified Box is called.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Box</Name>
+<Description>The name of the Box.</Description>
+<Type>string</Type>
+<Default></Default>
+<Required>1</Required>
+<EasyMode>
+<Default></Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Interval</Name>
+<Description>The interval to which the Box will adhere (in millisends).</Description>
+<Type>number</Type>
+<Default>3500</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>3500</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Const>
+<Name>"string"</Name>
+<Value>"string"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"file"</Name>
+<Value>"file"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>To execute once (without repeating), simply bump the Box.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the value of the box bump interval in milliseconds.
+
+If the specified box does not exist then -2 is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a numerically indexed table whose values are the closed box names.
+
+If no boxes exist or there are no closed boxes then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a numerically indexed table whose values are the box names.
+
+If no boxes exist then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns a numerically indexed table whose values are the open box names.
+
+If no boxes exist or there are no open boxes then nil is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the script contained in a box.
+
+If the specified box does not exist then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note>It is not recommended to exceed 1000 due to the slowing effect it has on projects in excess of this amount.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the box is full.
+Returns false if it is not (or does not exist).</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the box is full.
+Returns false if it is not (or does not exist).</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>Values are in milliseconds.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action><Name>Box</Name>
+<Description>Allows for the simultaneous operation of the GUI and execution of one to many scripts. 
+This is a fast and loose way of multithreading scripts.
+
+Scripts can be repeated at specific intervals (Box,Open) or simply called once (Box.Bump).</Description>
+<Version1>1</Version1>
+<Version2>1</Version2>
+<Version3>0</Version3>
+<Version4>2</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>2010 © AMSPublic.com</Copyright>
+<License>Free to use and distribute (but not to wrap without permission)</License>
+<InstallNotes>Put this script into your global functions.</InstallNotes>
+</Extended>
+</ActionTemplates>

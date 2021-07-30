@@ -1,0 +1,437 @@
+<ActionTemplates>
+<Action>
+<Name>Frames.ConstrainHorBar</Name>
+<Description>This sets the maximun movement of the specified horizontal bar.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object serving as the horizontal bar.</Description>
+<Type>string</Type>
+<Default>"Hbar"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Hbar"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Closest to Top</Name>
+<Description>The closest the horizontal bar is allowed to get to the top of the application window.</Description>
+<Type>number</Type>
+<Default>35</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>35</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Closest to Bottom</Name>
+<Description>The closest the horizontal bar is allowed to get to the bottom of the application window.</Description>
+<Type>number</Type>
+<Default>200</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>200</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Frames.ConstrainVerBar</Name>
+<Description>This sets the maximun movement of the specified vertical bar.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object serving as the vertical bar.</Description>
+<Type>string</Type>
+<Default>"Vbar left"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Vbar left"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Closest to Left</Name>
+<Description>The closest the vertical bar is allowed to get to the left of the application window.</Description>
+<Type>number</Type>
+<Default>75</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>75</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Closest to Right</Name>
+<Description>The closest the vertical bar is allowed to get to the right of the application window.</Description>
+<Type>number</Type>
+<Default>350</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>350</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Frames.Initialize</Name>
+<Description>This enables the designated objects as frame bars. This action should be placed in your On Preload or On Show events. Be sure to use this after any change in name prefixes.</Description>
+<ReturnValueType></ReturnValueType>
+</Action>
+<Action>
+<Name>Frames.SetHorPrefix</Name>
+<Description>Set the name prefix that horizontal bars will use. To designate a bar or non-moving object, simply name the specified object the proper prefix plus a given suffix (as its name).</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Prefix</Name>
+<Description>The prefix that will be on all horizontal bar objects. If you do not set this or if an error occurs, the default "hsplit_" will be used as the prefix. This is not case sensitive.</Description>
+<Type>string</Type>
+<Default>"Hbar"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Hbar"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Frames.SetNoMovePrefix</Name>
+<Description>Set the name prefix that non-moving objects will use. To designate a bar or non-moving object, simply name the specified object the proper prefix plus a given suffix (as its name).</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Prefix</Name>
+<Description>The prefix that will be on all non-moving objects. If you do not set this or if an error occurs, the default "nomove_" will be used as the prefix. This is not case sensitive.</Description>
+<Type>string</Type>
+<Default>"Stay_"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>""Stay_"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Frames.SetVerPrefix</Name>
+<Description>Set the name prefix that vertical bars will use. To designate a bar or non-moving object, simply name the specified object the proper prefix plus a given suffix (as its name).</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Prefix</Name>
+<Description>The prefix that will be on all vertical bar objects. If you do not set this or if an error occurs, the default "vsplit_" will be used as the prefix. This is not case sensitive.</Description>
+<Type>string</Type>
+<Default>"Vbar"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Vbar"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Frames.OnMouseButton</Name>
+<Description>This must be placed in your page's On Mouse Button event.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>e_Type</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_Type</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_Type</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>e_X</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_X</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_X</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>e_Y</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_Y</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_Y</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Frames.OnMouseMove</Name>
+<Description>This must be placed in your page's On Mouse Move event.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>e_X</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_X</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_X</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>e_Y</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_Y</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_Y</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Callback Function</Name>
+<Description>You may specify a function that will be executed when the splitter bars are being moved. If you do not wish to declare a function then leave nil.</Description>
+<Type>variant</Type>
+<Default>nil</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>nil</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Frames.OnSize</Name>
+<Description>This must be placed in your page's On Size event.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Window Width</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_WindowWidth</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_WindowWidth</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Window Height</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_WindowHeight</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_WindowHeight</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Page Width</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_PageWidth</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_PageWidth</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Page Height</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_PageHeight</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_PageHeight</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object Type</Name>
+<Description>Do Not Change.</Description>
+<Type>number</Type>
+<Default>e_Type</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>e_Type</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Const>
+<Name>Function</Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Name>Frames</Name>
+<Description>This plugin adds the ability to create Frames on in your AMS project.
+
+Original Code created by Worm
+All Additional code created by Centauri Soldier
+Converted to plugin format by Centauri Soldier</Description>
+<Version1>1</Version1>
+<Version2>2</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>centaurisoldier@amspublic.com</Email>
+<Web>www.amspublic.com</Web>
+<Copyright>©2009 www.amspublic.com</Copyright>
+<License>Free to Use and Distribute</License>
+<Requirements>.Net Framework 2.0 or higher.</Requirements>
+<InstallNotes>Place the "Frames" folder inside your "AutoPlay Media Studio\Plugins\Actions" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

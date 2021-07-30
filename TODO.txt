@@ -1,0 +1,160 @@
+Fix cursor plugin
+https://forums.indigorose.com/forum/autoplay-media-studio-8-5/autoplay-media-studio-8-discussion/33110-cursor-action-plugin-i-can%C2%B4t-restore-the-default-cursor?t=32642&amp;page=
+
+-=================================================
+
+I started using your Group action plugin recently (I honestly don't know why it took me so long, but then again...) but I noticed a glitch.
+
+If
+
+Code:
+
+Group.AddObject("Group1", "Radio_Button_1");
+Group.SetVisible("Group1", false);
+Group.SetEnabled("Group1", false);
+
+The Radio Button is still visible and it's "sort of" enabled. It highlights when you hover over it, but if you click it, the mouse gets locked to the Radio Button and won't release unless you double click it.
+
+Interestingly, and probably related to the "Group" action, if
+
+Code:
+
+Group.AddObject("Group1", "Radio_Button_1");
+Group.SetVisible("Group1", false);
+Group.SetEnabled("Group1", false);
+RadioButton.SetVisible("Radio_Button_1", false);
+RadioButton.SetEnabled("Radio_Button_1", false)
+
+the Radio Button acts exactly the same as when it was added to the Group with no additional action as in the first sample.
+
+Group Action 2.0.0.5
+AMS 8.0.2.0
+Win 7 x64
+
+Is this something you've seen before?
+
+Cheers,
+Dean 
+-=================================================
+
+upload dll tester for Friethoe
+-=================================================
+
+fix website contact form
+
+-=================================================
+
+
+MadDogDean
+MadDogDean and I
+07-11-2012, 12:05 PM
+Possible DXMl bug
+Hey CS, hope all is well.
+Ran into an odd one with DXML... If you try to get/set a value to a DXML table (before loading it, d'oh!) future access to loading/using actions relating to that DXML reference will fail.
+
+Hope this makes sense. If you need more info, let me know.
+
+Cheers,
+Dean
+
+PS. I also just discovered that directory listing is possible for the /forms/ directory on your website..
+
+PPS. If you received this once or twice already, sorry... My internet has been whacking out all day... 
+
+
+--+====================================================
+I've been playing with the DXML plugin, and have made a couple updates.
+
+DXML.UnloadTable()
+- seemed to be messing with tables when unloaded. This seems to work better
+
+
+Code:
+
+--===========================
+-- DXML.UnloadTable
+--===========================
+
+function DXML.UnloadTable(...)
+IRLUA_PLUGIN_CheckNumArgs(arg,1);
+local sXMLTable = IRLUA_PLUGIN_CheckTypes(arg,1,{"string"});
+--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+if DXML_FILES[sXMLTable] then
+	ProcessActive(sXMLTable);
+	XML.SetXML("");
+	
+	for sIndex, sValue in pairs(DXML_FILES[sXMLTable]) do
+		DXML_FILES[sXMLTable].sIndex = nil;
+	end
+	
+	DXML_FILES[sXMLTable] = {};
+	collectgarbage();
+	collectgarbage();
+end
+
+end
+
+DXML.ReadFromString() &
+DXML.ReadFromFile()
+- now re-reads the XML file into memory, very useful if the XML is updated by an external source.
+
+Code:
+
+--===========================
+-- DXML.ReadFromFile
+--===========================
+function DXML.ReadFromFile(...)
+IRLUA_PLUGIN_CheckNumArgs(arg,2);
+local sFile = IRLUA_PLUGIN_CheckTypes(arg,1,{"string"});
+local sXMLTable = IRLUA_PLUGIN_CheckTypes(arg,2,{"string"});
+--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+if DXML_FILES[sXMLTable] then
+	ProcessActive(sXMLTable);
+	DXML_FILES[sXMLTable].Name = sXMLTable;
+	DXML_FILES[sXMLTable].Path = sFile;
+	DXML_FILES[sXMLTable].XML = TextFile.ReadToString(sFile);
+	XML.SetXML(DXML_FILES[sXMLTable].XML);
+else
+
+DXML_FILES[sXMLTable] = {};
+DXML_FILES[sXMLTable].Name = sXMLTable;
+DXML_FILES[sXMLTable].Path = sFile;
+DXML_FILES[sXMLTable].XML = TextFile.ReadToString(sFile);
+end
+
+end
+
+Code:
+
+--===========================
+-- DXML.ReadFromString
+--===========================
+function DXML.ReadFromString(...)
+IRLUA_PLUGIN_CheckNumArgs(arg,3);
+local sFile = IRLUA_PLUGIN_CheckTypes(arg,1,{"string"});
+local sXMLTable = IRLUA_PLUGIN_CheckTypes(arg,2,{"string"});
+local sString = IRLUA_PLUGIN_CheckTypes(arg,3,{"string"});
+--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+if DXML_FILES[sXMLTable] then
+	ProcessActive(sXMLTable);
+	DXML_FILES[sXMLTable].Name = sXMLTable;
+	DXML_FILES[sXMLTable].Path = sFile;
+	DXML_FILES[sXMLTable].XML = sString;
+	XML.SetXML(DXML_FILES[sXMLTable].XML);
+else
+	DXML_FILES[sXMLTable] = {};
+	DXML_FILES[sXMLTable].Name = sXMLTable;
+	DXML_FILES[sXMLTable].Path = sFile;
+	DXML_FILES[sXMLTable].XML = sString;
+end
+
+end
+
+Cheers,
+Dean
+
+PS. I tried to send this on your website, but after submitting the form I'm directed to a blank page...
+http://www.amspublic.com/forms/conta..._form_send.php
+
+PPS. This one is updated *after* the message on the website (sent you the wrong version via your website) 

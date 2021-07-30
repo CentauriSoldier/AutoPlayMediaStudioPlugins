@@ -1,0 +1,345 @@
+<ActionTemplates>
+<Action>
+<Name>Class.DialogDefine</Name>
+<Description>Defines a class for Dialogs(DialogEx).</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Class</Name>
+<Description>The name to call the class.</Description>
+<Type>string</Type>
+<Default>"My Class"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Class"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Class Properties</Name>
+<Description>The table used for the class's properties.</Description>
+<Type>table</Type>
+<Default>tDialogExProps</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tDialogExProps</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Class.DialogInherit</Name>
+<Description>Force a Dialog(DialogEx) to inherit properties from a specific class.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Class</Name>
+<Description>The name of the class whos properties to inherit.</Description>
+<Type>string</Type>
+<Default>"My Class"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Class"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Dialog Name</Name>
+<Description>The name of the dialog being affected.</Description>
+<Type>string</Type>
+<Default>"MyDialog"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"MyDialog"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Redraw</Name>
+<Description>Whether or not to redraw the dialog after applying the changes.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Class.ObjectDefine</Name>
+<Description>Defines a class for Objects (Excluding OBJECT_PLUGIN type objects).</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Class</Name>
+<Description>The name to call the class.</Description>
+<Type>string</Type>
+<Default>"My Class"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Class"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object Type</Name>
+<Description>The type of object being affected.</Description>
+<Type>number</Type>
+<Default>OBJECT_BUTTON</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>OBJECT_BUTTON</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Class Properties</Name>
+<Description>The table used for the class's properties.</Description>
+<Type>table</Type>
+<Default>tButtonProps</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tButtonProps</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Class.ObjectInherit</Name>
+<Description>Force an Object to inherit properties from a specific class.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Class</Name>
+<Description>The name of the class whos properties to inherit.</Description>
+<Type>string</Type>
+<Default>"My Class"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Class"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object Type</Name>
+<Description>The type of object being affected.</Description>
+<Type>number</Type>
+<Default>OBJECT_BUTTON</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>OBJECT_BUTTON</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object Name</Name>
+<Description>The name of the object being affected.</Description>
+<Type>string</Type>
+<Default>"My Button"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Button"</Default>
+<DataType>objectname</DataType>
+<Constraints>all</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Redraw</Name>
+<Description>Whether or not to redraw the page/dialog after applying the changes.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Class.PageDefine</Name>
+<Description>Defines a class for Pages.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Class</Name>
+<Description>The name to call the class.</Description>
+<Type>string</Type>
+<Default>"My Class"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Class"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Class Properties</Name>
+<Description>The table used for the class's properties.</Description>
+<Type>table</Type>
+<Default>tPageProps</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>tPageProps</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Class.PageInherit</Name>
+<Description>Force a Page to inherit properties from a specific class.</Description>
+<ReturnValueType>string</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Class</Name>
+<Description>The name of the class whos properties to inherit.</Description>
+<Type>string</Type>
+<Default>"My Class"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"My Class"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Page Name</Name>
+<Description>The name of the page to affect.</Description>
+<Type>string</Type>
+<Default>"Page1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Page1"</Default>
+<DataType>pagename</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Redraw</Name>
+<Description>Whether or not to redraw the page after applying the changes.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the class name. If an error occurs then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the class name. If an error occurs then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns the class name. If an error occurs then a blank string is returned.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Name>Class</Name>
+<Description>The Class Action Plugin has been designed to make the coding of large projects easier. 
+Projects containing many pages, dialogs or objects can be more easily modified by creating and assigning classes. 
+This plugin works well with the Group Action Plugin.</Description>
+<Version1>1</Version1>
+<Version2>2</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>© 2009 AMSPublic.com</Copyright>
+<License>Free to use and distribute.</License>
+<InstallNotes>Place the "Class" folder in your AutoPlay Media Studio\Plugins\Actions folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

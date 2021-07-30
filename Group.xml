@@ -1,0 +1,1473 @@
+<ActionTemplates>
+<Action>
+<Name>Group.AddObject</Name>
+<Description>Adds an object on the page or dialog to the specified group. If the group does not exist, it will be created.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object to add.</Description>
+<Type>string</Type>
+<Default>"Image1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Image1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.AdjustPos</Name>
+<Description>This action adjusts the position of each object in the group by the specified amount.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>X</Name>
+<Description>The value to move objects on the X axis.</Description>
+<Type>number</Type>
+<Default>5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Y</Name>
+<Description>The value to move objects on the Y axis.</Description>
+<Type>number</Type>
+<Default>5</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>5</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.AdjustSize</Name>
+<Description>This action adjusts the size of each object in the group by the specified amount.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Width</Name>
+<Description>The number by which to adjust the width.</Description>
+<Type>number</Type>
+<Default>25</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>25</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Height</Name>
+<Description>The number by which to adjust the height.</Description>
+<Type>number</Type>
+<Default>25</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>25</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.ClearSettings</Name>
+<Description>Clears the specified settings bank from memory.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Key</Name>
+<Description>The Group Memory Key to clear.</Description>
+<Type>string</Type>
+<Default>"Key1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Key1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.Count</Name>
+<Description>Counts the number of objects in a group.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.Create</Name>
+<Description>Manually creates a group. This action is called automatically when an object is created within [Group.CreateObject()] or added to [Group.AddObject()] a group. </Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of group.</Description>
+<Type>string</Type>
+<Default>"Group2"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group2"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.CreateObject</Name>
+<Description>This performs the same action as Page/DialogEx.CreateObject() as well as adding the newly-created object to the specified group (and also creating the group if it does not exist).</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The group name.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object to create.</Description>
+<Type>string</Type>
+<Default>"ListBox1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"ListBox1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object Type</Name>
+<Description>The type of the object.</Description>
+<Type>number</Type>
+<Default>OBJECT_LISTBOX</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>OBJECT_LISTBOX</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Properties</Name>
+<Description>The table containing the object's properties.</Description>
+<Type>table</Type>
+<Default>ListBox_Props</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>ListBox_Props</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.Delete</Name>
+<Description>Deletes a group from memory along with all of that group's objects from the page/dialog.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.DeleteInactiveSettings</Name>
+<Description>Deletes all sections, from the specified settings file, that reference groups which are no longer in memory.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>File</Name>
+<Description>The full path to the settings file where group information is stored.</Description>
+<Type>string</Type>
+<Default>"C:\\Group Settings.ini"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Group Settings.ini"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.DeleteObject</Name>
+<Description>Deletes an object from the page/dialog and removes it from the specified group (Optionally, the group is deleted if the last object is removed from the group).</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object.</Description>
+<Type>string</Type>
+<Default>"ListBox1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"ListBox1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Remove Group</Name>
+<Description>Whether or not to remove the group from memory if the listed object is the last in the group.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.DoesExist</Name>
+<Description>Determines whether or not a group exists.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.Enumerate</Name>
+<Description>Gets the group objects and each object's common properties. Use Group.GetObjects() to get a table containing each object's full properties.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.GetEnabled</Name>
+<Description>Determines whether or not all of the objects in a group are enabled.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.GetGroupNames</Name>
+<Description>Gets all of the groups names of the currently active groups.</Description>
+<ReturnValueType>table</ReturnValueType>
+</Action>
+<Action>
+<Name>Group.GetObjects</Name>
+<Description>Gets all of the objects within a specified group and their complete properties tables.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.GetRectPos</Name>
+<Description>Returns the position of the group's two-dimensional rectangle referencing the top-left corner.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.GetRectSize</Name>
+<Description>Returns the size of the group's two-dimensional rectangle.</Description>
+<ReturnValueType>table</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.GetVisible</Name>
+<Description>Determines whether or not all of the objects in a group are visible.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.LoadSettings</Name>
+<Description>Loads and applys settings to a specific group froma group settings file (which is created by Group.SaveSettings()).</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>File</Name>
+<Description>The full path to the settings file where group information is stored.</Description>
+<Type>string</Type>
+<Default>"C:\\Group Settings.ini"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Group Settings.ini"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.Merge</Name>
+<Description>Merges one group with another.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Destination Group</Name>
+<Description>The group that will receive the other group's obejcts and their properties.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Source Group</Name>
+<Description>The group from which the objects originate,</Description>
+<Type>string</Type>
+<Default>"Group2"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group2"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.ObjectDoesExist</Name>
+<Description>Determines whether an object exists on the current page/dialog.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object.</Description>
+<Type>string</Type>
+<Default>"ListBox1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"ListBox1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.ObjectIsInGroup</Name>
+<Description>Determines whether or not an object is referenced in the specified group's settings.</Description>
+<ReturnValueType>boolean</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object.</Description>
+<Type>string</Type>
+<Default>"ListBox1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"ListBox1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.RecallSettings</Name>
+<Description>Recalls and applys settings to a specified group from a Group Memory Key created by the Group.StoreSettings() function.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group to which the settings will be applied.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key</Name>
+<Description>The Group Memory Key from which the settings will be derived.</Description>
+<Type>string</Type>
+<Default>"Key1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Key1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.Remove</Name>
+<Description>Removes a group and all of its object references from memory.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group2"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group2"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.RemoveObject</Name>
+<Description>Removes an object's reference from the specified group (Optionally, the group is removed if the last object is removed from the group).</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Object</Name>
+<Description>The name of the object.</Description>
+<Type>string</Type>
+<Default>"ListBox1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"ListBox1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Remove Group</Name>
+<Description>Whether or not to remove the group if the listed object is the last in the group.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.Rename</Name>
+<Description>Renames a group.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The original name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>New Name</Name>
+<Description>The name by which the group will be referenced hence.</Description>
+<Type>string</Type>
+<Default>"Group5"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group5"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.SaveSettings</Name>
+<Description>Saves a group and its object settings to a file.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>File</Name>
+<Description>The full path to the settings file where group information is stored.</Description>
+<Type>string</Type>
+<Default>"C:\\Group Settings.ini"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"C:\\Group Settings.ini"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.SetEnabled</Name>
+<Description>Enables or disables all items in the specified group.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Enable</Name>
+<Description>Whether or not to enable the group objects.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.SetPos</Name>
+<Description>Sets the position of each object in the specified group to the specified coordinates.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>X</Name>
+<Description>The value of X the coordinate.</Description>
+<Type>number</Type>
+<Default>50</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>50</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Y</Name>
+<Description>The value of the Y coordinate.</Description>
+<Type>number</Type>
+<Default>50</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>50</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.SetRectPos</Name>
+<Description>Moves the group rectangle to the specified coordinates using the left-most and top-most object as reference.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>X</Name>
+<Description>The value of the X coordinate.</Description>
+<Type>number</Type>
+<Default>50</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>50</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Y</Name>
+<Description>The value of the Y coordinate.</Description>
+<Type>number</Type>
+<Default>50</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>50</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.SetSize</Name>
+<Description>Sets the size of each object in the specified group to the specified size.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Width</Name>
+<Description>The number in width to set each object in the group.</Description>
+<Type>number</Type>
+<Default>200</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>200</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Height</Name>
+<Description>The number in height to set each object in the group.</Description>
+<Type>number</Type>
+<Default>75</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>75</Default>
+<DataType>number</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.SetVisible</Name>
+<Description>Set all of the objects in the specified group to visible or not visible.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Make Visible</Name>
+<Description>Whether or not to make all of the group's objects visible.</Description>
+<Type>boolean</Type>
+<Default>false</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>false</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.StoreSettings</Name>
+<Description>Stores a group and its object references and settings in Group Memory Key which is stored in memory for later recall by the Group.RecallSettings() function.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of  the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Key</Name>
+<Description>The Group Memory Key in which to store the settings.</Description>
+<Type>string</Type>
+<Default>"Key1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Key1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.ToggleEnabled</Name>
+<Description>Toggles the enabled status of each individual object in the specified group.</Description>
+<ReturnValueType>number</ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Group</Name>
+<Description>The name of the group.</Description>
+<Type>string</Type>
+<Default>"Group1"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Group1"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Action>
+<Name>Group.ToggleVisible</Name>
+<Description>Toggles the visible status of each individual object in the specified group.</Description>
+<ReturnValueType>number</ReturnValueType>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription>
+Returns 1 if the object is already in the specifed group.
+
+Returns -1 if the object does not exist.
+
+Retuns 0 if the action was successful.</ReturnValueDescription>
+<Example>local nRet = Group.AddObject("Group1", "Image1");</Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>Set either the X or Y value to 0 to move objects only on the other axis.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Set the X value to 0 to move objects on the Y axis only.</Note>
+</Arg>
+<Arg>
+<Note>Set the Y value to 0 to move objects on the X axis only.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>Set either the Width or Height to 0 to change only the other dimension.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Set this to zero to adjust only the height.</Note>
+</Arg>
+<Arg>
+<Note>Set this to zero to adjust only the width.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -1 if the bank does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns the number of objects in the specified group.
+
+Returns -2 if the group does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 1 if the group already exists.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>Group names are case-sensitive.</Note>
+<Arg>
+<Note>This action is optional since groups are automatically created when an object is created within or added to a group.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+If and error occurs, the error number is returned.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This name must be unique among objects on the current page/dialog.</Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -1 if the file does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 1 if the object and the group were both deleted.
+
+Returns -1 if the object does not exist.
+
+Returns -2 if the specified group does not exist.
+
+Returns -3 if the object is not in the specified group.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the group exists and false if it does not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a table indexed by object names which are subtables containing the object's common properties.
+Object subtables are indexed by X, Y, Width, Height, IsEnabled, IsVisible and Type.
+
+Returns nil if there are no objects in the group.
+
+Returns -2 if the group does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if all of the group's objects are enabled and false if they are not.
+
+Returns nil if the result is ambiguous (some objects enabled, some not).
+
+Returns -2 if the group does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a numerically-indexed table whose values are the group names.
+
+Returns nil if no groups exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns an numerically-indexed table containing subtables indexed by Object, Type and Properties.
+
+Returns nil if the there are no objects in the group.
+
+Returns -2 if the group does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a table indexed by X and Y.
+
+Returns nil if there are no objects in the group.
+
+Returns -2 if the group does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns a table indexed by Width and Height.
+
+Returns nil if there are no objects in the group.
+
+Returns -2 if the group does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if all of the group's objects are visible and false if they are not.
+
+Returns nil if the result is ambiguous (some objects visible, some not).
+
+Returns -2 if the group does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns -3 if the group section in the settings file does not exist or if there are no settings listed in the group's section.
+
+Returns -4 if the specified settings file does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns 1 if the group-to-be-imported has no objects.
+
+Returns -2 if either of the groups do not exist.
+
+Returns 0 if the action was successsful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This group will be removed from memory once the transfer is complete.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>Returns true if the object exists and false if it does not.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns true if the object is referenced in the specified group's settings and false if it is not.
+
+Returns -2 if the group does not exist.</ReturnValueDescription>
+<Example></Example>
+<Note>If, by an external(non-Group Plugin) action, an object is deleted, its reference will still remain in the group's settings. To determine whether or not an object exists on the page/dialog, use Group.ObjectDoesExist().</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -1 if the specified settings key does not exist.
+
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>This action does not delete the objects from the page/dialog. To also delete the objects, use Group.Delete().</Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns 1 if the object and the group were removed from memory.
+
+Retuns -1 if the object is not in the specified group.
+
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>This action does not delete the object from the page/dialog. To also delete the object, use Group.DeleteObject().</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -1 if new group name is invalid.
+
+Returns -2 if the group does not exist.
+
+Returns -3 if the new group name references a group that already exists.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -1 if there are no objects in the specified group.
+
+Returns -2 if the group does not exist.
+
+Returns the error number if a problem with file access was encountered.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns - 2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>This action does not affect Web objects.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>This action does not affect Web objects.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>Set either the X or Y value to nil to move objects on the other axis only.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Set the X value to nil to move objects on the Y axis only.</Note>
+</Arg>
+<Arg>
+<Note>Set the Y value to nil to move objects on the X axis only.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>Use Group.GetRectPos() to get the current position of the group rectangle.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Set the X value to nil to move the group on the Y axis only.</Note>
+</Arg>
+<Arg>
+<Note>Set the Y value to nil to move objects on the X axis only.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note>Set either the Width or Height to nil to change the other dimension only.</Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Set the Width to nil to change the Height only.</Note>
+</Arg>
+<Arg>
+<Note>Set the Height to nil to change the Width only.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>If the key already exists, it will be overwritten.</Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+<Arg>
+<Note></Note>
+</Arg>
+</Action>
+<Action>
+<ReturnValueDescription>
+Returns -2 if the group does not exist.
+
+Returns 0 if the action was successful.</ReturnValueDescription>
+<Example></Example>
+<Note></Note>
+</Action><Name>Group</Name>
+<Description>This plugin allows the programmer to make groups of objects and manipulate them.
+
+Original concept by Worm and RizlaUK.</Description>
+<Version1>2</Version1>
+<Version2>0</Version2>
+<Version3>0</Version3>
+<Version4>6</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@AMSPublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>© 2010 AMSPublic.com</Copyright>
+<License>Free to use and distribute.</License>
+<InstallNotes>Place the "Group" folder inside your "AutoPlay Media Studio/Plugins/Actions" folder.</InstallNotes>
+</Extended>
+</ActionTemplates>

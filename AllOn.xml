@@ -1,0 +1,178 @@
+<ActionTemplates>
+<Action>
+<Name>AllOn.SetEventCode</Name>
+<Description>Writes input code for a specified event to all pages, all dialogs or all pages and dialogs.</Description>
+<ReturnValueType></ReturnValueType>
+<Arguments>
+<Arg>
+<Name>Window Type</Name>
+<Description>Determines whether this action applies to all Pages, all Dialogs or both.</Description>
+<Type>string</Type>
+<Default>"Page"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Page"</Default>
+<DataType>combo</DataType>
+<Constraints>"Page","Dialog","Both",</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Event</Name>
+<Description>The event that will be affected by the action.</Description>
+<Type>string</Type>
+<Default>"On Preload"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"On Preload"</Default>
+<DataType>combo</DataType>
+<Constraints>"On Preload","On Show","On Close","On Timer","On Audio","On Size","On Menu","On Key","On Mouse Button","On Mouse Move",</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Code</Name>
+<Description>The code to add to each window's specified event.</Description>
+<Type>string</Type>
+<Default>"Dialog.Message(\"AllOn Test\", \"It seems to be working\");"</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>"Dialog.Message(\"AllOn Test\", \"It seems to be working\");"</Default>
+<DataType>string</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Preceed</Name>
+<Description>Whether or not the input code should preceed the original code.</Description>
+<Type>boolean</Type>
+<Default>true</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>true</Default>
+<DataType>boolean</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+<Arg>
+<Name>Exclusions</Name>
+<Description>A table containing all pages and/or dialogs to exclude from the AllOn Cascade.</Description>
+<Type>table</Type>
+<Default>nil</Default>
+<Required>1</Required>
+<EasyMode>
+<Default>nil</Default>
+<DataType>table</DataType>
+<Constraints>none</Constraints>
+</EasyMode>
+</Arg>
+</Arguments>
+</Action>
+<Extended>
+<Action>
+<ReturnValueDescription></ReturnValueDescription>
+<Example></Example>
+<Note>This event MUST be called in "Global Functions".</Note>
+<Arg>
+<Const>
+<Name>"Page"</Name>
+<Value>"Page"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Dialog"</Name>
+<Value>"Dialog"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"Both"</Name>
+<Value>"Both"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+<Arg>
+<Const>
+<Name>"On Preload"</Name>
+<Value>"On Preload"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Show"</Name>
+<Value>"On Show"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Close"</Name>
+<Value>"On Close"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Timer"</Name>
+<Value>"On Timer"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Audio"</Name>
+<Value>"On Audio"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Size"</Name>
+<Value>"On Size"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Menu"</Name>
+<Value>"On Menu"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Key"</Name>
+<Value>"On Key"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Mouse Button"</Name>
+<Value>"On Mouse Button"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name>"On Mouse Move"</Name>
+<Value>"On Mouse Move"</Value>
+<Description></Description>
+</Const>
+<Const>
+<Name></Name>
+<Value></Value>
+<Description></Description>
+</Const>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note></Note>
+</Arg>
+<Arg>
+<Note>Page and Dialog names ARE case sensitive.</Note>
+</Arg>
+</Action>
+<Name>AllOn</Name>
+<Description>Enables the programmer to write input code for a specified event to all pages/dialogs or both at runtime.</Description>
+<Version1>1</Version1>
+<Version2>1</Version2>
+<Version3>0</Version3>
+<Version4>0</Version4>
+<Author>Centauri Soldier</Author>
+<Email>CentauriSoldier@amspublic.com</Email>
+<Web>www.AMSPublic.com</Web>
+<Copyright>Copyright © 2008 AMSPublic.com</Copyright>
+<License>Free to use and distribute.</License>
+<InstallNotes>Copy the "AllOn" Folder to your "AutoPlayMediaStudio" Folder.</InstallNotes>
+</Extended>
+</ActionTemplates>
