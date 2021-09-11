@@ -1,0 +1,49 @@
+<!-- Warning : Do not edit this document manually -->
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Project>
+    <ProjectInfo>
+        <Type>0</Type>
+        <ID>{a78d7460-9e0d-4da1-ad05-9196860f5e6e}</ID>
+        <Environment>1</Environment>
+    </ProjectInfo>
+    <ProductInfo>
+        <Created>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.1.0.0</Version>
+            <Date>9/1/2021 7:24:59 PM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Created>
+        <Modified>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.1.0.0</Version>
+            <Date>9/1/2021 7:48:34 PM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Modified>
+    </ProductInfo>
+    <Scripts>
+        <Script Name="Lua" ScrollPosition="0" CursorPosition="259">
+            <Source>bG9jYWwgaW5pdDsNCmxvY2FsIGhEQzsNCmxvY2FsIGhQZW47IA0KDQpmdW5jdGlvbiBpbml0KCkNCglpbml0ID0gX19HcmFwaGljcy5Jbml0aWFsaXplKCk7DQoJaERDID0gX19XaW5kb3cuR2V0Q2xpZW50REMoQXBwbGljYXRpb24uR2V0V25kSGFuZGxlKCkpOw0KCURpYWxvZy5NZXNzYWdlKCIiLCB0b3N0cmluZyhoREMpKTsNCgloUGVuID0gX19HcmFwaGljcy5QZW5DcmVhdGUoMCwyNTUsMixEYXNoU3R5bGVTb2xpZCxEYXNoQ2FwRmxhdCk7DQoNCmVuZA0KDQpmdW5jdGlvbiB0ZXN0KCkNCgkNCg0KDQoJZm9yIHggPSAxLCAxMCBkbw0KCQlsb2NhbCB4ID0gbWF0aC5yYW5kb20oMSw2MDApOw0KCQlsb2NhbCB5ID0gbWF0aC5yYW5kb20oMSw2MDApOw0KCQlfX0dyYXBoaWNzLkRyYXdSZWN0YW5nbGUoaERDLGhQZW4seCx5LDIwLDIwKTsNCgllbmQNCg0KZW5k</Source>
+            <FoldLines />
+            <BookMarks />
+        </Script>
+    </Scripts>
+    <Modules>
+        <Module Name="Graphics" GUID="{bd6fec44-4f27-4a98-b728-fc64940f49d9}" />
+        <Module Name="Window" GUID="{656ef969-4ae8-49ef-874f-591415ffa15e}" />
+    </Modules>
+    <Dependencies />
+    <Resources />
+    <Properties>
+        <Property Name="PluginName">UICom</Property>
+        <Property Name="HelpFileAuthoring">1</Property>
+        <Property Name="PluginVersion">1.0.0.0</Property>
+        <Property Name="AuthorInfo">UICom Plugin For AutoPlay Media Studio</Property>
+    </Properties>
+    <Intellisense />
+</Project>

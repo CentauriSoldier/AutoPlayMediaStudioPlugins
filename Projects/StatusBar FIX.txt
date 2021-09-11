@@ -1,1 +1,0 @@
-The notes are showing up ioncorrectly probably from the sorter. The height is also missing from the help file.
