@@ -1,0 +1,221 @@
+<!-- Warning : Do not edit this document manually -->
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Project>
+    <ProjectInfo>
+        <Type>0</Type>
+        <ID>{6716dc59-e100-42df-9c7b-1c3633d431d8}</ID>
+        <Environment>1</Environment>
+    </ProjectInfo>
+    <ProductInfo>
+        <Created>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.1.0.0</Version>
+            <Date>6/9/2022 8:47:20 AM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Created>
+        <Modified>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.1.0.0</Version>
+            <Date>6/9/2022 1:56:47 PM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Modified>
+    </ProductInfo>
+    <Scripts>
+        <Script Name="Lua" ScrollPosition="0" CursorPosition="4401">
+            <Source>bG9jYWwgTUFJTFNFTkRfR09fRElSIAkJCT0gIk1haWxTZW5kR28iOw0KbG9jYWwgTUFJTFNFTkRfR09fWDg2X0RJUiAJCT0gIng4NiI7DQpsb2NhbCBNQUlMU0VORF9HT19YNjRfRElSIAkJPSAieDY0IjsNCmxvY2FsIE1BSUxTRU5EX0dPX0VYRQkJCT0gIm1haWxzZW5kLWdvLmV4ZSI7DQoNCmFzc2VydCh0eXBlKF9CaW4pID09ICJzdHJpbmciLCAiRXJyb3IgbG9hZGluZyBNYWlsU2VuZEdvIHBsdWdpbi5cblBsZWFzZSBlbnN1cmUgeW91J3JlIHVzaW5nIHRoZSBsYXRlc3QgdmVyc2lvbiBvZiB0aGUgR2xvYmFsUGF0aHMgYWN0aW9uIHBsdWdpbi4iKQ0KYXNzZXJ0KEZvbGRlci5Eb2VzRXhpc3QoX0JpbiksICJFcnJvciBsb2FkaW5nIE1haWxTZW5kR28gcGx1Z2luLlxuJ0JpbicgZm9sZGVyIGRvZXMgbm90IGV4aXN0IHdpdGhpbiB0aGUgQU1TIGRhdGEgZm9sZGVyLiIpOw0KYXNzZXJ0KEZvbGRlci5Eb2VzRXhpc3QoX0Jpbi4uIlxcIi4uTUFJTFNFTkRfR09fRElSKSwgIkVycm9yIGxvYWRpbmcgTWFpbFNlbmRHbyBwbHVnaW4uXG4nIi4uTUFJTFNFTkRfR09fRElSLi4iJyBmb2xkZXIgZG9lcyBub3QgZXhpc3QuIEV4cGVjdGVkIGRpcmVjdG9yeSBzdHJ1Y3R1cmUsICciLi5fQmluLi4iXFwiLi5NQUlMU0VORF9HT19ESVIuLiInLiIpOw0KDQpsb2NhbCBNQUlMU0VORF9HT19QQVRIRiA9IF9CaW4uLiJcXCIuLk1BSUxTRU5EX0dPX0RJUi4uIlxcIi4uKFN5c3RlbS5JczY0Qml0T1MoKSBhbmQgIng2NCIgb3IgIng4NiIpLi4iXFwiLi5NQUlMU0VORF9HT19FWEU7DQphc3NlcnQoRmlsZS5Eb2VzRXhpc3QoTUFJTFNFTkRfR09fUEFUSEYpLCAiRXJyb3IgbG9hZGluZyBNYWlsU2VuZEdvIHBsdWdpbi5cbk1pc3NpbmcgJyIuLk1BSUxTRU5EX0dPX0VYRS4uIicgZmlsZS5cbkV4cGVjdGVkIGZpbGUgdG8gYmUgZm91ZG4gYXQgJyIuLk1BSUxTRU5EX0dPX1BBVEhGLi4iJyIpOwkJDQoNCmxvY2FsIHRNU0cgPSB7DQoJSXNJbml0CT0gZmFsc2UsDQoJS2V5IAk9ICIiLA0KCVBhdGggCT0gTUFJTFNFTkRfR09fUEFUSEYsDQoJUGFzcyAJPSAiIiwNCglQb3J0CT0gIiIsDQoJU2VydmVyIAk9ICIiLA0KCVVzZXIJPSAiIiwNCn07DQoNCi0tYnkgIEBqYW1lczJkb3lsZSAgaHR0cHM6Ly9naXN0LmdpdGh1Yi5jb20vamFtZXMyZG95bGUvNjc4NDZhZmQwNTMzNTgyMmMxNDkNCmxvY2FsIGZ1bmN0aW9uIHZhbGlkZW1haWwoc3RyKQ0KICBpZiBzdHIgPT0gbmlsIG9yIHN0cjpsZW4oKSA9PSAwIHRoZW4gcmV0dXJuIG5pbCBlbmQNCiAgaWYgKHR5cGUoc3RyKSB+PSAnc3RyaW5nJykgdGhlbg0KICAgIC0tZXJyb3IoIkV4cGVjdGVkIHN0cmluZyIpDQogICAgcmV0dXJuIG5pbA0KICBlbmQNCiAgbG9jYWwgbGFzdEF0ID0gc3RyOmZpbmQoIlteJUBdKyQiKQ0KICBsb2NhbCBsb2NhbFBhcnQgPSBzdHI6c3ViKDEsIChsYXN0QXQgLSAyKSkgLS0gUmV0dXJucyB0aGUgc3Vic3RyaW5nIGJlZm9yZSAnQCcgc3ltYm9sDQogIGxvY2FsIGRvbWFpblBhcnQgPSBzdHI6c3ViKGxhc3RBdCwgI3N0cikgLS0gUmV0dXJucyB0aGUgc3Vic3RyaW5nIGFmdGVyICdAJyBzeW1ib2wNCiAgLS0gd2Ugd2VyZW50IGFibGUgdG8gc3BsaXQgdGhlIGVtYWlsIHByb3Blcmx5DQogIGlmIGxvY2FsUGFydCA9PSBuaWwgdGhlbg0KICAgIHJldHVybiBuaWwsICJMb2NhbCBuYW1lIGlzIGludmFsaWQiDQogIGVuZA0KDQogIGlmIGRvbWFpblBhcnQgPT0gbmlsIG9yIG5vdCBkb21haW5QYXJ0OmZpbmQoIiUuIikgdGhlbg0KICAgIHJldHVybiBuaWwsICJEb21haW4gaXMgaW52YWxpZCINCiAgZW5kDQogIGlmIHN0cmluZy5zdWIoZG9tYWluUGFydCwgMSwgMSkgPT0gIi4iIHRoZW4NCiAgICByZXR1cm4gbmlsLCAiRmlyc3QgY2hhcmFjdGVyIGluIGRvbWFpbiBjYW5ub3QgYmUgYSBkb3QiDQogIGVuZA0KICAtLSBsb2NhbCBwYXJ0IGlzIG1heGVkIGF0IDY0IGNoYXJhY3RlcnMNCiAgaWYgI2xvY2FsUGFydCA+IDY0IHRoZW4NCiAgICByZXR1cm4gbmlsLCAiTG9jYWwgbmFtZSBtdXN0IGJlIGxlc3MgdGhhbiA2NCBjaGFyYWN0ZXJzIg0KICBlbmQNCiAgLS0gZG9tYWlucyBhcmUgbWF4ZWQgYXQgMjUzIGNoYXJhY3RlcnMNCiAgaWYgI2RvbWFpblBhcnQgPiAyNTMgdGhlbg0KICAgIHJldHVybiBuaWwsICJEb21haW4gbXVzdCBiZSBsZXNzIHRoYW4gMjUzIGNoYXJhY3RlcnMiDQogIGVuZA0KICAtLSBzb210aGluZyBpcyB3cm9uZw0KICBpZiBsYXN0QXQgPj0gNjUgdGhlbg0KICAgIHJldHVybiBuaWwsICJJbnZhbGlkIEAgc3ltYm9sIHVzYWdlIg0KICBlbmQNCiAgLS0gcXVvdGVzIGFyZSBvbmx5IGFsbG93ZWQgYXQgdGhlIGJlZ2lubmluZyBvZiBhIHRoZSBsb2NhbCBuYW1lDQogIGxvY2FsIHF1b3RlcyA9IGxvY2FsUGFydDpmaW5kKCJbXCJdIikNCiAgaWYgdHlwZShxdW90ZXMpID09ICdudW1iZXInIGFuZCBxdW90ZXMgPiAxIHRoZW4NCiAgICByZXR1cm4gbmlsLCAiSW52YWxpZCB1c2FnZSBvZiBxdW90ZXMiDQogIGVuZA0KICAtLSBubyBAIHN5bWJvbHMgYWxsb3dlZCBvdXRzaWRlIHF1b3Rlcw0KICBpZiBsb2NhbFBhcnQ6ZmluZCgiJUArIikgYW5kIHF1b3RlcyA9PSBuaWwgdGhlbg0KICAgIHJldHVybiBuaWwsICJJbnZhbGlkIEAgc3ltYm9sIHVzYWdlIGluIGxvY2FsIHBhcnQiDQogIGVuZA0KICAtLSBubyBkb3QgZm91bmQgaW4gZG9tYWluIG5hbWUNCiAgaWYgbm90IGRvbWFpblBhcnQ6ZmluZCgiJS4iKSB0aGVuDQogICAgcmV0dXJuIG5pbCwgIk5vIFRMRCBmb3VuZCBpbiBkb21haW4iDQogIGVuZA0KICAtLSBvbmx5IDEgcGVyaW9kIGluIHN1Y2Nlc3Npb24gYWxsb3dlZA0KICBpZiBkb21haW5QYXJ0OmZpbmQoIiUuJS4iKSB0aGVuDQogICAgcmV0dXJuIG5pbCwgIlRvbyBtYW55IHBlcmlvZHMgaW4gZG9tYWluIg0KICBlbmQNCiAgaWYgbG9jYWxQYXJ0OmZpbmQoIiUuJS4iKSB0aGVuDQogICAgcmV0dXJuIG5pbCwgIlRvbyBtYW55IHBlcmlvZHMgaW4gbG9jYWwgcGFydCINCiAgZW5kDQogIC0tIGp1c3QgYSBnZW5lcmFsIG1hdGNoDQogIGlmIG5vdCBzdHI6bWF0Y2goJ1sld10qWyVwXSolQCtbJXddKlslLl0/WyV3XSonKSB0aGVuDQogICAgcmV0dXJuIG5pbCwgIkVtYWlsIHBhdHRlcm4gdGVzdCBmYWlsZWQiDQogIGVuZA0KICAtLSBhbGwgb3VyIHRlc3RzIHBhc3NlZCwgc28gd2UgYXJlIG9rDQogIHJldHVybiB0cnVlDQplbmQNCg0KDQoNCmxvY2FsIGZ1bmN0aW9uIEdldENDQkNDKHRJbnB1dCkNCglsb2NhbCBzUmV0ID0gIiI7DQoNCglpZiAodHlwZSh0SW5wdXQpID09ICJ0YWJsZSIpIHRoZW4NCgkJbG9jYWwgbk1heCA9ICN0SW5wdXQ7DQoNCgkJaWYgKG5NYXggPiAwKSB0aGVuDQoNCgkJCWZvciBuSW5kZXgsIHNFbWFpbCBpbiBwYWlycyh0SW5wdXQpIGRvDQoNCgkJCQlpZiAodmFsaWRlbWFpbChzRW1haWwpKSB0aGVuDQoJCQkJCWxvY2FsIHNDb21tYSA9IG5JbmRleCA8IG5NYXggYW5kICIsIiBvciAiIjsNCgkJCQkJc1JldCA9IHNFbWFpbC4uc0NvbW1hOw0KCQkJCWVuZA0KDQoJCQllbmQNCg0KCQllbmQNCg0KCWVuZA0KDQoJcmV0dXJuIHNSZXQ7DQplbmQNCg0KbG9jYWwgZnVuY3Rpb24gR2V0QXR0YWNobWVudHModElucHV0LCBiSW5saW5lKQ0KCWxvY2FsIHNSZXQgPSAiIjsNCglsb2NhbCBzSW5saW5lID0gYklubGluZSBhbmQgIiAtaW5saW5lIiBvciAiIjsNCgkNCglpZiAodHlwZSh0SW5wdXQpID09ICJ0YWJsZSIpIHRoZW4NCgkJCQkNCgkJZm9yIG5JbmRleCwgcEZpbGUgaW4gcGFpcnModElucHV0KSBkbw0KCQkJCQkJDQoJCQlpZiAodHlwZShwRmlsZSkgPT0gInN0cmluZyIgYW5kIEZpbGUuRG9lc0V4aXN0KHBGaWxlKSkgdGhlbg0KCQkJCWxvY2FsIHNDb21tYSA9IHNSZXQgPT0gIiIgYW5kICIiIG9yICIsIjsNCgkJCQlzUmV0ID0gc1JldC4uJyBhdHRhY2ggLWZpbGUgIicuLnBGaWxlLi4nIicuLnNJbmxpbmU7DQoJCQllbmQNCgkJCQ0KCQllbmQNCgkJDQoJZW5kDQoJDQoJcmV0dXJuIHNSZXQ7DQplbmQNCg0KbG9jYWwgZnVuY3Rpb24gRXNjYXBlUXVvdGVzKHNJbnB1dCkNCglyZXR1cm4gc0lucHV0OmdzdWIoIlwiIiwgIlwiXCIiKTsNCmVuZA0KDQpNYWlsU2VuZEdvID0gew0KCUluaXQgPSBmdW5jdGlvbihzU2VydmVyLCBuUG9ydCwgc1VzZXIsIHNFbmNQYXNzLCBzS2V5KQ0KCQl0TVNHLktleQk9IHRvc3RyaW5nKHNLZXkpOw0KCQl0TVNHLlNlcnZlciA9IHRvc3RyaW5nKHNTZXJ2ZXIpOw0KCQl0TVNHLlBvcnQgCT0gdG9zdHJpbmcoblBvcnQpOw0KCQl0TVNHLlVzZXIgCT0gdG9zdHJpbmcoc1VzZXIpOw0KCQl0TVNHLlBhc3MgCT0gdG9zdHJpbmcoc0VuY1Bhc3MpOw0KCQl0TVNHLklzSW5pdCA9IHRydWU7DQoJZW5kLA0KCVNlbmQgPSBmdW5jdGlvbihzRnJvbSwgc1RvLCB0Q0MsIHRCQ0MsIHNTdWJqZWN0LCBzQm9keSwgdEF0dGFjaG1lbnRzKS0tLCB0SW5saW5lKQ0KCQkNCgkJaWYgKHRNU0cuSXNJbml0KSB0aGVuCQkJDQoJCQl2YWxpZGVtYWlsKHNGcm9tKTsNCgkJCXZhbGlkZW1haWwoc1RvKTsNCg0KCQkJLS1nZXQgdGhlIHZhbHVlcyB0byBiZSBjb25jYXRlbmF0ZWQNCgkJCWxvY2FsIHNTZXJ2ZXIgCT0gIiAtc210cCAiLi50TVNHLlNlcnZlcjsNCgkJCWxvY2FsIHNQb3J0IAk9ICIgLXBvcnQgIi4udE1TRy5Qb3J0Ow0KCQkJbG9jYWwgc1VzZXJQYXNzCT0gJyBhdXRoIC11c2VyICInLi50TVNHLlVzZXIuLiciIC1wYXNzICInLi5DcnlwdG8uQmxvd2Zpc2hEZWNyeXB0U3RyaW5nKHRNU0cuUGFzcywgdE1TRy5LZXkpLi4nIic7DQoJCQlzRnJvbSAJCQk9ICcgLWZyb20gIicuLnNGcm9tLi4nIic7DQoJCQlzVG8gCQkJPSAnIC10byAiJy4uc1RvLi4nIic7DQoJCQlsb2NhbCBzQ0MgCQk9IEdldENDQkNDKHRDQyk7DQoJCQlzQ0MJCQkJPSBzQ0Mgfj0gIiIgCWFuZCAnIC1jYyAiJy4uc0NDLi4nIicgCW9yIHNDQzsNCgkJCWxvY2FsIHNCQ0MgCQk9IEdldENDQkNDKHRCQ0MpOw0KCQkJc0JDQwkJCT0gc0JDQyB+PSAiIiAJYW5kICcgLWNjICInLi5zQkNDLi4nIicgb3Igc0JDQzsNCgkJCXNTdWJqZWN0IAkJPSAnIC1zdWIgIicuLkVzY2FwZVF1b3Rlcyh0b3N0cmluZyhzU3ViamVjdCkpLi4nIic7DQoJCQlzQm9keQkJCT0gJyBib2R5IC1tc2cgIicuLkVzY2FwZVF1b3Rlcyh0b3N0cmluZyhzQm9keSkpLi4nIic7CQkJDQoJCQlsb2NhbCBzQXR0YWNoCT0gR2V0QXR0YWNobWVudHModEF0dGFjaG1lbnRzLCBmYWxzZSk7DQoJCQlsb2NhbCBzSW5saW5lIAk9ICIiOy0tR2V0QXR0YWNobWVudHModElubGluZSwgdHJ1ZSk7Tk9UIFdPUktJTkcgQVRNOyB0aGV5IGFyZSBnZXR0aW5nIGF0dGFjaGVkIGJ1dCwgZm9yIHNvbWUgcmVhc29uLCBub3QgaW5saW5lDQoNCgkJCWxvY2FsIHNBcmdzID0gJyInLi50TVNHLlBhdGguLiciJy4uc1NlcnZlci4uc1BvcnQuLnNVc2VyUGFzcy4uc0Zyb20uLnNUby4uc0NDLi5zQkNDLi5zU3ViamVjdC4uc0JvZHkuLnNBdHRhY2guLnNJbmxpbmU7CQkJDQoJCQlyZXR1cm4gQ29tbWFuZExpbmUuRXhlY3V0ZShzQXJncywgMCk7DQoJCQ0KCQllbHNlDQoJCQllcnJvcigiRXJyb3Igc2VuZGluZyBlbWFpbCB3aXRoIE1haWxTZW5kR28uXG5QbHVnaW4gaGFzIG5vdCBiZWVuIGluaXRpYWxpemVkLiBQbGVhc2UgcnVuIHRoZSBNYWlsU2VuZEdvLkluaXQoKSBmdW5jdGlvbi4iKTsNCgkJZW5kDQoJZW5kLA0KCVV0aWwgPSB7DQoJCUdldEVuY1Bhc3MgPSBmdW5jdGlvbihzS2V5LCBzUGFzcykNCgkJCXJldHVybiBDcnlwdG8uQmxvd2Zpc2hFbmNyeXB0U3RyaW5nKHRNU0cuUGFzcywgdE1TRy5LZXkpDQoJCWVuZA0KCX0sDQp9Ow==</Source>
+            <FoldLines />
+            <BookMarks />
+        </Script>
+    </Scripts>
+    <Modules />
+    <Dependencies />
+    <Resources />
+    <Properties>
+        <Property Name="PluginName">MailSendGo</Property>
+        <Property Name="HelpFileAuthoring">1</Property>
+        <Property Name="PluginVersion">1.0.0.0</Property>
+        <Property Name="AuthorInfo">MailSendGo Plugin For AutoPlay Media Studio&#x0D;&#x0A;Allows sending mail from AMS applications through an SMTP server.&#x0D;&#x0A;&#x0D;&#x0A;Thanks to muquit for creating the MailSend-Go application.&#x0D;&#x0A;https://github.com/muquit/mailsend-go&#x0D;&#x0A;&#x0D;&#x0A;Thanks to james2doyle for creating the validemail function.&#x0D;&#x0A;https://gist.github.com/james2doyle/67846afd05335822c149</Property>
+        <Property Name="ApplyCompressionDebug">0</Property>
+        <Property Name="CompressionLevelDebug">10</Property>
+        <Property Name="AttachDebuggerOnDebug">1</Property>
+        <Property Name="MakeHelpOnDebug">1</Property>
+        <Property Name="InstallOnDebug">1</Property>
+        <Property Name="ApplyLicenceCheckOnDebug">0</Property>
+        <Property Name="InserFirstSerialOnDebug">0</Property>
+        <Property Name="ApplyCompressionPublish">0</Property>
+        <Property Name="CompressionLevelPublish">10</Property>
+        <Property Name="MakeHelpOnPublish">1</Property>
+        <Property Name="InstallOnPublish">1</Property>
+        <Property Name="InserFirstSerialOnPublish">0</Property>
+        <Property Name="ActiveProjectSettingsTab">1</Property>
+    </Properties>
+    <Intellisense>
+        <HelpIndex>
+            <Description>Allows sending emails with an AMS application using an smtp server.&#x0D;&#x0A;&#x0D;&#x0A;Thanks to  muquit for creating the  MailSend-Go application (https://github.com/muquit/mailsend-go).&#x0D;&#x0A;&#x0D;&#x0A;You can find more information about MailSend-Go by visiting muquits GitHub page at the link above.&#x0D;&#x0A;&#x0D;&#x0A;Thanks to james2doyle for creating the &apos;validemail()&apos; function (https://gist.github.com/james2doyle/67846afd05335822c149).</Description>
+            <Licence>MIT</Licence>
+            <Author>Centauri Soldier</Author>
+            <Website>https://github.com/CentauriSoldier/AutoPlayMediaStudioPlugins</Website>
+            <Email></Email>
+            <Copyright>None Claimed</Copyright>
+            <Requirements>MailSendGo&#x0D;&#x0A;You need both x64 and x86 versions.</Requirements>
+            <InstallNotes>Remember to place the provided MailSendGo folder and it&apos;s contents into your AMS data folder inside the Bin directory. If a Bin directory doesn&apos;t exist, create it.&#x0D;&#x0A;&#x0D;&#x0A;If you wish to download the latest version from muquit&apos;s github page and install it yourself, be sure to follow this directory structure:&#x0D;&#x0A;[AMS_DATA_FOLDER]\Bin\MailSendGo\x86\*.*&#x0D;&#x0A;[AMS_DATA_FOLDER]\Bin\MailSendGo\x64\*.*&#x0D;&#x0A;&#x0D;&#x0A;If you&apos;ve done that correctly, there should be a \Bin\MailSendGo folder inside your AMS data folder and it should contain two folders (x64 and x86) which each contain their respective MailSend-Go binaries (exe&apos;s in this case).&#x0D;&#x0A;&#x0D;&#x0A;This is muquit&apos;s releases page for MailSend-Go  https://github.com/muquit/mailsend-go/releases.</InstallNotes>
+        </HelpIndex>
+        <ActionGroups />
+        <Actions Expanded="1">
+            <Action GUID="{756987fe-5b10-4620-a73e-2a106054107b}" Group="" WizardPage="4">
+                <Name>Init</Name>
+                <Description>Initializes the plugin.</Description>
+                <Arguments>
+                    <Argument GUID="{fd2300c9-2c24-43f3-a554-423cbe66e1d4}">
+                        <Name>Server</Name>
+                        <Description>The SMTP server address.</Description>
+                        <DefaultValue>&quot;smtp.example.com&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{b6d943b6-96b2-425f-9ca9-abe4dddcfdfa}">
+                        <Name>Port</Name>
+                        <Description>The server port.</Description>
+                        <DefaultValue>587</DefaultValue>
+                        <Data />
+                        <Type>1</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{dc417127-4e87-46b6-90d0-04a9e0e857dd}">
+                        <Name>Username</Name>
+                        <Description>The username used to login to the server.</Description>
+                        <DefaultValue>&quot;username&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{04aa5008-71d8-4686-bb4d-845a7e421966}">
+                        <Name>Password</Name>
+                        <Description>The encrypted password used to login to the server. Use the MailSendGo.Util.GetEncPass() function to generate an encrytped password for use in this argument.</Description>
+                        <DefaultValue>&quot;sA32W#djf*Y(*#YUUjwed==&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{ee8e0135-dda7-4ba3-ae02-caa0736f2e53}">
+                        <Name>Key</Name>
+                        <Description>This is the key string used to encrypt and decrypt your password.</Description>
+                        <DefaultValue>&quot;*(Y&amp;#HEHSDyuy(&amp;^Y@HJHSss!2&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks>Remember to place the MailSendGo folder and it&apos;s contents into your AMS data folder inside the Bin directory. If a Bin directory doesn&apos;t exist, create it.&#x0D;&#x0A;&#x0D;&#x0A;Thanks to  muquit for creating the  MailSend-Go application (https://github.com/muquit/mailsend-go).&#x0D;&#x0A;&#x0D;&#x0A;You can find more information about MailSend-Go by visiting muquits GitHub page at the link above.&#x0D;&#x0A;&#x0D;&#x0A;Thanks to james2doyle for creating the &apos;validemail()&apos; function (https://gist.github.com/james2doyle/67846afd05335822c149).</Remarks>
+                <Notes>
+                    <Note GUID="{7ae8cef4-6c15-4455-a57c-643b01247c4c}">
+                        <Type>0</Type>
+                        <Title>Security of Passwords</Title>
+                        <Text>Encrypting your server password and using that string as input for the Init function prevents the need to place the password in your program in plaintext; however, since the key is also present in the Init function, anyone having access to the source code could decrypt the password string. This step merely creates a layer of obfuscation that would prevent anyone using a memory viewer from seeing your password in plaintext in the loaded source.</Text>
+                    </Note>
+                </Notes>
+                <Examples>
+                    <Example GUID="{6344b94e-21cd-437c-9b56-ba0f3ddc5e0e}">
+                        <Title>Intialization</Title>
+                        <Description>How to initialize the plugin.</Description>
+                        <Script>TWFpbFNlbmRHby5Jbml0KCJzbXRwLmV4YW1wbGUuY29tIiwgNTg3LCAiYm9iQGV4YW1wbGUub3JnIiwgIiooJkAjJFVISkpTREgiLCAiS1NKU0RLSmZFVSpTKkRGODJpSlUiKTs=</Script>
+                    </Example>
+                </Examples>
+                <Return>
+                    <Type>0</Type>
+                    <Description>Returns nothing.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{88065317-72d1-4962-8694-82eacee077dc}" Group="" WizardPage="4">
+                <Name>Send</Name>
+                <Description>This is the function that sends an email.</Description>
+                <Arguments>
+                    <Argument GUID="{65ede676-fd4b-409d-966f-3cabbfe67528}">
+                        <Name>From</Name>
+                        <Description>The email address of the sender.</Description>
+                        <DefaultValue>&quot;me@example.com&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{9340ee8c-fb0f-42ad-abbf-d02c7f0bcad0}">
+                        <Name>To</Name>
+                        <Description>To whom the email will be sent.</Description>
+                        <DefaultValue>&quot;you@example.com&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{b5ceff94-4b2b-4e37-9745-770b9cce31eb}">
+                        <Name>CC</Name>
+                        <Description>A numically-indexed table whose values are email addresses. This can be an empty table or nil if there are no address to which this email will be carbon copied.</Description>
+                        <DefaultValue>nil</DefaultValue>
+                        <Data />
+                        <Type>3</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{6605b0c8-df71-4db7-93f2-91fa1d284b6e}">
+                        <Name>BCC</Name>
+                        <Description>A numically-indexed table whose values are email addresses. This can be an empty table or nil if there are no address to which this email will be blind carbon copied.</Description>
+                        <DefaultValue>nil</DefaultValue>
+                        <Data />
+                        <Type>3</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{2e934243-964a-43ef-a132-6fe6bd18f1a2}">
+                        <Name>Subject</Name>
+                        <Description>The subject title of the email message.</Description>
+                        <DefaultValue>&quot;This is an email&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{cf528d31-214a-40df-a838-9c18d5174f83}">
+                        <Name>Body</Name>
+                        <Description>The body of the email. You can use either plaintext or email-compliant html.</Description>
+                        <DefaultValue>&quot;Hello world!&quot;</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{592c2c8b-7a35-4ce2-9cb4-d0a7f6b627fc}">
+                        <Name>Attachments</Name>
+                        <Description>A numerically-indexed table whose keys are strings of paths to files which will be attached to this email message. This can be an empty table or nil if there are no files to be attached.</Description>
+                        <DefaultValue>nil</DefaultValue>
+                        <Data />
+                        <Type>3</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks></Remarks>
+                <Notes />
+                <Examples />
+                <Return>
+                    <Type>4</Type>
+                    <Description>Returns a table which contains the outcome of the send attempt.&#x0D;&#x0A;Return Table Layout:&#x0D;&#x0A;{&#x0D;&#x0A;ExitCode = 0,  --(number) 1 means an error occured, 0 means it was successful.&#x0D;&#x0A;StdError  = &quot;&quot;, --(string)    A message about the outcome of the attempt.&#x0D;&#x0A;StdOut    = &quot;&quot;, --(string)    A message containing additional information.&#x0D;&#x0A;}&#x0D;&#x0A;&#x0D;&#x0A;</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+        </Actions>
+    </Intellisense>
+</Project>
