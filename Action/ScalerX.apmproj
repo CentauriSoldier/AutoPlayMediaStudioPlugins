@@ -1,0 +1,189 @@
+<!-- Warning : Do not edit this document manually -->
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Project>
+    <ProjectInfo>
+        <Type>0</Type>
+        <ID>{b2f36a3b-9701-4b9a-bb2c-48aeb9f51a77}</ID>
+        <Environment>1</Environment>
+    </ProjectInfo>
+    <ProductInfo>
+        <Created>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.2.0.0</Version>
+            <Date>1/4/2026 8:26:48 AM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Created>
+        <Modified>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.2.0.0</Version>
+            <Date>1/4/2026 9:55:15 AM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Modified>
+    </ProductInfo>
+    <Scripts>
+        <Script Name="Lua" ScrollPosition="0" CursorPosition="2598">
+            <Source>bG9jYWwgQXBwbGljYXRpb24gPSBBcHBsaWNhdGlvbjsNCg0KbG9jYWwgX25CdWlsZFdpZHRoID0gMDsNCmxvY2FsIF9uQnVpbGRIZWlnaHQgPSAwOw0KbG9jYWwgX25EaXNwbGF5V2lkdGggPSAwOw0KbG9jYWwgX25EaXNwbGF5SGVpZ2h0ID0gMDsNCmxvY2FsIF9uRm9udENvID0gMDsNCmxvY2FsIF9uWEhvckNvID0gMDsNCmxvY2FsIF9uWVZlckNvID0gMDsNCg0KbG9jYWwgY2xhc3MgICAgID0gY2xhc3M7DQpsb2NhbCBTY2FsZXIgICAgPSBTY2FsZXI7DQpsb2NhbCBfYkhhc0luaXQgPSBmYWxzZTsNCmxvY2FsIF9vU2NhbGVyICA9IG51bGw7DQoNCg0KbG9jYWwgdEJhbmsgICAgID0ge307DQpsb2NhbCB0VHlwZXMgICAgPSB7DQogICAgW09CSkVDVF9CVVRUT05dIAkJPSBCdXR0b24sDQogICAgW09CSkVDVF9DSEVDS0JPWF0gCQk9IENoZWNrQm94LA0KICAgIFtPQkpFQ1RfQ09NQk9CT1hdIAkJPSBDb21ib0JveCwNCiAgICBbT0JKRUNUX0ZMQVNIXSAJCQk9IEZsYXNoLA0KICAgIFtPQkpFQ1RfR1JJRF0gCQkJPSBHcmlkLA0KICAgIFtPQkpFQ1RfSE9UU1BPVF0gCQk9IEhvdHNwb3QsDQogICAgW09CSkVDVF9JTUFHRV0gCQkJPSBJbWFnZSwNCiAgICBbT0JKRUNUX0lOUFVUXSAJCQk9IElucHV0LA0KICAgIFtPQkpFQ1RfTEFCRUxdIAkJCT0gTGFiZWwsDQogICAgW09CSkVDVF9MSVNUQk9YXSAJCT0gTGlzdEJveCwNCiAgICBbT0JKRUNUX1BBUkFHUkFQSF0gCQk9IFBhcmFncmFwaCwNCiAgICBbT0JKRUNUX1BERl0gCQkJPSBQREYsDQogICAgW09CSkVDVF9QTFVHSU5dIAkJPSBQbHVnaW4sDQogICAgW09CSkVDVF9QUk9HUkVTU10gCQk9IFByb2dyZXNzLA0KICAgIFtPQkpFQ1RfUVVJQ0tUSU1FXSAJCT0gUXVpY2tUaW1lLA0KICAgIFtPQkpFQ1RfUkFESU9CVVRUT05dCT0gUmFkaW9CdXR0b24sDQogICAgW09CSkVDVF9SSUNIVEVYVF0gCQk9IFJpY2hUZXh0LA0KICAgIFtPQkpFQ1RfU0xJREVTSE9XXSAJCT0gU2xpZGVTaG93LA0KICAgIFtPQkpFQ1RfVFJFRV0gCQkJPSBUcmVlLA0KICAgIFtPQkpFQ1RfVklERU9dIAkJCT0gVmlkZW8sDQogICAgW09CSkVDVF9XRUJdIAkJCT0gV2ViLA0KICAgIFtPQkpFQ1RfWEJVVFRPTl0gCQk9IHhCdXR0b24sDQp9Ow0KDQpsb2NhbCBmdW5jdGlvbiBJbml0UGFnZXNBbmREaWFsb2dzKHRoaXMsIGNkYXQpDQogICAgbG9jYWwgdERpYWxvZ3MgCT0gQXBwbGljYXRpb24uR2V0RGlhbG9ncygpOw0KICAgIGxvY2FsIHRQYWdlcyAJPSBBcHBsaWNhdGlvbi5HZXRQYWdlcygpOw0KDQogICAgaWYgKHREaWFsb2dzKSB0aGVuDQogICAgICAgIGxvY2FsIHRWaWV3cG9ydCA9IF9vU2NhbGVyLmdldFZpZXdwb3J0KCk7DQogICAgICAgIGxvY2FsIHRDT1YgICAgICA9IF9vU2NhbGVyLmdldENPVigpOw0KICAgICAgICBsb2NhbCBuQ09WX1hXICAgPSB0Q09WLnh3Ow0KICAgICAgICBsb2NhbCBuQ09WX1lIICAgPSB0Q09WLnloOw0KDQoNCiAgICAgICAgZm9yIG5JbmRleCwgc0RpYWxvZyBpbiBwYWlycyh0RGlhbG9ncykgZG8NCiAgICAgICAgICAgIGxvY2FsIHRQcm9wcyA9IEFwcGxpY2F0aW9uLkdldERpYWxvZ1Byb3BlcnRpZXMoc0RpYWxvZyk7DQoNCiAgICAgICAgICAgIGxvY2FsIG5OZXdXaWR0aCAgICAgPSB0UHJvcHMuV2lkdGggICogbkNPVl9YVzsNCiAgICAgICAgICAgIGxvY2FsIG5OZXdIZWlnaHQgICAgPSB0UHJvcHMuSGVpZ2h0ICogbkNPVl9ZSDsNCg0KICAgICAgICAgICAgLS1kZXRlcm1pbmUgYW5kIHNldCB0aGUgZGlhbG9nJ3MgbmV3IHNpemUNCiAgICAgICAgICAgIEFwcGxpY2F0aW9uLlNldERpYWxvZ1Byb3BlcnRpZXMoc0RpYWxvZywNCiAgICAgICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgICAgIFdpZHRoICAgPSBuTmV3V2lkdGgsDQogICAgICAgICAgICAgICAgICAgIEhlaWdodCAgPSBuTmV3SGVpZ2h0LA0KICAgICAgICAgICAgICAgIH0pOw0KDQogICAgICAgICAgICB0QmFua1tzRGlhbG9nXSA9IHsNCiAgICAgICAgICAgICAgICBIYXNCZWVuU2NhbGVkID0gZmFsc2UsDQogICAgICAgICAgICAgICAgU2NhbGVyID0gU2NhbGVyKHRQcm9wcy5XaWR0aCwgdFByb3BzLkhlaWdodCwgbk5ld1dpZHRoLCBuTmV3SGVpZ2h0KSwNCiAgICAgICAgICAgICAgICBUeXBlID0gRGlhbG9nRXgsDQogICAgICAgICAgICAgICAgUHJvcGVydGllcyA9IEFwcGxpY2F0aW9uLkdldERpYWxvZ1Byb3BlcnRpZXMoc0RpYWxvZyk7DQogICAgICAgICAgICB9Ow0KICAgICAgICBlbmQNCg0KICAgIGVuZA0KDQogICAgaWYgKHRQYWdlcykgdGhlbg0KDQogICAgICAgIGZvciBuSW5kZXgsIHNQYWdlIGluIHBhaXJzKHRQYWdlcykgZG8NCiAgICAgICAgICAgIHRCYW5rW3NQYWdlXSA9IHsNCiAgICAgICAgICAgICAgICBIYXNCZWVuU2NhbGVkID0gZmFsc2UsDQogICAgICAgICAgICAgICAgVHlwZSA9IFBhZ2UsDQogICAgICAgICAgICAgICAgUHJvcGVydGllcyA9IEFwcGxpY2F0aW9uLkdldFBhZ2VQcm9wZXJ0aWVzKHNQYWdlKTsNCiAgICAgICAgICAgIH07DQogICAgICAgIGVuZA0KDQogICAgZW5kDQplbmQNCg0KU2NhbGVyWCA9IGNsYXNzKCJTY2FsZXJYIiwNCnstLU1FVEFNRVRIT0RTDQoNCn0sDQp7LS1TVEFUSUMgUFVCTElDDQogICAgLS1BTVNTY2FsZXIgPSBmdW5jdGlvbihzdGFwdWIpIGVuZCwNCglNYXJrRm9yUmVzY2FsZSA9IGZ1bmN0aW9uKHNOYW1lKQ0KCQl0QmFua1tzTmFtZV0uSGFzQmVlblNjYWxlZCA9IGZhbHNlOw0KCWVuZCwNCiAgICBPblByZWxvYWQgPSBmdW5jdGlvbihzTmFtZSkNCg0KICAgIAlpZiAoX2JIYXNJbml0IGFuZCBub3QgdEJhbmtbc05hbWVdLkhhc0JlZW5TY2FsZWQpIHRoZW4NCiAgICAgICAgICAgIGxvY2FsIHRJbmZvICAgICAgICAgPSB0QmFua1tzTmFtZV07IC0tVE9ETyB0aHJvdyBlcnJvciBoZXJlIGlmIHRoZSBwYWdlL2RpYWxvZyBkb2Vzbid0IGV4aXN0DQogICAgCQlsb2NhbCB0UGFnZURpYWxvZyAgID0gdEluZm8uVHlwZTsNCiAgICAgICAgICAgIGxvY2FsIG9TY2FsZXIgICAgICAgPSB0UGFnZURpYWxvZyA9PSBQYWdlIGFuZCBfb1NjYWxlciBvciB0SW5mby5TY2FsZXI7DQoNCiAgICAJCXRCYW5rW3NOYW1lXS5IYXNCZWVuU2NhbGVkID0gdHJ1ZTsNCiAgICAJCUFwcGxpY2F0aW9uLlNldFJlZHJhdyhmYWxzZSk7DQoNCiAgICAJCS0tYWRqdXN0IGZvciBvcmlnaW5hbCBidWlsZCBzaXplIGFuZCBhY3R1YWwgdmlld3BvcnQgc2l6ZQ0KICAgIAkJdERlbHRhID0gMDsNCg0KICAgIAkJLS1nZXQgdGhlIHBhZ2UvZGlhbG9nIG9iamVjdHMNCiAgICAJCWxvY2FsIHRPYmplY3RzID0gdFBhZ2VEaWFsb2cuRW51bWVyYXRlT2JqZWN0cygpOw0KDQogICAgCQktLWVudW1lcmF0ZSB0aHJvdWdoIHRoZSBvYmplY3RzDQogICAgCQlpZiAodE9iamVjdHMpIHRoZW4NCg0KICAgIAkJCWZvciBuSW5kZXgsIHNPYmplY3QgaW4gcGFpcnModE9iamVjdHMpIGRvDQogICAgCQkJCS0tZ2V0IHRoZSBvYmplY3QgdHlwZQ0KICAgICAgICAgICAgICAgICAgICBsb2NhbCB0T2JqZWN0VHlwZSA9IHRQYWdlRGlhbG9nLkdldE9iamVjdFR5cGUoc09iamVjdCk7DQogICAgCQkJCWxvY2FsIHRPYmplY3QgPSB0VHlwZXNbdE9iamVjdFR5cGVdOw0KICAgIAkJCQktLWdldCB0aGUgb2JqZWN0J3Mgc2l6ZSBhbmQgcG9zaXRpb24NCiAgICAJCQkJbG9jYWwgdFNpemUgPSB0T2JqZWN0LkdldFNpemUoc09iamVjdCk7DQogICAgCQkJCWxvY2FsIHRQb3MgCT0gdE9iamVjdC5HZXRQb3Moc09iamVjdCk7DQogICAgCQkJCS0tc2NhbGUgYW5kIHRyYW5zZm9ybSB0aGUgb2JqZWN0DQogICAgCQkJCWxvY2FsIHREZWx0YSA9IG9TY2FsZXIuYWRqdXN0KHt3aWR0aCA9IHRTaXplLldpZHRoLCBoZWlnaHQgPSB0U2l6ZS5IZWlnaHQsIHggPSB0UG9zLlgsIHkgPSB0UG9zLll9KTsNCiAgICAJCQkJdE9iamVjdC5TZXRTaXplKHNPYmplY3QsIHREZWx0YS53aWR0aCwgdERlbHRhLmhlaWdodCk7DQogICAgCQkJCXRPYmplY3QuU2V0UG9zKHNPYmplY3QsIHREZWx0YS54LCB0RGVsdGEueSk7DQoNCiAgICAgICAgICAgICAgICAgICAgLS1hZGp1c3QgZm9udCBzaXplIGFzIG5lZWRlZA0KICAgICAgICAgICAgICAgICAgICBpZiAodE9iamVjdFR5cGUgPT0gT0JKRUNUX1BBUkFHUkFQSCkgdGhlbg0KICAgICAgICAgICAgICAgICAgICAgICAgbG9jYWwgdFByb3BzICAgID0gUGFyYWdyYXBoLkdldFByb3BlcnRpZXMoc09iamVjdCk7DQogICAgICAgICAgICAgICAgICAgICAgICBsb2NhbCBuRm9udFNpemUgPSB0UHJvcHMuRm9udFNpemUgKiBfbkZvbnRDbzsNCiAgICAgICAgICAgICAgICAgICAgICAgIC0tRGlhbG9nLk1lc3NhZ2UoIiIsIHRvc3RyaW5nKHRQcm9wcy5Gb250U2l6ZSkuLiJcbiIuLnRvc3RyaW5nKF9uRm9udENvKSkNCiAgICAgICAgICAgICAgICAgICAgICAgIFBhcmFncmFwaC5TZXRQcm9wZXJ0aWVzKHNPYmplY3QsIHtGb250U2l6ZSA9IG5Gb250U2l6ZX0pOw0KICAgICAgICAgICAgICAgICAgICBlbmQNCg0KICAgIAkJCWVuZA0KDQogICAgCQllbmQNCg0KICAgIAkJQXBwbGljYXRpb24uU2V0UmVkcmF3KHRydWUpOw0KICAgIAllbmQNCg0KICAgIGVuZCwNCg0KDQogICAgT25TdGFydHVwID0gZnVuY3Rpb24obkJ1aWxkV2lkdGgsIG5CdWlsZEhlaWdodCkNCgkJDQoJCWlmIG5vdCAoTFVBRVhfSU5JVCkgdGhlbg0KCQkJZXJyb3IoIkVycm9yIGxvYWRpbmcgU2NhbGVyWCBwbHVnaW4uIFNjYWxlclggcmVxdWlyZXMgTHVhRXguXHJcblBsZWFzZSBjYWxsIHRoaXMgbWV0aG9kIGFmdGVyIHlvdSd2ZSBpbml0aWFsaXplZCBMdWFFeC4iKTsNCgkJZW5kDQoNCiAgICAgICAgaWYgbm90IChfYkhhc0luaXQpIHRoZW4NCiAgICAgICAgICAgIGxvY2FsIGJDb250aW51ZSA9ICAgcmF3dHlwZShuQnVpbGRXaWR0aCkgICAgPT0gIm51bWJlciIgYW5kDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJhd3R5cGUobkJ1aWxkSGVpZ2h0KSAgID09ICJudW1iZXIiIGFuZA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBuQnVpbGRXaWR0aCA+IDAgYW5kIG5CdWlsZEhlaWdodCA+IDA7DQoNCiAgICAgICAgICAgIGlmIChiQ29udGludWUpIHRoZW4NCiAgICAgICAgICAgICAgICBfbkJ1aWxkV2lkdGggICAgPSBuQnVpbGRXaWR0aDsNCiAgICAgICAgICAgICAgICBfbkJ1aWxkSGVpZ2h0ICAgPSBuQnVpbGRIZWlnaHQ7DQoNCiAgICAgICAgICAgICAgICBsb2NhbCBoV25kID0gQXBwbGljYXRpb24uR2V0V25kSGFuZGxlKCk7DQoNCiAgICAgICAgICAgIAktLWdldCB0aGUgc2NyZWVuIHNpemUgYW5kIHNldCB0aGUgYXBwIHdpbmRvdyBzaXplDQogICAgICAgICAgICAJbG9jYWwgdERpc3BsYXkgPSBTeXN0ZW0uR2V0RGlzcGxheUluZm8oKTsNCg0KICAgICAgICAgICAgICAgIF9uRGlzcGxheVdpZHRoID0gdERpc3BsYXkuV2lkdGg7DQogICAgICAgICAgICAgICAgX25EaXNwbGF5SGVpZ2h0ID0gdERpc3BsYXkuSGVpZ2h0Ow0KDQogICAgICAgICAgICAJV2luZG93LlNldFNpemUoaFduZCwgX25EaXNwbGF5V2lkdGgsIF9uRGlzcGxheUhlaWdodCk7DQogICAgICAgICAgICAJV2luZG93LlNldFBvcyhoV25kLCAwLCAwKTsNCg0KICAgICAgICAgICAgICAgIC0tc2V0IHRoZSBmb250IGNvZWZmaWNpZW50DQogICAgICAgICAgICAgICAgX25YSG9yQ28gPSBfbkRpc3BsYXlXaWR0aCAgLyAgX25CdWlsZFdpZHRoOw0KICAgICAgICAgICAgICAgIF9uWVZlckNvID0gX25EaXNwbGF5SGVpZ2h0IC8gIF9uQnVpbGRIZWlnaHQ7DQogICAgICAgICAgICAgICAgX25Gb250Q28gPSAoX25YSG9yQ28gKyBfbllWZXJDbykgLyAzOy0tVE9ETyB0aGlzIDMgaXMgYSBtYWdpYyBudW1iZXIgYW5kIGEgZ3Vlc3MsIGZpZ3VyZSBvdXQgd2hhdCBudW1iZXIgd291bGQgd29yayBpbiBhbGwgY2FzZXMNCg0KICAgICAgICAgICAgCS0tY3JlYXRlIHRoZSBvdXRlci9pbm5lciByZWN0cyBhbmQgY2FsY3VsYXRlIHRoZSAoY2VudGVyZWQpIHZpZXdwb3J0IHJlY3QNCiAgICAgICAgICAgIAlsb2NhbCB0T3V0ZXIgPSB7d2lkdGggPSB0RGlzcGxheS5XaWR0aCwgaGVpZ2h0ID0gdERpc3BsYXkuSGVpZ2h0LCB4ID0gMCwgeSA9IDB9Ow0KICAgICAgICAgICAgCWxvY2FsIHRJbm5lciA9IHt3aWR0aCA9IG5CdWlsZFdpZHRoLCBoZWlnaHQgPSBuQnVpbGRIZWlnaHR9Ow0KICAgICAgICAgICAgICAgIC0tcHJpbnQobkJ1aWxkV2lkdGgsIG5CdWlsZEhlaWdodCk7DQogICAgICAgICAgICAJbG9jYWwgdFZpZXdwb3J0ID0gbWF0aC5nZW9tZXRyeS5maXRyZWN0KHRPdXRlciwgdElubmVyLCB0cnVlKTsNCg0KICAgICAgICAgICAgCS0tZ2V0IHRoZSBhZGRpdGlvbmFsIHggYW5kIHkgb2Zmc2V0cyAoc2luY2UgdGhlIGJ1aWxkIHNpemUgaXMgZGlmZmVyZW50IHRoYW4gdGhlIHZpZXdwb3J0IHNpemUpDQogICAgICAgICAgICAJbG9jYWwgblhPZmZzZXQgPSBtYXRoLmFicyh0Vmlld3BvcnQud2lkdGggLSBuQnVpbGRXaWR0aCkgLyAyOw0KICAgICAgICAgICAgCWxvY2FsIG5ZT2Zmc2V0ID0gbWF0aC5hYnModFZpZXdwb3J0LmhlaWdodCAtIG5CdWlsZEhlaWdodCkgLyAyOw0KDQogICAgICAgICAgICAJLS1pbml0aWFsaXplIHRoZSBzY2FsZXIgc3lzdGVtDQogICAgICAgICAgICAJX29TY2FsZXIgPSBTY2FsZXIodElubmVyLndpZHRoLCB0SW5uZXIuaGVpZ2h0LCB0T3V0ZXIud2lkdGgsIHRPdXRlci5oZWlnaHQsIHRydWUpOy0tLCBuWE9mZnNldCwgbllPZmZzZXQpOw0KDQogICAgICAgICAgICAgICAgSW5pdFBhZ2VzQW5kRGlhbG9ncygpOw0KDQogICAgICAgICAgICAgICAgX2JIYXNJbml0ID0gdHJ1ZTsNCiAgICAgICAgICAgIGVuZA0KDQogICAgICAgIGVuZA0KDQogICAgZW5kLA0KfSwNCnstLVBSSVZBVEUNCiAgICBTY2FsZXJYID0gZnVuY3Rpb24odGhpcywgY2RhdCkgZW5kDQp9LA0Ke30sLS1QUk9URUNURUQNCnstLVBVQkxJQw0KDQp9LA0KbmlsLCAgIC0tZXh0ZW5kaW5nIGNsYXNzDQp0cnVlLCAgLS1pZiB0aGUgY2xhc3MgaXMgZmluYWwNCm5pbCAgICAtLWludGVyZmFjZShzKSAoZWl0aGVyIG5pbCwgb3IgaW50ZXJmYWNlKHMpKQ0KKTsNCg==</Source>
+            <FoldLines />
+            <BookMarks>
+                <Line>89</Line>
+            </BookMarks>
+        </Script>
+    </Scripts>
+    <Modules />
+    <Dependencies />
+    <Resources />
+    <Properties>
+        <Property Name="PluginName">ScalerX</Property>
+        <Property Name="HelpFileAuthoring">1</Property>
+        <Property Name="PluginVersion">1.0.0.0</Property>
+        <Property Name="AuthorInfo">Centauri Soldier</Property>
+        <Property Name="ApplyCompressionDebug">0</Property>
+        <Property Name="CompressionLevelDebug">10</Property>
+        <Property Name="AttachDebuggerOnDebug">1</Property>
+        <Property Name="MakeHelpOnDebug">1</Property>
+        <Property Name="InstallOnDebug">0</Property>
+        <Property Name="ApplyLicenceCheckOnDebug">0</Property>
+        <Property Name="InserFirstSerialOnDebug">0</Property>
+        <Property Name="ApplyCompressionPublish">0</Property>
+        <Property Name="CompressionLevelPublish">10</Property>
+        <Property Name="MakeHelpOnPublish">1</Property>
+        <Property Name="InstallOnPublish">1</Property>
+        <Property Name="InserFirstSerialOnPublish">0</Property>
+        <Property Name="ActiveProjectSettingsTab">0</Property>
+    </Properties>
+    <Intellisense>
+        <HelpIndex>
+            <Description>ScalarX automatically adjusts your app’s objects to fit the current screen resolution, preserving the proportions and layout you designed at design-time. Whether the display’s aspect ratio or resolution changes, ScalarX ensures your content scales seamlessly and proportionally, providing a consistent and responsive user experience across all devices.</Description>
+            <Licence>The Unlicense</Licence>
+            <Author>Centauri Soldier</Author>
+            <Website>https://github.com/CentauriSoldier/AutoPlayMediaStudioPlugins</Website>
+            <Email />
+            <Copyright>Public Domain</Copyright>
+            <Requirements>LuaEx</Requirements>
+            <InstallNotes>Place plugin folder into &quot;C:\Program Files (x86)\AutoPlay Media Studio 9\Plugins\Actions.&quot;</InstallNotes>
+        </HelpIndex>
+        <ActionGroups />
+        <Actions Expanded="1">
+            <Action GUID="{20ac59f3-1699-4fca-b112-30b164f92d3d}" Group="" WizardPage="3">
+                <Name>MarkForRescale</Name>
+                <Description>Marks the specified page/dialog for reevaluation and rescaling.</Description>
+                <Arguments>
+                    <Argument GUID="{b59847d8-1d6b-4b6f-9a8e-9549ade0295d}">
+                        <Name>Page Name</Name>
+                        <Description>The name of the page to mark for reevaluation and rescaling. You can simply input the keyword, this, as the parameter.</Description>
+                        <DefaultValue>this</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes>
+                    <Note GUID="{32d861a6-01b2-48f6-92b4-3ff291ccae36}">
+                        <Type>0</Type>
+                        <Title>Does Not Process</Title>
+                        <Text>This method does not process reevaluation or rescaling in and of itself. It merely marks the indicated page/dialog for reevaluation and rescaling so that next time the OnPreload event for that page/dialog fires, it will reprocess.</Text>
+                    </Note>
+                </Notes>
+                <Examples>
+                    <Example GUID="{b6c92d89-3fb9-467a-a87b-6c8e0ef6a432}">
+                        <Title>Example</Title>
+                        <Description>Makrs a page/dialog for reevaluation and rescaling.</Description>
+                        <Script>TWFya0ZvclJlc2NhbGUoIk15IFBhZ2UiKTs=</Script>
+                    </Example>
+                </Examples>
+                <Return>
+                    <Type>0</Type>
+                    <Description>Returns nothing.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{cbd49799-c7a3-4590-aee8-ffd783ea7983}" Group="" WizardPage="3">
+                <Name>OnPreload</Name>
+                <Description>Must be called in the OnPreload event of each page or dialog you want to scale. This method scales all objects on the specified page or dialog by adjusting their size and position according to the scaling coefficients, ensuring that UI elements are resized properly before the page or dialog is displayed.</Description>
+                <Arguments>
+                    <Argument GUID="{4458784e-7563-4883-8361-6be27d40fc8f}">
+                        <Name>Page Name</Name>
+                        <Description>The current page name. You can simply input the keyword, this, as the parameter.</Description>
+                        <DefaultValue>this</DefaultValue>
+                        <Data />
+                        <Type>0</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes>
+                    <Note GUID="{ce42d5ba-b2c2-41c0-8dea-d087a49720cb}">
+                        <Type>1</Type>
+                        <Title>On Efficiency</Title>
+                        <Text>This occurs only once, during the initial preload phase. You can force a page/dialog to be reevaluated and rescaled by using the ForceRescale method.</Text>
+                    </Note>
+                </Notes>
+                <Examples>
+                    <Example GUID="{e6b25e04-15aa-4ddf-b581-96e0f8a85c9c}">
+                        <Title>OnPreload Example</Title>
+                        <Description>Using ScalarX on a page/dialog is as simple as placing the following code in the OnPreload event of the page/dialog.</Description>
+                        <Script>U2NhbGFyWC5PblByZWxvYWQodGhpcyk7</Script>
+                    </Example>
+                </Examples>
+                <Return>
+                    <Type>0</Type>
+                    <Description>Returns nothing.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+            <Action GUID="{3086f4cf-9d10-4eff-9e09-4ef4d53178c6}" Group="" WizardPage="0">
+                <Name>OnStartup</Name>
+                <Description>Initializes the scaling system by calculating scaling coefficients based on the input build size and display resolution. Sets up the application window size and viewport, and prepares the scaler for use during runtime.</Description>
+                <Arguments>
+                    <Argument GUID="{9f48c4dc-a5a4-4fc7-bfd7-0f44037d86e4}">
+                        <Name>Build Width</Name>
+                        <Description>The width of the application layout at design time, used to calculate scaling relative to the current screen resolution. The width of the application layout at design time. This setting can be found in Project &gt; Settings under the Appearance tab, in the Dimensions heading.</Description>
+                        <DefaultValue>1200</DefaultValue>
+                        <Data />
+                        <Type>1</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                    <Argument GUID="{ed5cac67-2816-499c-8f47-00b30e2218bf}">
+                        <Name>Build Height</Name>
+                        <Description>The height of the application layout at design time. This setting can be found in Project &gt; Settings under the Appearance tab, in the Dimensions heading.</Description>
+                        <DefaultValue>768</DefaultValue>
+                        <Data />
+                        <Type>1</Type>
+                        <SubType>0</SubType>
+                        <Enumeration />
+                    </Argument>
+                </Arguments>
+                <Remarks />
+                <Notes>
+                    <Note GUID="{0befd1e9-3522-4891-9240-de59cc13841d}">
+                        <Type>0</Type>
+                        <Title>Required Call</Title>
+                        <Text>Must be placed in the application&apos;s OnStartup event.</Text>
+                    </Note>
+                </Notes>
+                <Examples>
+                    <Example GUID="{6769c949-3e01-43fb-a7da-28a935699886}">
+                        <Title>Getting Started</Title>
+                        <Description>Getting ScalarX up and ruinning is as simple as placing the following code in your application&apos;s OnStartup event.</Description>
+                        <Script>U2NhbGFyWC5PblN0YXJ0dXAoMTIwMCwgNzY4KTsgLS1hZGp1c3QgdmFsdWVzIHRvIHlvdXIgYXBwbGljYXRpb24ncyBEaW1lbnNpb25zICh0aGF0IGNhbiBiZSBmb3VuZCBpbiBQcm9qZWN0ID4gU2V0dGluZ3MgdW5kZXIgdGhlIEFwcGVhcmFuY2UgdGFiLCBpbiB0aGUgRGltZW5zaW9ucyBoZWFkaW5nKQ==</Script>
+                    </Example>
+                </Examples>
+                <Return>
+                    <Type>0</Type>
+                    <Description>Returns nothing.</Description>
+                    <Enumeration />
+                </Return>
+            </Action>
+        </Actions>
+    </Intellisense>
+</Project>

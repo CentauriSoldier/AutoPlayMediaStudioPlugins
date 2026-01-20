@@ -1,0 +1,58 @@
+<!-- Warning : Do not edit this document manually -->
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Project>
+    <ProjectInfo>
+        <Type>0</Type>
+        <ID>{3cd18eca-9602-4519-bb39-ec4357dfd32f}</ID>
+        <Environment>1</Environment>
+    </ProjectInfo>
+    <ProductInfo>
+        <Created>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.2.0.0</Version>
+            <Date>1/4/2026 9:19:34 AM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Created>
+        <Modified>
+            <Name>AmsPluginMaker 1.1</Name>
+            <Version>1.2.0.0</Version>
+            <Date>1/4/2026 10:05:20 AM</Date>
+            <Type>Commercial Version</Type>
+            <ID>{7a2e86e3-5079-44d5-8208-2aa1334ccc56}</ID>
+            <MajorVersion>1</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </Modified>
+    </ProductInfo>
+    <Scripts>
+        <Script Name="Lua" ScrollPosition="0" CursorPosition="0">
+            <Source>cmVxdWlyZSgiUGx1Z2lucy5MdWFFeC5Jbml0Iik7</Source>
+            <FoldLines />
+            <BookMarks />
+        </Script>
+    </Scripts>
+    <Modules />
+    <Dependencies />
+    <Resources />
+    <Properties>
+        <Property Name="PluginName">00LuaExLoader</Property>
+        <Property Name="HelpFileAuthoring">1</Property>
+        <Property Name="PluginVersion">1.0.0.0</Property>
+        <Property Name="AuthorInfo">00LuaExLoader Plugin For AutoPlay Media Studio</Property>
+        <Property Name="InstallOnDebug">0</Property>
+    </Properties>
+    <Intellisense>
+        <HelpIndex>
+            <Description>Loads LuaEx. LuaEx must be in the Scripts\Plugins Directory of your project. You can validate the correct path configuration by confirming that LuaEx&apos;s init.lua script path is [Project Directory]\Scripts\Plugins\LuaEx\init.lua.</Description>
+            <Licence>The Unlicense</Licence>
+            <Author>Centauri Soldier</Author>
+            <Website>https://github.com/CentauriSoldier/AutoPlayMediaStudioPlugins</Website>
+            <Email></Email>
+            <Copyright>Public Domain</Copyright>
+            <Requirements>LuaEx</Requirements>
+            <InstallNotes>Download LuaEx from https://github.com/CentauriSoldier/LuaEx and place the LuaEx subfolder in your project&apos;s Script\Plugins path.</InstallNotes>
+        </HelpIndex>
+    </Intellisense>
+</Project>
